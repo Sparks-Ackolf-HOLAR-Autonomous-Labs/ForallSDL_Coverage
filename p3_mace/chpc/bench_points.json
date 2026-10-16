@@ -1,0 +1,33 @@
+{
+ "protocol": {
+  "model": "small",
+  "ncx": 3,
+  "ncy": 3,
+  "ncz": 16,
+  "relax_steps": 150,
+  "dt_fs": 1.0,
+  "equil": 10000,
+  "prod": 60000,
+  "swap_every": 50
+ },
+ "points": {
+  "bench_disp": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 1
+  },
+  "bench_clu": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 2
+  }
+ }
+}

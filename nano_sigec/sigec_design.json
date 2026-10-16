@@ -1,0 +1,116 @@
+{
+ "campaign": "nano-sigec-doping-2026-09-29",
+ "declared_limits": [
+  "almaBTE VCA host + RTA (as the nano campaign); host modes are not recomputed with carbon (carbon enters only as scatterers)",
+  "gray boundary is known to be too strong (session 39: Pr1/Pr5 fail), so findings are reported at the calibrated effective grain sizes",
+  "SiC nanoinclusion cross-section is the Rayleigh-to-geometric interpolation, no interface (Kapitza) or mode-conversion physics; contrast bracketed not computed",
+  "substitutional strain term reuses the Abeles Si-Ge eps for C (bracket 0-39); M1 fixes only the size misfit delta_C",
+  "no electronic transport: SiC and pores also scatter carriers, so zT is not claimed",
+  "nanopores (reported by Zhao et al.) are not modelled; PrC4 tests only whether SiC particles alone suffice",
+  "MACE-MP-0 is a universal potential trained on PBE data; M1a checks lattice constants only"
+ ],
+ "deliverables": {
+  "D1": "kappa_L(x, y_C, carbon form, R, d, T, dopant) table (results/sigec_results.json)",
+  "D2": "carbon-for-germanium frontier: minimum x reaching kappa_L <= 2.5 and <= 4.0 W/mK at 300 and 1100 K vs y_C and form, at d_eff in {0.1, 0.3, 0.5} um",
+  "D3": "carbon-form decision map: which form (substitutional at both eps bounds, SiC at each R and contrast) gives the largest kappa_L drop per C atom, vs x and T",
+  "D4": "screening decision: (x, y_C, form, R) minimising kappa_L at 300 and 1100 K for d_eff = 0.3 um, with and without the M1 equilibrium constraint",
+  "D5": "where carbon goes (M1): delta_C, dE_prec and dE_site vs x, the materials answer to Q1"
+ },
+ "deviation_policy": "infrastructure reruns allowed with a ledger deviation entry; any change to grid, constants, gates or predictions after registration is a new pre-registration",
+ "evidence_reused": {
+  "boundary_calibration": "session 39 result: gray-boundary effective grain size for sintered Si0.8Ge0.2 is 0.1-0.9 um (median 0.5 um; 0.18-0.3 um after a typical electronic-kappa subtraction)",
+  "host_modes": "nano/modes/x*.npz (almaBTE 1.3.2 per-mode C, tau, |v|, 9 compositions x 5 T; ledger seq 45); no new BTE runs"
+ },
+ "operator_go": "issue 55, 2026-09-29: 'correction that I want Nanostructured SiGeC and light doping not just SiGe'",
+ "paper": "P1",
+ "predictions": {
+  "PrC1": "M1: MACE delta_C at x=0 lies within +/-30% of the modified-Vegard value -0.395 (Si to 3C-SiC)",
+  "PrC2": "M1: dE_prec < -0.5 eV per C at every x in {0, 0.2, 0.5} (substitutional C is metastable; sintering should precipitate SiC), and more negative at x=0.5 than at x=0",
+  "PrC2b": "M1: carbon prefers Si-rich neighbour shells: mean dE_site > 0 at x=0.2 and x=0.5",
+  "PrC3": "carbon form: x=0.2, 300 K, d_eff=0.3 um, y_C=0.01: SiC nanoinclusions with R=2.5 nm (stiffness contrast) lower kappa_L more than substitutional C at eps=0, and less than substitutional C at eps=39",
+  "PrC4": "Zhao et al. 2025 check: x=0.2, y_C=0.03 as SiC with R in [50, 150] nm (reported 100-300 nm diameters), 1023 K, d_eff in [0.1, 0.5] um, both contrast bounds: SiC particles alone lower kappa_L by less than 10%, i.e. less than half of the measured 20.9% total-kappa drop (supports the authors' nanopore attribution)",
+  "PrC5": "carbon for germanium: at 300 K and d_eff=0.3 um, y_C=0.01 in its best form (upper bracket) reaches the kappa_L of carbon-free x=0.2 at x <= 0.15 (saves >= 25% of the Ge)",
+  "PrC6": "light doping on top of SiGeC: with y_C=0.01 as R=2.5 nm SiC, x in [0.15, 0.5], d_eff=0.3 um, B or P at n <= 1e20 changes kappa_L by less than 5% (eps=0)"
+ },
+ "question": "In nanostructured (ball-milled and sintered) Si-Ge-C with light B/P doping: (Q1) where does carbon go, substitutional sites or SiC precipitates; (Q2) which carbon form lowers the lattice thermal conductivity most per carbon atom; (Q3) how much germanium can carbon replace at equal kappa_L; (Q4) does light doping add anything once carbon and grain boundaries are present; (Q5) can SiC particles of the size reported in the one sintered SiGe+SiC experiment (Zhao et al., ACS Omega 2025) explain its measured kappa drop",
+ "references_checked_via_asta": {
+  "Adachi2007": "10.1063/1.2779259 (no kappa work on CxSi1-x; C solubility in Si about 6e-6)",
+  "Gurunathan2020": "10.1103/PhysRevApplied.13.034011 (analytical point-defect scattering models)",
+  "KimSingerMajumdar2007": "10.1088/1742-6596/92/1/012085 (thermal doping by embedded nanoparticles)",
+  "Kundu2011": "10.1103/PhysRevB.84.125426 (light vs heavy nanoparticles in Si0.5Ge0.5)",
+  "Lu2025": "10.3390/inorganics13120402 (p-type Si80Ge20 + B4C, in-situ SiC and B-rich nano-inclusions + B doping)",
+  "SiC_membranes_2021": "10.1016/j.matdes.2021.110135 (modified Vegard for Si1-yCy, interpolation Si to 3C-SiC)",
+  "Zhao2025": "10.1021/acsomega.4c10843 (n-type (Si0.8Ge0.2)0.98P0.02(SiC)x, ball milling + SPS, SiC 100-300 nm, 3% SiC: 2.08 vs 2.63 W/mK at 1023 K)"
+ },
+ "stage_A_analysis": {
+  "T_interp_for_1023K": "ln kappa linear in T between the 900 K and 1100 K grid points",
+  "channels": {
+   "SiC_nanoinclusion": "rate = |v| n sigma(omega), n = phi/(4/3 pi R^3), 1/sigma = 1/sigma_R + 1/sigma_G, sigma_G = 2 pi R^2, sigma_R = (4/9) pi R^2 Lambda^2 (q R)^4, q = omega/max(|v|, 1000 m/s); contrast bracket Lambda^2 in {(dD/D)^2 density-only, (dK/K)^2 stiffness}, D = mass density, K = bulk modulus (SiC 3.21 g/cm3, 225 GPa; host Vegard-weighted Si 2.33/98 GPa, Ge 5.32/75 GPa); phi = y_C * V(SiC f.u.)/V(host atom) with V(SiC f.u.) = 4.360^3/4 A^3",
+   "grain_boundary": "gray diffuse |v|/d; reported at nominal d = 20 nm, 100 nm and at effective d_eff in {0.1, 0.3, 0.5} um (session-39 calibration band)",
+   "light_doping": "B, P at n in {1e19, 3e19, 1e20, 3e20} cm^-3, Tamura with mass + Pauling-radius size term, eps {0, 39} (as nano campaign)",
+   "substitutional_C": "Tamura rate (pi/6) Gamma omega^2 g(omega), Gamma = y[(1 - M_C/Mbar)^2 + eps delta_C^2], delta_C from M1 (per host x, linear in x between 0, 0.2, 0.5, held at the x=0.5 value above), eps bracket {0, 39} (39 = Abeles 1963 Si-Ge fit)"
+  },
+  "grid": {
+   "SiC_radius_nm": [
+    2.5,
+    5,
+    10,
+    25,
+    50,
+    100,
+    150
+   ],
+   "T_K": [
+    300,
+    500,
+    700,
+    900,
+    1100
+   ],
+   "carbon_partition": "all-substitutional, all-SiC, and equilibrium-guided (substitutional share = 0 if dE_prec < 0, i.e. all C as SiC)",
+   "x_Ge": [
+    0.0,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.85,
+    1.0
+   ],
+   "y_C": [
+    0.0,
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.03
+   ]
+  },
+  "method": "per-mode Matthiessen re-summation on the committed almaBTE modes (as nano/analyze_nano.py), adding channels below"
+ },
+ "stage_M1_mace_gate": {
+  "cells": "3x3x3 conventional diamond supercells (216 sites); random Si(1-x)Ge(x) host for x in {0, 0.2, 0.5}; 3 random host configurations per x (seeds 1-3); n_C in {0, 2, 4} substitutional C on random Si sites; plus, per x>0 config, one C on the Si site with the most Ge nearest neighbours and one on a site with 4 Si nearest neighbours",
+  "definitions": {
+   "dE_prec": "E(host_N) + E(SiC per formula unit) - E(host_N with one Si->C) - 2 mu_Si(bulk Si); negative = C prefers to leave the lattice and form SiC",
+   "dE_site": "E(C at max-Ge-neighbour site) - E(C at 4-Si-neighbour site), same host config",
+   "delta_C": "slope of ln a against carbon site fraction y = n_C/216, least squares over n_C in {0,2,4} and the 3 configs"
+  },
+  "gates": {
+   "M1a": "MACE-MP-0 lattice constants within 2.5% of experiment for Si (5.431 A), Ge (5.658 A), 3C-SiC (4.360 A)",
+   "M1b": "every relaxation reaches fmax <= 0.01 eV/A; ln a vs y fit R^2 >= 0.9 for each x",
+   "on_failure": "record gate_failure; delta_C then falls back to modified Vegard (Si to 3C-SiC, -0.395) and is reported as unvalidated"
+  },
+  "outputs": [
+   "lattice constants of Si, Ge, 3C-SiC (8/8/8-atom cells)",
+   "a(n_C) per host config -> delta_C = (1/a) da/dy",
+   "E per config",
+   "precipitation energy per C",
+   "site-preference energy"
+  ],
+  "relax": "ExpCellFilter (hydrostatic) + FIRE, fmax 0.01 eV/A, max 600 steps",
+  "where": "CHPC notchpeak-guest CPU (owner-guest), module mace/0.3.16_cu126, MACE-MP-0 medium, float64; no DGX compute (operator), grn061 untouched"
+ },
+ "supersedes_scope_of": "nano-sige-doping-2026-09-29 (ledger seq 40/45): that campaign treated C only as a dilute substitutional dopant with a bracketed strain term; this campaign makes carbon a composition axis with two physical forms"
+}

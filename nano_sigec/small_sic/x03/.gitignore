@@ -1,0 +1,3 @@
+# raw evidence must be committed (ledger); override the repo-wide *.log / *.out ignores
+!results/*.log
+!logs/*.out

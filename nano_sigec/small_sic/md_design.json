@@ -1,0 +1,38 @@
+{
+ "campaign": "sigec-small-sic-md-2026-09-30",
+ "paper": "P1",
+ "parent_campaign": "nano-sigec-2026-09-29",
+ "question": "The SiC scattering strength for particles of R <= 5 nm is bracketed by the density-only and stiffness-only contrast of the Rayleigh-to-geometric model (reduction per 1 at% C at R = 2.5 nm, x = 0.2, 300 K: 12.5% to 27.2%). Which part of that band, if any, does an atomistic simulation with an explicit, relaxed, lattice-mismatched SiC/SiGe interface support?",
+ "no_compute_precheck": "decision_robustness.json (committed with this design): the stiffness bracket already sits within 0.5% of the geometric-cap limit of the model form, and the screening pick (x = 0.3, 3 at% C) is the same across the whole band; only the preferred radius (2.5 vs 5 nm) and the size of the Ge saving (27% to 51%) depend on the contrast.",
+ "method": {
+  "engine": "LAMMPS (CHPC module lammps, openmpi/4.1.6), Muller-Plathe rNEMD, protocol identical to chpc/in.mp_kappa2 (NPT 50 ps, warm 100 ps, production 500 ps, swap every 50 steps, 20 z-bins)",
+  "potential": "md/SiCGe_GeC.tersoff = LAMMPS SiCGe.tersoff (Tersoff 1989) + 12 Ge-C triplets by the upstream mixing rules with chi_GeC = 1; gate G1 guarantees they are never evaluated",
+  "host": "Si0.8Ge0.2 random alloy, 12 x 12 x 40 diamond cells (about 6.6 x 6.6 x 21.9 nm, 46080 sites)",
+  "particle": "two 3C-SiC spheres (a = 4.36 A before relaxation), centred at z = Lz/4 and 3Lz/4, radius R; every Ge within R + 7 A of a centre is converted to Si (Si-rich pocket, consistent with the converged MACE site preference); overlaps < 1.6 A deleted; box relaxed (aniso) before dynamics",
+  "runs": "md/points.txt: host (2 seeds); for R = 10, 15, 20 A: shell-only control and particle, 2 seeds each; 14 runs, T = 300 K",
+  "placement": "notchpeak-guest / owner-guest, 32 ranks, requeue; grn061 and the DGX are not used"
+ },
+ "gates": {
+  "G1": "for every particle run, at start and end: (min distance of any Ge atom to its nearest particle centre) - (max distance of any C atom to its nearest centre) >= 5.7 A",
+  "G2": "every run completes with MPT_EPROD present and analyze_mp.py producing a finite kappa",
+  "G3": "mean C coordination (Si + C neighbours within 2.3 A) at the end >= 3.3 (particle stays crystalline; surface atoms lower the mean)",
+  "G4": "the two host seeds agree within 8%"
+ },
+ "analysis": {
+  "reduction": "r_MD(R) = 1 - kappa(particle, R) / kappa(shell-only, R), seed-paired, reported as mean and the two-seed half range",
+  "phi_eff": "per half: V_particle / (A_xy * 7 * Lz / 20), the volume of the 7 bins analyze_mp.py fits in each half",
+  "model_side": "nano_sigec SModes at x = 0.2, 300 K, with (i) intrinsic rates scaled by one factor f so that bulk kappa equals the Tersoff kappa_inf of the P1 final law at x = 0.2, 300 K (1/(0.209 + 1.919*0.2 - 2.244*0.04 + 8.35e-5*300) = 1.894 W/mK), then (ii) a boundary length d chosen so that the model equals the mean MD shell-only kappa at the same R; the particle is then added at phi_eff and R, giving r_model(lam2)",
+  "lam2_eff": "bisection of r_model(lam2) = r_MD over lam2 in [0, 1e6]; band edges: density contrast (0.0093) and geometric cap (lam2 = 1e6)"
+ },
+ "predictions": {
+  "PrS1": "r_MD(R = 20 A) >= 5%",
+  "PrS2": "for all three radii, r_MD lies between r_model(density) and r_model(cap), within the two-seed half range",
+  "PrS3": "|1 - kappa(shell-only)/kappa(host)| < 5% at R = 10 A"
+ },
+ "decision_rule": {
+  "inside_band": "strengthen the small-SiC claims with a narrowed band: recompute the Ge saving and the reduction at R = 2.5 and 5 nm with lam2 restricted to [min, max] of lam2_eff over radii and seeds; the narrowed interval replaces 27% to 51%",
+  "above_cap": "if r_MD exceeds r_model(cap) beyond the half range for any radius: correct the model form (the explicit interface scatters more than any contrast in the Rayleigh-to-geometric form allows); fit an effective-radius multiplier R_eff/R on the three radii and report the corrected Ge saving",
+  "below_density": "if r_MD is below r_model(density) beyond the half range for any radius: downweight the few-nm SiC claims and report the MD-bounded saving",
+  "extrapolation_note": "the claims concern R = 2.5 and 5 nm; the check runs R = 1.0 to 2.0 nm because larger particles need larger boxes. lam2_eff (or R_eff/R) is assumed constant in R; the trend over the three radii is reported so a reader can judge that assumption"
+ }
+}

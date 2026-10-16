@@ -1,0 +1,80 @@
+{
+ "10.1016/j.matchemphys.2013.09.019": {
+  "paper": {
+   "paperId": "c458a397c1d5d43a507ce4deaef40c7b3ae854f1",
+   "corpusId": 135939092,
+   "title": "Influences of milling media on the fabricating process and thermoelectric properties of silicon germanium alloys",
+   "year": 2013,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ },
+ "10.1002/pssa.201228102": {
+  "paper": {
+   "paperId": "8d259f4d2de75273605fb1f66f527153f9188299",
+   "corpusId": 122523670,
+   "title": "The effect of synthesis parameters on transport properties of nanostructured bulk thermoelectric p\u2010type silicon germanium alloy",
+   "year": 2012,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ },
+ "10.1016/j.scriptamat.2014.10.001": {
+  "paper": {
+   "paperId": "070148f8ae0da2e8c18bc0ad5a1dad9df535e4b1",
+   "corpusId": 279535228,
+   "title": "Optimization of ball-milling process for preparation of Si\u2013Ge nanostructured thermoelectric materials with a high figure of merit",
+   "year": 2015,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ },
+ "10.1016/j.ceramint.2016.02.001": {
+  "paper": {
+   "paperId": "2e978034e7a9a8dbe9f47e71e87398e5da5a3b27",
+   "corpusId": 138604026,
+   "title": "Fabrication and contact resistivity of W\u2013Si3N4/TiB2\u2013Si3N4/p\u2013SiGe thermoelectric joints",
+   "year": 2016,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ },
+ "10.1063/1.4764919": {
+  "paper": {
+   "paperId": "9cb8195bc1e2640b8d3ed8236c546d3c3913e41a",
+   "corpusId": 119677030,
+   "title": "Comparison of thermoelectric properties of p-type nanostructured bulk Si0.8Ge0.2 alloy with Si0.8Ge0.2 composites embedded with CrSi2 nano-inclusisons",
+   "year": 2012,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ },
+ "10.1021/nl8026795": {
+  "paper": {
+   "paperId": "039e4ebfb02c1184a15bf196c17b11fb34cee983",
+   "corpusId": 34045459,
+   "title": "Enhanced thermoelectric figure-of-merit in nanostructured p-type silicon germanium bulk alloys.",
+   "year": 2008,
+   "isOpenAccess": false
+  },
+  "snippets": {
+   "data": [],
+   "retrievalVersion": "pa1-v1"
+  }
+ }
+}

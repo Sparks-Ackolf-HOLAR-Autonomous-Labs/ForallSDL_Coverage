@@ -1,0 +1,3 @@
+# Raw campaign evidence: must be committed (overrides the repo-wide *.out / *.log ignore).
+!*.out
+!*.log

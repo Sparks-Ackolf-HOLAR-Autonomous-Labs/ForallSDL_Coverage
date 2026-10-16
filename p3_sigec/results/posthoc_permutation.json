@@ -1,0 +1,39 @@
+{
+ "note": "post hoc, not registered",
+ "n_runs": {
+  "single": 33,
+  "doubled": 62
+ },
+ "single_vs_random": {
+  "regret": {
+   "median_covering": 0.10884553451439449,
+   "median_random": 0.11663573946942418,
+   "diff_median": -0.007790204955029689,
+   "p_permutation": 0.528473576321184,
+   "p_mannwhitney": 0.11038353655445049
+  },
+  "log_rmse": {
+   "median_covering": 0.17299197227472657,
+   "median_random": 0.1837592606493709,
+   "diff_median": -0.01076728837464433,
+   "p_permutation": 0.11944402779861008,
+   "p_mannwhitney": 0.14917969130959766
+  }
+ },
+ "doubled_vs_random": {
+  "regret": {
+   "median_covering": 0.10565572422638747,
+   "median_random": 0.10412794384298008,
+   "diff_median": 0.0015277803834073955,
+   "p_permutation": 0.9394530273486326,
+   "p_mannwhitney": 0.7538642679566085
+  },
+  "log_rmse": {
+   "median_covering": 0.14095807295593094,
+   "median_random": 0.1476768345338408,
+   "diff_median": -0.006718761577909876,
+   "p_permutation": 0.23018849057547122,
+   "p_mannwhitney": 0.05421823992705198
+  }
+ }
+}

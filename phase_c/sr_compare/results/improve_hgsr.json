@@ -1,0 +1,310 @@
+[
+ {
+  "task": "md",
+  "engine": "hgsr-v1",
+  "n": 24,
+  "expression": "r = 3.115*x + -3.193*x^2 + 65.68*1/L",
+  "fit_s": 0.01,
+  "cv5_rows": {
+   "rmse_kappa": 17.6633,
+   "medape_pct": 11.755,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 18.7674,
+   "medape_pct": 13.788,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.1995,
+   "medape_pct": 9.3019,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "+F1 logo-select",
+  "n": 24,
+  "expression": "r = -8.142e-05*T + 2.835*x(1-x) + 42.1*1/L + 206.8*x(1-x)/L",
+  "fit_s": 0.01,
+  "cv5_rows": {
+   "rmse_kappa": 3.7546,
+   "medape_pct": 6.4354,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 3.2912,
+   "medape_pct": 8.8662,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.2615,
+   "medape_pct": 11.4293,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "+F2 size cells",
+  "n": 24,
+  "expression": "r = -6.279e-05*T + 2.65*x(1-x) + 40.88*1/L + 234.8*x(1-x)/L",
+  "fit_s": 0.03,
+  "cv5_rows": {
+   "rmse_kappa": 10.1099,
+   "medape_pct": 6.4605,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 3.3616,
+   "medape_pct": 9.2162,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.2649,
+   "medape_pct": 11.3694,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "+F3 relative loss",
+  "n": 24,
+  "expression": "r = 2.356*x + -2.343*x^2 + 24.24*1/L + 349.1*x(1-x)/L",
+  "fit_s": 0.02,
+  "cv5_rows": {
+   "rmse_kappa": 1.0705,
+   "medape_pct": 7.3899,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 1.0863,
+   "medape_pct": 6.7869,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.2831,
+   "medape_pct": 12.4738,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "+F4 generated basis (v2)",
+  "n": 24,
+  "expression": "r = -0.03637*(1-x)*l^-1/2 + -3.597*x(1-x)*1/l + 8.752*x(1-x)*l^-1/2 + 0.09632*1/t*1/l",
+  "fit_s": 0.5,
+  "cv5_rows": {
+   "rmse_kappa": 2.1851,
+   "medape_pct": 4.2298,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 2.0346,
+   "medape_pct": 3.8852,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.3052,
+   "medape_pct": 10.9014,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "pysr",
+  "n": 24,
+  "expression": "1/r, r = 0.09079046 - (2.0445511 + 431.6459/L)*(-x + x*x)",
+  "fit_s": 7.66,
+  "cv5_rows": {
+   "rmse_kappa": 10.4418,
+   "medape_pct": 8.8353,
+   "n_nonfinite_pred": 1
+  },
+  "loco": {
+   "rmse_kappa": 14.1269,
+   "medape_pct": 12.4223,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.244,
+   "medape_pct": 13.0896,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md",
+  "engine": "sisso",
+  "n": 24,
+  "expression": "1/r, r = -0.1281176926*L/T - 0.4821529876*x + 0.757446636514768 + 225.3435430892*x/L",
+  "fit_s": 0.11,
+  "cv5_rows": {
+   "rmse_kappa": 10.0132,
+   "medape_pct": 50.7829,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 10.2763,
+   "medape_pct": 74.6543,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.454,
+   "medape_pct": 20.9824,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "hgsr-v1",
+  "n": 18,
+  "expression": "r = 0.1943*1 + 0.9935*x + 80.86*1/L",
+  "fit_s": 0.01,
+  "cv5_rows": {
+   "rmse_kappa": 0.2814,
+   "medape_pct": 6.0215,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.2967,
+   "medape_pct": 9.7582,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.5651,
+   "medape_pct": 22.3324,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "+F1 logo-select",
+  "n": 18,
+  "expression": "r = 0.4225*1 + 0.399*x + 388.6*x(1-x)/L",
+  "fit_s": 0.01,
+  "cv5_rows": {
+   "rmse_kappa": 0.1166,
+   "medape_pct": 5.2453,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.1415,
+   "medape_pct": 7.3319,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.441,
+   "medape_pct": 14.4722,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "+F2 size cells",
+  "n": 18,
+  "expression": "r = 0.0009942*x*T + 126.4*1/T + -0.03975*T/L + 505.3*x(1-x)/L",
+  "fit_s": 0.02,
+  "cv5_rows": {
+   "rmse_kappa": 0.11,
+   "medape_pct": 7.0904,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.1664,
+   "medape_pct": 11.95,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.5874,
+   "medape_pct": 27.6728,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "+F3 relative loss",
+  "n": 18,
+  "expression": "r = 0.5357*1 + -42.09*1/L + 629*x(1-x)/L",
+  "fit_s": 0.02,
+  "cv5_rows": {
+   "rmse_kappa": 0.1087,
+   "medape_pct": 9.2782,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.1593,
+   "medape_pct": 12.0726,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.3151,
+   "medape_pct": 11.5419,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "+F4 generated basis (v2)",
+  "n": 18,
+  "expression": "r = 0.3192*(1-x) + -0.1201*1/l + 5.898*x(1-x)*l^-1/2",
+  "fit_s": 0.38,
+  "cv5_rows": {
+   "rmse_kappa": 0.2738,
+   "medape_pct": 4.845,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.229,
+   "medape_pct": 10.4804,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.1506,
+   "medape_pct": 4.4597,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "pysr",
+  "n": 18,
+  "expression": "1/r, r = 0.4088743 - (0.018007794 - (113.57316 - T/113.38155)/L)/(0.19160326/x - (-1)*59.0577/L)",
+  "fit_s": 1.86,
+  "cv5_rows": {
+   "rmse_kappa": 0.1892,
+   "medape_pct": 3.5246,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.2057,
+   "medape_pct": 9.6136,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.5111,
+   "medape_pct": 17.1997,
+   "n_nonfinite_pred": 0
+  }
+ },
+ {
+  "task": "md-alloy",
+  "engine": "sisso",
+  "n": 18,
+  "expression": "1/r, r = -0.1443166199*L/T + 0.6811709102086565 + 150.5109495188*x/T + 143.1342480828*x/L",
+  "fit_s": 0.12,
+  "cv5_rows": {
+   "rmse_kappa": 0.0746,
+   "medape_pct": 3.6384,
+   "n_nonfinite_pred": 0
+  },
+  "loco": {
+   "rmse_kappa": 0.1003,
+   "medape_pct": 3.8733,
+   "n_nonfinite_pred": 0
+  },
+  "holdout": {
+   "rmse_kappa": 0.5416,
+   "medape_pct": 16.0222,
+   "n_nonfinite_pred": 0
+  }
+ }
+]

@@ -1,0 +1,108 @@
+# Muller-Plathe rNEMD kappa of Si0.8Ge0.2 (Tersoff 1989) with two embedded
+# 3C-SiC particles, one centred in each half of the box (z = Lz/4, 3Lz/4),
+# i.e. in the middle of each fitted gradient region, away from the swap
+# slabs at z = 0 and z = Lz/2. Same thermostat, swap and averaging protocol
+# as ../../../chpc/in.mp_kappa2, so analyze_mp.py applies unchanged.
+# Variables:
+#   -var x <x_Ge> -var T <K> -var seed <int> -var ncxy <cells> -var ncz <cells>
+#   -var R <particle radius, A; 0 = no particle>
+#   -var shell <1 = turn Ge within R+7 A of the centres into Si, 0 = no>
+#   -var pot <SiCGe_GeC.tersoff> -var out <prefix>
+# Run types (md_design.json): host (R=0, shell=0), shell-only control
+# (R>0 geometry, shell=1, no SiC), particle (R>0, shell=1, SiC inside R).
+variable x     index 0.2
+variable T     index 300
+variable seed  index 20260930
+variable ncxy  index 12
+variable ncz   index 40
+variable R     index 0
+variable shell index 0
+variable sic   index 0
+variable swapn index 50
+variable pot   index SiCGe_GeC.tersoff
+variable out   index sic_out
+
+units metal
+boundary p p p
+variable a0 equal 5.431+(5.658-5.431)*v_x
+lattice diamond ${a0}
+region box block 0 ${ncxy} 0 ${ncxy} 0 ${ncz}
+create_box 3 box
+create_atoms 1 box
+set type 1 type/fraction 2 ${x} ${seed}
+mass 1 28.0855
+mass 2 72.63
+mass 3 12.011
+pair_style tersoff
+pair_coeff * * ${pot} Si(D) Ge C
+
+variable cx  equal lx/2
+variable cy  equal ly/2
+variable czA equal lz/4
+variable czB equal 3*lz/4
+variable Rs  equal v_R+7.0
+if "${shell} == 1" then &
+  "region shA sphere ${cx} ${cy} ${czA} ${Rs} units box" &
+  "region shB sphere ${cx} ${cy} ${czB} ${Rs} units box" &
+  "set region shA type 1" &
+  "set region shB type 1"
+if "${sic} == 1" then &
+  "region pA sphere ${cx} ${cy} ${czA} ${R} units box" &
+  "region pB sphere ${cx} ${cy} ${czB} ${R} units box" &
+  "delete_atoms region pA" &
+  "delete_atoms region pB" &
+  "lattice custom 4.36 a1 1 0 0 a2 0 1 0 a3 0 0 1 basis 0 0 0 basis 0 0.5 0.5 basis 0.5 0 0.5 basis 0.5 0.5 0 basis 0.25 0.25 0.25 basis 0.25 0.75 0.75 basis 0.75 0.25 0.75 basis 0.75 0.75 0.25" &
+  "create_atoms 1 region pA basis 5 3 basis 6 3 basis 7 3 basis 8 3" &
+  "create_atoms 1 region pB basis 5 3 basis 6 3 basis 7 3 basis 8 3" &
+  "delete_atoms overlap 1.6 all all"
+
+# gate G1: no Ge atom may have a C atom within 5.7 A, so no Ge-C pair or
+# triplet term is ever evaluated. Checked geometrically: (closest Ge to a
+# particle centre) - (farthest C from its centre) >= 5.7 A, at start and end.
+group ge type 2
+group cc type 3
+variable dA atom sqrt((x-v_cx)^2+(y-v_cy)^2+(z-v_czA)^2)
+variable dB atom sqrt((x-v_cx)^2+(y-v_cy)^2+(z-v_czB)^2)
+variable dm atom (v_dA<v_dB)*v_dA+(v_dA>=v_dB)*v_dB
+compute gemin ge reduce min v_dm
+compute cmax cc reduce max v_dm
+thermo_style custom step temp pe press c_gemin c_cmax
+run 0
+print "SIC_G1_START $(c_gemin) $(c_cmax) $(count(cc))"
+print "SIC_NTYPES $(count(all)) $(count(ge)) $(count(cc))"
+
+fix br all box/relax aniso 0.0
+minimize 1.0e-10 1.0e-8 5000 50000
+unfix br
+reset_timestep 0
+neighbor 1.0 bin
+
+timestep 0.001
+thermo 10000
+thermo_style custom step temp pe press
+velocity all create $(2*v_T) ${seed} dist gaussian
+fix npt all npt temp ${T} ${T} 0.1 aniso 0.0 0.0 1.0
+run 50000
+unfix npt
+
+fix nve all nve
+fix flux all thermal/conductivity ${swapn} z 20
+run 100000
+print "MPT_EWARM $(f_flux:%.6f)"
+
+compute bins all chunk/atom bin/1d z lower 0.05 units reduced
+fix prof all ave/chunk 10 100 1000 bins temp ave running overwrite file ${out}.profile
+thermo_style custom step temp pe etotal
+run 500000
+print "MPT_EPROD $(f_flux:%.6f)"
+print "MPT_BOX $(lx:%.4f) $(ly:%.4f) $(lz:%.4f)"
+print "MPT_NATOMS $(atoms)"
+print "MPT_META x ${x} T ${T} ncz ${ncz} seed ${seed} prod_steps 500000 ncxy ${ncxy} swap ${swapn} R ${R} shell ${shell} sic ${sic}"
+
+# gate G1 at the end, and gate G3: C atoms still four-fold (particle crystalline)
+compute cn cc coord/atom cutoff 2.3 1
+compute cnavg cc reduce ave c_cn
+thermo_style custom step c_gemin c_cmax c_cnavg
+run 0
+print "SIC_G1_END $(c_gemin) $(c_cmax) $(count(cc))"
+print "SIC_G3_CCOORD $(c_cnavg)"

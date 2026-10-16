@@ -1,0 +1,2286 @@
+{
+ "generated": "2026-09-30",
+ "method": "Crossref search + api.crossref.org/works/<doi> fetch; OpenAlex /works/doi:<doi> for abstracts",
+ "gaps": [
+  "Topic 8: no paper found on H vs D isotope effect on lattice thermal conductivity of crystalline/poly Si or SiGe; closest verified items are a-Si:H thermal conductivity and Si-isotope mass-disorder MD in Si nanowires.",
+  "Topic 3: no paper found measuring thermal conductivity of He-implanted bulk Si with nanocavities; closest is He-ion-irradiated Si nanowire (Zhao 2017)."
+ ],
+ "records": [
+  {
+   "topic": 1,
+   "doi": "10.1557/jmr.2000.0211",
+   "crossref": {
+    "title": [
+     "Voids in Silicon by He Implantation: From Basic to Applications"
+    ],
+    "author": [
+     {
+      "given": "V.",
+      "family": "Raineri",
+      "name": null
+     },
+     {
+      "given": "M.",
+      "family": "Saggio",
+      "name": null
+     },
+     {
+      "given": "E.",
+      "family": "Rimini",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Journal of Materials Research"
+    ],
+    "volume": "15",
+    "issue": "7",
+    "page": "1449-1477",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2000,
+       7
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "abstract": "<jats:p>The mechanism of bubble formation when He is implanted into silicon is described. Many experiments are reviewed and several techniques are considered. During implantation and subsequent annealing, complex He<jats:sub><jats:italic>n</jats:italic></jats:sub>\u2013V<jats:sub><jats:italic>m</jats:italic></jats:sub> clusters are formed, trapping vacancies, while Si self-interstitials recombine directly at the surface. By increasing temperature He atoms out-diffuse, and the entire process produces a supersaturation of vacancies (void formation). Their evolution is studied during isothermal and isochronal annealing, describing the mechanisms involved; that is, direct coalescence or Ostwald ripening. The internal surface is an efficient trap for self-interstitials and for metals. The gettering mechanism is governed by a surface adsorption at low impurity concentration while at high value a silicide phase is observed. The high getter capability is ensured by the large number of traps introduced (10<jats:sup>17</jats:sup>\u201310<jats:sup>19</jats:sup> cm<jats:sup>\u22123</jats:sup>). Finally, voids introduce mid gap energy levels that act as minority carrier recombination centers, providing a powerful method to control lifetime locally in silicon devices. The reviewed results demonstrate that the trap levels are due to the dangling bonds present on the void surface. This property can be used in many applications.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2039187132",
+    "title": "Voids in Silicon by He Implantation: From Basic to Applications",
+    "year": 2000,
+    "abstract": null,
+    "biblio": {
+     "volume": "15",
+     "issue": "7",
+     "first_page": "1449",
+     "last_page": "1477"
+    }
+   },
+   "bibkey": "Raineri2000",
+   "topic_label": "He implantation nanocavities in Si"
+  },
+  {
+   "topic": 1,
+   "doi": "10.1007/bf02666190",
+   "crossref": {
+    "title": [
+     "Cavity formation and impurity gettering in He-implanted Si"
+    ],
+    "author": [
+     {
+      "given": "D. M.",
+      "family": "Follstaedt",
+      "name": null
+     },
+     {
+      "given": "S. M.",
+      "family": "Myers",
+      "name": null
+     },
+     {
+      "given": "G. A.",
+      "family": "Petersen",
+      "name": null
+     },
+     {
+      "given": "J. W.",
+      "family": "Medernach",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Journal of Electronic Materials"
+    ],
+    "volume": "25",
+    "issue": "1",
+    "page": "157-164",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1996,
+       1
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2042484410",
+    "title": "Cavity formation and impurity gettering in He-implanted Si",
+    "year": 1996,
+    "abstract": null,
+    "biblio": {
+     "volume": "25",
+     "issue": "1",
+     "first_page": "157",
+     "last_page": "164"
+    }
+   },
+   "bibkey": "Follstaedt1996",
+   "topic_label": "He implantation nanocavities in Si"
+  },
+  {
+   "topic": 1,
+   "doi": "10.1016/0168-583x(87)90522-2",
+   "crossref": {
+    "title": [
+     "Helium desorption/permeation from bubbles in silicon: A novel method of void production"
+    ],
+    "author": [
+     {
+      "given": "C.C.",
+      "family": "Griffioen",
+      "name": null
+     },
+     {
+      "given": "J.H.",
+      "family": "Evans",
+      "name": null
+     },
+     {
+      "given": "P.C.",
+      "family": "De Jong",
+      "name": null
+     },
+     {
+      "given": "A.",
+      "family": "Van Veen",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms"
+    ],
+    "volume": "27",
+    "issue": "3",
+    "page": "417-420",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1987,
+       7
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2017512312",
+    "title": "Helium desorption/permeation from bubbles in silicon: A novel method of void production",
+    "year": 1987,
+    "abstract": null,
+    "biblio": {
+     "volume": "27",
+     "issue": "3",
+     "first_page": "417",
+     "last_page": "420"
+    }
+   },
+   "bibkey": "Griffioen1987",
+   "topic_label": "He implantation nanocavities in Si"
+  },
+  {
+   "topic": 1,
+   "doi": "10.1103/physrevb.47.13380",
+   "crossref": {
+    "title": [
+     "Hydrogen interactions with cavities in helium-implanted silicon"
+    ],
+    "author": [
+     {
+      "given": "S. M.",
+      "family": "Myers",
+      "name": null
+     },
+     {
+      "given": "D. M.",
+      "family": "Follstaedt",
+      "name": null
+     },
+     {
+      "given": "H. J.",
+      "family": "Stein",
+      "name": null
+     },
+     {
+      "given": "W. R.",
+      "family": "Wampler",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review B"
+    ],
+    "volume": "47",
+    "issue": "20",
+    "page": "13380-13394",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1993,
+       5,
+       15
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1990081473",
+    "title": "Hydrogen interactions with cavities in helium-implanted silicon",
+    "year": 1993,
+    "abstract": "Hydrogen interactions with microscopic cavities in Si were quantitatively characterized in thermal-release experiments. Closed internal cavities were formed by He-ion implantation and annealing and were characterized by transmission-electron microscopy. The isotopes protium ${(}^{1}$H) and deuterium (D) were introduced by ion implantation or heating in ${\\mathrm{H}}_{2}$ gas. During temperature ramping the redistribution and release of D were monitored by nuclear-reaction profiling, and the bonding of $^{1}\\mathrm{H}$ was selectively examined by infrared absorption spectroscopy. By exploiting the properties of closed internal surfaces this study determined the Si-H bond energy for surface monohydrides, the result being 2.5\\ifmmode\\pm\\else\\textpm\\fi{}0.2 eV. Hydrogen bonded to the internal surfaces was found to lie several tenths of an eV lower in energy than ${\\mathrm{H}}_{2}$ gas and H trapped at lattice defects. The oxidized external surface of the Si specimens did not detectably impede H release, implying an efficient recombination process at the Si-${\\mathrm{SiO}}_{2}$ interface for which possible mechanisms are considered.",
+    "biblio": {
+     "volume": "47",
+     "issue": "20",
+     "first_page": "13380",
+     "last_page": "13394"
+    }
+   },
+   "bibkey": "Myers1993",
+   "topic_label": "He implantation nanocavities in Si"
+  },
+  {
+   "topic": 1,
+   "doi": "10.1103/physrevb.61.10183",
+   "crossref": {
+    "title": [
+     "Thermal desorption spectra from cavities in helium-implanted silicon"
+    ],
+    "author": [
+     {
+      "given": "G. F.",
+      "family": "Cerofolini",
+      "name": null
+     },
+     {
+      "given": "G.",
+      "family": "Calzolari",
+      "name": null
+     },
+     {
+      "given": "F.",
+      "family": "Corni",
+      "name": null
+     },
+     {
+      "given": "S.",
+      "family": "Frabboni",
+      "name": null
+     },
+     {
+      "given": "C.",
+      "family": "Nobili",
+      "name": null
+     },
+     {
+      "given": "G.",
+      "family": "Ottaviani",
+      "name": null
+     },
+     {
+      "given": "R.",
+      "family": "Tonini",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review B"
+    ],
+    "volume": "61",
+    "issue": "15",
+    "page": "10183-10193",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2000,
+       4,
+       15
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1993470099",
+    "title": "Thermal desorption spectra from cavities in helium-implanted silicon",
+    "year": 2000,
+    "abstract": "Thermal desorption spectra at constant ramp rate have been determined after helium implantation into bare silicon prepared for a large set of experimental conditions. The spectra can phenomenologically be classified as composed by two peaks: the $\\ensuremath{\\alpha}$ peak, centered on a temperature of $750--800\\ifmmode^\\circ\\else\\textdegree\\fi{}\\mathrm{C}$ with a shoulder extending to lower temperature (down to $550\\ifmmode^\\circ\\else\\textdegree\\fi{}\\mathrm{C}),$ and the $\\ensuremath{\\beta}$ peak, centered on a lower temperature depending on the implantation-annealing conditions. The $\\ensuremath{\\alpha}$ peak is attributed to the emission from cavities, while the $\\ensuremath{\\beta}$ peak is attributed to the emission from vacancylike defects. A detailed theory describing helium effusion from stable cavities as controlled by the interatomic helium-helium potential is proposed and found to reproduce accurately most of the $\\ensuremath{\\alpha}$ peaks. The postimplantation of hydrogen into samples displaying a pure $\\ensuremath{\\beta}$ emission results in an $\\ensuremath{\\alpha}$ peak which can be described by the same model as above provided that the cavities are unstable and shrink during desorption in such a way as to maintain constant the concentration of contained helium.",
+    "biblio": {
+     "volume": "61",
+     "issue": "15",
+     "first_page": "10183",
+     "last_page": "10193"
+    }
+   },
+   "bibkey": "Cerofolini2000",
+   "topic_label": "He implantation nanocavities in Si"
+  },
+  {
+   "topic": 2,
+   "doi": "10.1016/s0168-583x(01)00559-6",
+   "crossref": {
+    "title": [
+     "Strain relaxation of pseudomorphic /(100) heterostructures after hydrogen or helium ion implantation for virtual substrate fabrication"
+    ],
+    "author": [
+     {
+      "given": "B.",
+      "family": "Holl\u00e4nder",
+      "name": null
+     },
+     {
+      "given": "St.",
+      "family": "Lenk",
+      "name": null
+     },
+     {
+      "given": "S.",
+      "family": "Mantl",
+      "name": null
+     },
+     {
+      "given": "H.",
+      "family": "Trinkaus",
+      "name": null
+     },
+     {
+      "given": "D.",
+      "family": "Kirch",
+      "name": null
+     },
+     {
+      "given": "M.",
+      "family": "Luysberg",
+      "name": null
+     },
+     {
+      "given": "T.",
+      "family": "Hackbarth",
+      "name": null
+     },
+     {
+      "given": "H.-J.",
+      "family": "Herzog",
+      "name": null
+     },
+     {
+      "given": "P.F.P.",
+      "family": "Fichtner",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms"
+    ],
+    "volume": "175-177",
+    "issue": null,
+    "page": "357-367",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2001,
+       4
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2094979504",
+    "title": "Strain relaxation of pseudomorphic /(100) heterostructures after hydrogen or helium ion implantation for virtual substrate fabrication",
+    "year": 2001,
+    "abstract": null,
+    "biblio": {
+     "volume": "175-177",
+     "issue": null,
+     "first_page": "357",
+     "last_page": "367"
+    }
+   },
+   "bibkey": "Hollander2001",
+   "topic_label": "He-implant strain relaxation of SiGe/Si"
+  },
+  {
+   "topic": 2,
+   "doi": "10.1063/1.1504496",
+   "crossref": {
+    "title": [
+     "Effect of helium ion implantation and annealing on the relaxation behavior of pseudomorphic Si1\u2212xGex buffer layers on Si (100) substrates"
+    ],
+    "author": [
+     {
+      "given": "M.",
+      "family": "Luysberg",
+      "name": null
+     },
+     {
+      "given": "D.",
+      "family": "Kirch",
+      "name": null
+     },
+     {
+      "given": "H.",
+      "family": "Trinkaus",
+      "name": null
+     },
+     {
+      "given": "B.",
+      "family": "Holl\u00e4nder",
+      "name": null
+     },
+     {
+      "given": "St.",
+      "family": "Lenk",
+      "name": null
+     },
+     {
+      "given": "S.",
+      "family": "Mantl",
+      "name": null
+     },
+     {
+      "given": "H.-J.",
+      "family": "Herzog",
+      "name": null
+     },
+     {
+      "given": "T.",
+      "family": "Hackbarth",
+      "name": null
+     },
+     {
+      "given": "P. F. P.",
+      "family": "Fichtner",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Journal of Applied Physics"
+    ],
+    "volume": "92",
+    "issue": "8",
+    "page": "4290-4295",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2002,
+       10,
+       1
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>The influence of He implantation and annealing on the relaxation of Si0.7Ge0.3 layers on Si (100) substrates is investigated. Proper choice of the implantation energy results in a narrow defect band \u2248100 nm underneath the substrate/epilayer interface. During annealing at 700\u20131000\u200a\u00b0C, He-filled bubbles are created, which act as sources for misfit dislocations. Efficient annihilation of the threading dislocations is theoretically predicted, if a certain He bubble density with respect to the buffer layer thickness is maintained. The variation of the implantation dose and the annealing conditions changes density and size of spherical He bubbles, resulting in characteristic differences of the dislocation structure. Si1\u2212xGex layers with Ge fractions up to 30 at.\u200a% relax the initial strain by 70% at an implantation dose of 2\u00d71016\u2009cm\u22122 and an annealing temperature as low as 850\u200a\u00b0C. Simultaneously, a low threading dislocation density of 107\u2009cm\u22122 is achieved. The strain relaxation mechanism in the presence of He filled bubbles is discussed.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2028503100",
+    "title": "Effect of helium ion implantation and annealing on the relaxation behavior of pseudomorphic Si1\u2212xGex buffer layers on Si (100) substrates",
+    "year": 2002,
+    "abstract": "The influence of He implantation and annealing on the relaxation of Si0.7Ge0.3 layers on Si (100) substrates is investigated. Proper choice of the implantation energy results in a narrow defect band \u2248100 nm underneath the substrate/epilayer interface. During annealing at 700\u20131000 \u00b0C, He-filled bubbles are created, which act as sources for misfit dislocations. Efficient annihilation of the threading dislocations is theoretically predicted, if a certain He bubble density with respect to the buffer layer thickness is maintained. The variation of the implantation dose and the annealing conditions changes density and size of spherical He bubbles, resulting in characteristic differences of the dislocation structure. Si1\u2212xGex layers with Ge fractions up to 30 at. % relax the initial strain by 70% at an implantation dose of 2\u00d71016 cm\u22122 and an annealing temperature as low as 850 \u00b0C. Simultaneously, a low threading dislocation density of 107 cm\u22122 is achieved. The strain relaxation mechanism in the presence of He filled bubbles is discussed.",
+    "biblio": {
+     "volume": "92",
+     "issue": "8",
+     "first_page": "4290",
+     "last_page": "4295"
+    }
+   },
+   "bibkey": "Luysberg2002",
+   "topic_label": "He-implant strain relaxation of SiGe/Si"
+  },
+  {
+   "topic": 2,
+   "doi": "10.1063/1.126704",
+   "crossref": {
+    "title": [
+     "Strain relaxation mechanism for hydrogen-implanted Si1\u2212xGex/Si(100) heterostructures"
+    ],
+    "author": [
+     {
+      "given": "H.",
+      "family": "Trinkaus",
+      "name": null
+     },
+     {
+      "given": "B.",
+      "family": "Holl\u00e4nder",
+      "name": null
+     },
+     {
+      "given": "St.",
+      "family": "Rongen",
+      "name": null
+     },
+     {
+      "given": "S.",
+      "family": "Mantl",
+      "name": null
+     },
+     {
+      "given": "H.-J.",
+      "family": "Herzog",
+      "name": null
+     },
+     {
+      "given": "J.",
+      "family": "Kuchenbecker",
+      "name": null
+     },
+     {
+      "given": "T.",
+      "family": "Hackbarth",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "76",
+    "issue": "24",
+    "page": "3552-3554",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2000,
+       6,
+       12
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>A mechanism of strain relief of H+ ion implanted and annealed pseudomorphic Si1\u2212xGex/Si(100) heterostructures grown by molecular beam epitaxy is proposed and analyzed. Complete strain relaxation was obtained at temperatures as low as 800\u200a\u00b0C and the samples appeared free of threading dislocations within the SiGe layer to the limit of transmission electron microscopy analysis. In our model, H filled nanocracks are assumed to generate dislocation loops, which glide to the interface where they form strain relieving misfit segments. On the basis of this assumption, the conditions for efficient strain relaxation are discussed.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1644048013",
+    "title": "Strain relaxation mechanism for hydrogen-implanted Si1\u2212xGex/Si(100) heterostructures",
+    "year": 2000,
+    "abstract": "A mechanism of strain relief of H+ ion implanted and annealed pseudomorphic Si1\u2212xGex/Si(100) heterostructures grown by molecular beam epitaxy is proposed and analyzed. Complete strain relaxation was obtained at temperatures as low as 800 \u00b0C and the samples appeared free of threading dislocations within the SiGe layer to the limit of transmission electron microscopy analysis. In our model, H filled nanocracks are assumed to generate dislocation loops, which glide to the interface where they form strain relieving misfit segments. On the basis of this assumption, the conditions for efficient strain relaxation are discussed.",
+    "biblio": {
+     "volume": "76",
+     "issue": "24",
+     "first_page": "3552",
+     "last_page": "3554"
+    }
+   },
+   "bibkey": "Trinkaus2000",
+   "topic_label": "He-implant strain relaxation of SiGe/Si"
+  },
+  {
+   "topic": 2,
+   "doi": "10.1109/led.2002.801336",
+   "crossref": {
+    "title": [
+     "Si/SiGe n-MODFETs on thin SiGe virtual substrates prepared by means of He implantation"
+    ],
+    "author": [
+     {
+      "given": "H.-J.",
+      "family": "Herzog",
+      "name": null
+     },
+     {
+      "given": "T.",
+      "family": "Hackbarth",
+      "name": null
+     },
+     {
+      "given": "U.",
+      "family": "Seiler",
+      "name": null
+     },
+     {
+      "given": "U.",
+      "family": "Konig",
+      "name": null
+     },
+     {
+      "given": "M.",
+      "family": "Luysberg",
+      "name": null
+     },
+     {
+      "given": "B.",
+      "family": "Hollander",
+      "name": null
+     },
+     {
+      "given": "S.",
+      "family": "Mantl",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "IEEE Electron Device Letters"
+    ],
+    "volume": "23",
+    "issue": "8",
+    "page": "485-487",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2002,
+       8
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2098643581",
+    "title": "Si/SiGe n-MODFETs on thin SiGe virtual substrates prepared by means of He implantation",
+    "year": 2002,
+    "abstract": "Si/SiGe n-type modulation-doped field-effect transistors grown on a very thin strain-relieved Si/sub 0.69/Ge/sub 0.31/ buffer on top of a Si(100) substrate were fabricated and characterized. This novel type of virtual substrate has been created by means of a high dose He ion implantation localized beneath a 95-nm-thick pseudomorphic SiGe layer on Si followed by a strain relaxing annealing step at 850/spl deg/C. The layers were grown by molecular beam epitaxy. Electron mobilities of 1415 cm/sup 2//Vs and 5270 cm/sup 2//Vs were measured at room temperature and 77 K, respectively, at a sheet carrier density of about 3/spl times/10/sup 12//cm/sup 2/. The fabricated transistors with Pt-Schottky gates showed good dc characteristics with a drain current of 330 mA/mm and a transconductance of 200 mS/mm. Cutoff frequencies of f/sub t/=49 GHz and f/sub max/=95 GHz at 100 nm gate length were obtained which are quite close to the figures of merit of a control sample grown on a conventional, thick Si/sub 0.7/Ge/sub 0.3/ buffer.",
+    "biblio": {
+     "volume": "23",
+     "issue": "8",
+     "first_page": "485",
+     "last_page": "487"
+    }
+   },
+   "bibkey": "Herzog2002",
+   "topic_label": "He-implant strain relaxation of SiGe/Si"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1038/ncomms15919",
+   "crossref": {
+    "title": [
+     "Engineering the thermal conductivity along an individual silicon nanowire by selective helium ion irradiation"
+    ],
+    "author": [
+     {
+      "given": "Yunshan",
+      "family": "Zhao",
+      "name": null
+     },
+     {
+      "given": "Dan",
+      "family": "Liu",
+      "name": null
+     },
+     {
+      "given": "Jie",
+      "family": "Chen",
+      "name": null
+     },
+     {
+      "given": "Liyan",
+      "family": "Zhu",
+      "name": null
+     },
+     {
+      "given": "Alex",
+      "family": "Belianinov",
+      "name": null
+     },
+     {
+      "given": "Olga S.",
+      "family": "Ovchinnikova",
+      "name": null
+     },
+     {
+      "given": "Raymond R.",
+      "family": "Unocic",
+      "name": null
+     },
+     {
+      "given": "Matthew J.",
+      "family": "Burch",
+      "name": null
+     },
+     {
+      "given": "Songkil",
+      "family": "Kim",
+      "name": null
+     },
+     {
+      "given": "Hanfang",
+      "family": "Hao",
+      "name": null
+     },
+     {
+      "given": "Daniel S.",
+      "family": "Pickard",
+      "name": null
+     },
+     {
+      "given": "Baowen",
+      "family": "Li",
+      "name": null
+     },
+     {
+      "given": "John T. L.",
+      "family": "Thong",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nature Communications"
+    ],
+    "volume": "8",
+    "issue": "1",
+    "page": null,
+    "article-number": "15919",
+    "issued": {
+     "date-parts": [
+      [
+       2017,
+       6,
+       27
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The ability to engineer the thermal conductivity of materials allows us to control the flow of heat and derive novel functionalities such as thermal rectification, thermal switching and thermal cloaking. While this could be achieved by making use of composites and metamaterials at bulk length-scales, engineering the thermal conductivity at micro- and nano-scale dimensions is considerably more challenging. In this work, we show that the local thermal conductivity along a single Si nanowire can be tuned to a desired value (between crystalline and amorphous limits) with high spatial resolution through selective helium ion irradiation with a well-controlled dose. The underlying mechanism is understood through molecular dynamics simulations and quantitative phonon-defect scattering rate analysis, where the behaviour of thermal conductivity with dose is attributed to the accumulation and agglomeration of scattering centres at lower doses. Beyond a threshold dose, a crystalline-amorphous transition was observed.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2617918103",
+    "title": "Engineering the thermal conductivity along an individual silicon nanowire by selective helium ion irradiation",
+    "year": 2017,
+    "abstract": "The ability to engineer the thermal conductivity of materials allows us to control the flow of heat and derive novel functionalities such as thermal rectification, thermal switching and thermal cloaking. While this could be achieved by making use of composites and metamaterials at bulk length-scales, engineering the thermal conductivity at micro- and nano-scale dimensions is considerably more challenging. In this work, we show that the local thermal conductivity along a single Si nanowire can be tuned to a desired value (between crystalline and amorphous limits) with high spatial resolution through selective helium ion irradiation with a well-controlled dose. The underlying mechanism is understood through molecular dynamics simulations and quantitative phonon-defect scattering rate analysis, where the behaviour of thermal conductivity with dose is attributed to the accumulation and agglomeration of scattering centres at lower doses. Beyond a threshold dose, a crystalline-amorphous transition was observed.",
+    "biblio": {
+     "volume": "8",
+     "issue": "1",
+     "first_page": "15919",
+     "last_page": "15919"
+    }
+   },
+   "bibkey": "Zhao2017",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1021/nl201359q",
+   "crossref": {
+    "title": [
+     "Morphology and Temperature Dependence of the Thermal Conductivity of Nanoporous SiGe"
+    ],
+    "author": [
+     {
+      "given": "Yuping",
+      "family": "He",
+      "name": null
+     },
+     {
+      "given": "Davide",
+      "family": "Donadio",
+      "name": null
+     },
+     {
+      "given": "Giulia",
+      "family": "Galli",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nano Letters"
+    ],
+    "volume": "11",
+    "issue": "9",
+    "page": "3608-3611",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2011,
+       8,
+       26
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Chemical Society (ACS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1979531720",
+    "title": "Morphology and Temperature Dependence of the Thermal Conductivity of Nanoporous SiGe",
+    "year": 2011,
+    "abstract": "Using molecular dynamics simulations, we show that the thermal conductivity (\u03ba) of Si(0.5)Ge(0.5) can be reduced by more than one order of magnitude by etching nanometer-sized holes in the material, and it becomes almost constant as a function of temperature between 300 and 1100 K for samples with 1 nm wide pores. In nanoporous SiGe, thermal conduction is largely determined by mass disorder and boundary scattering, and thus the dependence of \u03ba on pore distance and on structural, atomistic disorder is much weaker than in the case of nanoporous Si. This indicates that one may minimize \u03ba of the alloy with less stringent morphological constraints than for pure Si.",
+    "biblio": {
+     "volume": "11",
+     "issue": "9",
+     "first_page": "3608",
+     "last_page": "3611"
+    }
+   },
+   "bibkey": "He2011",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1063/1.2817739",
+   "crossref": {
+    "title": [
+     "Lattice thermal conductivity of nanoporous Si: Molecular dynamics study"
+    ],
+    "author": [
+     {
+      "given": "J.-H.",
+      "family": "Lee",
+      "name": null
+     },
+     {
+      "given": "J. C.",
+      "family": "Grossman",
+      "name": null
+     },
+     {
+      "given": "J.",
+      "family": "Reed",
+      "name": null
+     },
+     {
+      "given": "G.",
+      "family": "Galli",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "91",
+    "issue": "22",
+    "page": null,
+    "article-number": "223110",
+    "issued": {
+     "date-parts": [
+      [
+       2007,
+       11,
+       26
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Lattice thermal conductivity \u03bal of Si with nanometer-sized pores along the [001] direction is calculated as a function of pore diameter (dp) and pore spacing (ds) by employing a molecular dynamics approach. Our results show that \u03bal across pores is smaller than the bulk value by over two orders of magnitude at room temperature, and that it decreases (increases) as a function of dp\u2008(ds) for fixed ds\u2008(dp). This behavior is shown to originate from the reduction in the channels for phonon transport and the increased phonon scattering at the pore surfaces.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2035986708",
+    "title": "Lattice thermal conductivity of nanoporous Si: Molecular dynamics study",
+    "year": 2007,
+    "abstract": "Lattice thermal conductivity \u03bal of Si with nanometer-sized pores along the [001] direction is calculated as a function of pore diameter (dp) and pore spacing (ds) by employing a molecular dynamics approach. Our results show that \u03bal across pores is smaller than the bulk value by over two orders of magnitude at room temperature, and that it decreases (increases) as a function of dp (ds) for fixed ds (dp). This behavior is shown to originate from the reduction in the channels for phonon transport and the increased phonon scattering at the pore surfaces.",
+    "biblio": {
+     "volume": "91",
+     "issue": "22",
+     "first_page": null,
+     "last_page": null
+    }
+   },
+   "bibkey": "Lee2007",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1021/nl102931z",
+   "crossref": {
+    "title": [
+     "Holey Silicon as an Efficient Thermoelectric Material"
+    ],
+    "author": [
+     {
+      "given": "Jinyao",
+      "family": "Tang",
+      "name": null
+     },
+     {
+      "given": "Hung-Ta",
+      "family": "Wang",
+      "name": null
+     },
+     {
+      "given": "Dong Hyun",
+      "family": "Lee",
+      "name": null
+     },
+     {
+      "given": "Melissa",
+      "family": "Fardy",
+      "name": null
+     },
+     {
+      "given": "Ziyang",
+      "family": "Huo",
+      "name": null
+     },
+     {
+      "given": "Thomas P.",
+      "family": "Russell",
+      "name": null
+     },
+     {
+      "given": "Peidong",
+      "family": "Yang",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nano Letters"
+    ],
+    "volume": "10",
+    "issue": "10",
+    "page": "4279-4283",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2010,
+       9,
+       14
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Chemical Society (ACS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W210521316",
+    "title": "Holey Silicon as an Efficient Thermoelectric Material",
+    "year": 2010,
+    "abstract": "This work investigated the thermoelectric properties of thin silicon membranes that have been decorated with high density of nanoscopic holes. These \"holey silicon\" (HS) structures were fabricated by either nanosphere or block-copolymer lithography, both of which are scalable for practical device application. By reducing the pitch of the hexagonal holey pattern down to 55 nm with 35% porosity, the thermal conductivity of HS is consistently reduced by 2 orders of magnitude and approaches the amorphous limit. With a ZT value of \u223c0.4 at room temperature, the thermoelectric performance of HS is comparable with the best value recorded in silicon nanowire system.",
+    "biblio": {
+     "volume": "10",
+     "issue": "10",
+     "first_page": "4279",
+     "last_page": "4283"
+    }
+   },
+   "bibkey": "Tang2010",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1063/1.1642753",
+   "crossref": {
+    "title": [
+     "Thermal conductivity of periodic microporous silicon films"
+    ],
+    "author": [
+     {
+      "given": "David",
+      "family": "Song",
+      "name": null
+     },
+     {
+      "given": "Gang",
+      "family": "Chen",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "84",
+    "issue": "5",
+    "page": "687-689",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2004,
+       2,
+       2
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>This letter reports the experimental in-plane thermal conductivity of microfabricated, free-standing, single-crystal silicon thin films with periodically arranged through-film micropores. The experimental data suggest that strong size effects exist even in micro-sized porous silicon structures, particularly at low temperatures. Even at room temperature, all porous membranes show thermal conductivity values lower than expected by porosity and bulk phonon mean free path of silicon, and small-pore membranes have smaller thermal conductivity compared to the large-pore ones despite that they have close porosity values.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1994365690",
+    "title": "Thermal conductivity of periodic microporous silicon films",
+    "year": 2004,
+    "abstract": "This letter reports the experimental in-plane thermal conductivity of microfabricated, free-standing, single-crystal silicon thin films with periodically arranged through-film micropores. The experimental data suggest that strong size effects exist even in micro-sized porous silicon structures, particularly at low temperatures. Even at room temperature, all porous membranes show thermal conductivity values lower than expected by porosity and bulk phonon mean free path of silicon, and small-pore membranes have smaller thermal conductivity compared to the large-pore ones despite that they have close porosity values.",
+    "biblio": {
+     "volume": "84",
+     "issue": "5",
+     "first_page": "687",
+     "last_page": "689"
+    }
+   },
+   "bibkey": "Song2004",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 3,
+   "doi": "10.1021/nl102918q",
+   "crossref": {
+    "title": [
+     "Reduction in the Thermal Conductivity of Single Crystalline Silicon by Phononic Crystal Patterning"
+    ],
+    "author": [
+     {
+      "given": "Patrick E.",
+      "family": "Hopkins",
+      "name": null
+     },
+     {
+      "given": "Charles M.",
+      "family": "Reinke",
+      "name": null
+     },
+     {
+      "given": "Mehmet F.",
+      "family": "Su",
+      "name": null
+     },
+     {
+      "given": "Roy H.",
+      "family": "Olsson",
+      "name": null
+     },
+     {
+      "given": "Eric A.",
+      "family": "Shaner",
+      "name": null
+     },
+     {
+      "given": "Zayd C.",
+      "family": "Leseman",
+      "name": null
+     },
+     {
+      "given": "Justin R.",
+      "family": "Serrano",
+      "name": null
+     },
+     {
+      "given": "Leslie M.",
+      "family": "Phinney",
+      "name": null
+     },
+     {
+      "given": "Ihab",
+      "family": "El-Kady",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nano Letters"
+    ],
+    "volume": "11",
+    "issue": "1",
+    "page": "107-112",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2010,
+       11,
+       24
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Chemical Society (ACS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2006730336",
+    "title": "Reduction in the Thermal Conductivity of Single Crystalline Silicon by Phononic Crystal Patterning",
+    "year": 2010,
+    "abstract": "Phononic crystals (PnCs) are the acoustic wave equivalent of photonic crystals, where a periodic array of scattering inclusions located in a homogeneous host material causes certain frequencies to be completely reflected by the structure. In conjunction with creating a phononic band gap, anomalous dispersion accompanied by a large reduction in phonon group velocities can lead to a massive reduction in silicon thermal conductivity. We measured the cross plane thermal conductivity of a series of single crystalline silicon PnCs using time domain thermoreflectance. The measured values are over an order of magnitude lower than those obtained for bulk Si (from 148 W m(-1) K(-1) to as low as 6.8 W m(-1) K(-1)). The measured thermal conductivity is much smaller than that predicted by only accounting for boundary scattering at the interfaces of the PnC lattice, indicating that coherent phononic effects are causing an additional reduction to the cross plane thermal conductivity.",
+    "biblio": {
+     "volume": "11",
+     "issue": "1",
+     "first_page": "107",
+     "last_page": "112"
+    }
+   },
+   "bibkey": "Hopkins2010",
+   "topic_label": "Thermal conductivity of He-irradiated / nanoporous Si and SiGe"
+  },
+  {
+   "topic": 4,
+   "doi": "10.1063/1.116172",
+   "crossref": {
+    "title": [
+     "Reduction of hot electron degradation in metal oxide semiconductor transistors by deuterium processing"
+    ],
+    "author": [
+     {
+      "given": "J. W.",
+      "family": "Lyding",
+      "name": null
+     },
+     {
+      "given": "K.",
+      "family": "Hess",
+      "name": null
+     },
+     {
+      "given": "I. C.",
+      "family": "Kizilyalli",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "68",
+    "issue": "18",
+    "page": "2526-2528",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1996,
+       4,
+       29
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>We report experimental results that replacing hydrogen with deuterium during the final wafer sintering process greatly reduces hot electron degradation effects in metal oxide semiconductor transistors due to a new giant isotope effect. Transistor lifetime improvements by factors of 10\u201350 are observed. A plausible physical theory suggests that the benefits of deuterium use may be general and also applicable to other areas of semiconductor device processing and fabrication.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2036858306",
+    "title": "Reduction of hot electron degradation in metal oxide semiconductor transistors by deuterium processing",
+    "year": 1996,
+    "abstract": "We report experimental results that replacing hydrogen with deuterium during the final wafer sintering process greatly reduces hot electron degradation effects in metal oxide semiconductor transistors due to a new giant isotope effect. Transistor lifetime improvements by factors of 10\u201350 are observed. A plausible physical theory suggests that the benefits of deuterium use may be general and also applicable to other areas of semiconductor device processing and fabrication.",
+    "biblio": {
+     "volume": "68",
+     "issue": "18",
+     "first_page": "2526",
+     "last_page": "2528"
+    }
+   },
+   "bibkey": "Lyding1996",
+   "topic_label": "D vs H isotope effect in Si devices"
+  },
+  {
+   "topic": 4,
+   "doi": "10.1109/16.658674",
+   "crossref": {
+    "title": [
+     "Giant isotope effect in hot electron degradation of metal oxide silicon devices"
+    ],
+    "author": [
+     {
+      "given": "K.",
+      "family": "Hess",
+      "name": null
+     },
+     {
+      "given": "I.C.",
+      "family": "Kizilyalli",
+      "name": null
+     },
+     {
+      "given": "J.W.",
+      "family": "Lyding",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "IEEE Transactions on Electron Devices"
+    ],
+    "volume": "45",
+    "issue": "2",
+    "page": "406-416",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1998
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2110391381",
+    "title": "Giant isotope effect in hot electron degradation of metal oxide silicon devices",
+    "year": 1998,
+    "abstract": "A giant isotope effect of hot electron degradation was found by annealing and passivating integrated circuits of recent complementary metal oxide silicon (CMOS) technology with deuterium instead of hydrogen. In this paper, we summarize our experience and present new results of secondary ion mass spectroscopy that correlate deuterium accumulation with reduced hot electron degradation. We also present a first account of the physical theory of this effect with a view on engineering application and point toward rules of current and voltage scaling as obtained from this theory.",
+    "biblio": {
+     "volume": "45",
+     "issue": "2",
+     "first_page": "406",
+     "last_page": "416"
+    }
+   },
+   "bibkey": "Hess1998",
+   "topic_label": "D vs H isotope effect in Si devices"
+  },
+  {
+   "topic": 4,
+   "doi": "10.1109/55.556087",
+   "crossref": {
+    "title": [
+     "Deuterium post-metal annealing of MOSFET's for improved hot carrier reliability"
+    ],
+    "author": [
+     {
+      "given": "I.C.",
+      "family": "Kizilyalli",
+      "name": null
+     },
+     {
+      "given": "J.W.",
+      "family": "Lyding",
+      "name": null
+     },
+     {
+      "given": "K.",
+      "family": "Hess",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "IEEE Electron Device Letters"
+    ],
+    "volume": "18",
+    "issue": "3",
+    "page": "81-83",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1997,
+       3
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2111401168",
+    "title": "Deuterium post-metal annealing of MOSFET's for improved hot carrier reliability",
+    "year": 1997,
+    "abstract": "Low-temperature post-metallization anneals in hydrogen ambients are critical to CMOS fabrication technologies in reducing Si/SiO/sub 2/ interface trap charge densities by hydrogen passivation. In this letter we show that the hot carrier reliability (lifetime) of NMOS transistors can be increased by an order of magnitude when wafers are annealed in a deuterium ambient. This phenomenon can be understood as a kinetic isotope effect. The chemical reaction rates involving the heavier isotopes are reduced, and consequently, under hot electron stress, bonds to deuterium are more difficult to break than bonds to protium (H). However, the static chemical bonding (i.e., binding energies and excited states) is evidently the same for both hydrogen and deuterium. We measure identical transistor function after hydrogen and deuterium treatment before hot electron dynamics and resultant damage. Therefore, deuterium and hydrogen post-metal anneal processes are compatible with each other in semiconductor manufacturing. SIMS analysis proves that at typical anneal temperatures (400-450/spl deg/C), deuterium diffuses rapidly through the interlevel oxides and accumulates at Si/SiO/sub 2/ interfaces. Transistor speed versus reliability trade-off in CMOS device design is discussed in light of the findings of this study.",
+    "biblio": {
+     "volume": "18",
+     "issue": "3",
+     "first_page": "81",
+     "last_page": "83"
+    }
+   },
+   "bibkey": "Kizilyalli1997",
+   "topic_label": "D vs H isotope effect in Si devices"
+  },
+  {
+   "topic": 5,
+   "doi": "10.1103/physrevlett.51.2224",
+   "crossref": {
+    "title": [
+     "Neutralization of Shallow Acceptor Levels in Silicon by Atomic Hydrogen"
+    ],
+    "author": [
+     {
+      "given": "J. I.",
+      "family": "Pankove",
+      "name": null
+     },
+     {
+      "given": "D. E.",
+      "family": "Carlson",
+      "name": null
+     },
+     {
+      "given": "J. E.",
+      "family": "Berkeyheiser",
+      "name": null
+     },
+     {
+      "given": "R. O.",
+      "family": "Wance",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review Letters"
+    ],
+    "volume": "51",
+    "issue": "24",
+    "page": "2224-2225",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1983,
+       12,
+       12
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1983085028",
+    "title": "Neutralization of Shallow Acceptor Levels in Silicon by Atomic Hydrogen",
+    "year": 1983,
+    "abstract": "Most of the shallow acceptor levels due to boron in single-crystal silicon can be neutralized by atomic hydrogen at temperatures between 65 and 300\\ifmmode^\\circ\\else\\textdegree\\fi{}C. This treatment can result in a sixfold increase in resistivity.",
+    "biblio": {
+     "volume": "51",
+     "issue": "24",
+     "first_page": "2224",
+     "last_page": "2225"
+    }
+   },
+   "bibkey": "Pankove1983",
+   "topic_label": "H passivation of B acceptors; B-H LVM"
+  },
+  {
+   "topic": 5,
+   "doi": "10.1103/physrevb.31.5525",
+   "crossref": {
+    "title": [
+     "Mechanism for hydrogen compensation of shallow-acceptor impurities in single-crystal silicon"
+    ],
+    "author": [
+     {
+      "given": "N. M.",
+      "family": "Johnson",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review B"
+    ],
+    "volume": "31",
+    "issue": "8",
+    "page": "5525-5528",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1985,
+       4,
+       15
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2038453556",
+    "title": "Mechanism for hydrogen compensation of shallow-acceptor impurities in single-crystal silicon",
+    "year": 1985,
+    "abstract": "Experimental results are presented which identify the following chemical reaction as being responsible for compensation of shallow-acceptor impurities when single-crystal silicon is exposed to monatomic hydrogen: ${A}^{\\ensuremath{-}}+{h}^{+}+{\\mathrm{H}}^{0}\\ensuremath{\\leftrightarrow}{(A\\mathrm{H})}^{0}$, where ${A}^{\\ensuremath{-}}$ represents an ionized shallow acceptor, ${h}^{+}$ is a (positively charged) free hole, and ${\\mathrm{H}}^{0}$ is a neutral hydrogen atom. Infrared absorption spectroscopy on boron-doped silicon, combined with recent defect-model calculations, reveals that the hydrogen atom forms a Si-H bond at the site of a substitutional boron atom; the absorption band for the stretch mode appears at 1870 ${\\mathrm{cm}}^{\\ensuremath{-}1}$. Measurements by secondary-ion mass spectrometry of impurity profiles in deuterated silicon reveal that shallow-acceptor passivation is suppressed by counter doping to produce $n$-type conductivity. These new results identify both the defect complex responsible for hydrogen compensation of shallow acceptors and the essential role of free holes, or equivalently neutral acceptors, in the chemical reaction.",
+    "biblio": {
+     "volume": "31",
+     "issue": "8",
+     "first_page": "5525",
+     "last_page": "5528"
+    }
+   },
+   "bibkey": "Johnson1985",
+   "topic_label": "H passivation of B acceptors; B-H LVM"
+  },
+  {
+   "topic": 5,
+   "doi": "10.1063/1.95599",
+   "crossref": {
+    "title": [
+     "Hydrogen localization near boron in silicon"
+    ],
+    "author": [
+     {
+      "given": "J. I.",
+      "family": "Pankove",
+      "name": null
+     },
+     {
+      "given": "P. J.",
+      "family": "Zanzucchi",
+      "name": null
+     },
+     {
+      "given": "C. W.",
+      "family": "Magee",
+      "name": null
+     },
+     {
+      "given": "G.",
+      "family": "Lucovsky",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "46",
+    "issue": "4",
+    "page": "421-423",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1985,
+       2,
+       15
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Several models of boron neutralized by atomic hydrogen in silicon were tested by secondary ion mass spectrometry and infrared spectrometry. The hydrogen concentration is comparable to that of boron. Boron neutralization appears as a drop in free-carrier absorption and as an increase in resistivity. A new infrared vibrational mode attributed to \u3008111\u3009 vibrations of H tied to Si appears at 1875 cm\u22121.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1992657310",
+    "title": "Hydrogen localization near boron in silicon",
+    "year": 1985,
+    "abstract": "Several models of boron neutralized by atomic hydrogen in silicon were tested by secondary ion mass spectrometry and infrared spectrometry. The hydrogen concentration is comparable to that of boron. Boron neutralization appears as a drop in free-carrier absorption and as an increase in resistivity. A new infrared vibrational mode attributed to \u3008111\u3009 vibrations of H tied to Si appears at 1875 cm\u22121.",
+    "biblio": {
+     "volume": "46",
+     "issue": "4",
+     "first_page": "421",
+     "last_page": "423"
+    }
+   },
+   "bibkey": "Pankove1985",
+   "topic_label": "H passivation of B acceptors; B-H LVM"
+  },
+  {
+   "topic": 5,
+   "doi": "10.1063/1.97978",
+   "crossref": {
+    "title": [
+     "Vibrational characteristics of acceptor-hydrogen complexes in silicon"
+    ],
+    "author": [
+     {
+      "given": "Michael",
+      "family": "Stavola",
+      "name": null
+     },
+     {
+      "given": "S. J.",
+      "family": "Pearton",
+      "name": null
+     },
+     {
+      "given": "J.",
+      "family": "Lopata",
+      "name": null
+     },
+     {
+      "given": "W. C.",
+      "family": "Dautremont-Smith",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "50",
+    "issue": "16",
+    "page": "1086-1088",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1987,
+       4,
+       20
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Acceptor-hydrogen complexes for the group III acceptors, B, Al, and Ga, in Si have been studied with low-temperature infrared spectroscopy. The Si-H stretching band narrows dramatically upon cooling to low temperature thereby aiding the detection of the vibrations of the Al and Ga acceptor-H complexes. The frequency 2201 cm\u22121 we have measured for the Al-H complex is in reasonable agreement with the prediction made by G. G. DeLeo and W. B. Fowler [Phys. Rev. B 31, 6861 (1985)] (2220 cm\u22121 for a \u3008111\u3009 interstitial configuration for the H). Assignment of the new vibrational bands is confirmed by isotopic substitution. The strength of the absorption provides evidence that the passivation is not the result of compensation alone and that a major fraction of the passivated acceptors result in acceptor-H complexes. A new, low-energy excitation of the acceptor-hydrogen complexes gives rise to a sideband to the main stretching vibration and explains the pronounced energy shift and narrowing of the spectra upon cooling to He temperature.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2082764440",
+    "title": "Vibrational characteristics of acceptor-hydrogen complexes in silicon",
+    "year": 1987,
+    "abstract": "Acceptor-hydrogen complexes for the group III acceptors, B, Al, and Ga, in Si have been studied with low-temperature infrared spectroscopy. The Si-H stretching band narrows dramatically upon cooling to low temperature thereby aiding the detection of the vibrations of the Al and Ga acceptor-H complexes. The frequency 2201 cm\u22121 we have measured for the Al-H complex is in reasonable agreement with the prediction made by G. G. DeLeo and W. B. Fowler [Phys. Rev. B 31, 6861 (1985)] (2220 cm\u22121 for a \u3008111\u3009 interstitial configuration for the H). Assignment of the new vibrational bands is confirmed by isotopic substitution. The strength of the absorption provides evidence that the passivation is not the result of compensation alone and that a major fraction of the passivated acceptors result in acceptor-H complexes. A new, low-energy excitation of the acceptor-hydrogen complexes gives rise to a sideband to the main stretching vibration and explains the pronounced energy shift and narrowing of the spectra upon cooling to He temperature.",
+    "biblio": {
+     "volume": "50",
+     "issue": "16",
+     "first_page": "1086",
+     "last_page": "1088"
+    }
+   },
+   "bibkey": "Stavola1987",
+   "topic_label": "H passivation of B acceptors; B-H LVM"
+  },
+  {
+   "topic": 5,
+   "doi": "10.1063/1.94287",
+   "crossref": {
+    "title": [
+     "Deactivation of the boron acceptor in silicon by hydrogen"
+    ],
+    "author": [
+     {
+      "given": "Chih-Tang",
+      "family": "Sah",
+      "name": null
+     },
+     {
+      "given": "Jack Yuan-Chen",
+      "family": "Sun",
+      "name": null
+     },
+     {
+      "given": "Joseph Jeng-Tao",
+      "family": "Tzou",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "43",
+    "issue": "2",
+    "page": "204-206",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1983,
+       7,
+       15
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Two new experiments are presented which suggest that the \u2018\u2018bulk-compensating donor\u2019\u2019 phenomenon observed in p-Si is probably a deactivation process of the boron acceptor by hydrogen with the formation of a B\u2212H+ pair. The two experiments are (i) avalanche hole injection in Al-gate metal-oxide-silicon capacitor from boron-diffused n-Si substrate and (ii) 5-keV electron irradiation of Al/p-Si Schottky diodes. Atomic hydrogen may be released by the avalanche injected energetic electrons or holes or keV electrons from the Al\u2013H, AlO\u2013H, Si\u2013H, and SiO\u2013H sites in the Al gate and the SiO2 film as well as at the Al/SiO2 and SiO2/Si interfaces, which may then migrate to the boron acceptor sites to form the B\u2212H+ pair. Observed hydrogen bond breaking rate by holes is as much as two orders of magnitude larger than by electrons, which is consistent with the thermal hole capture and energetic electron impact bond-breaking models.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2109935085",
+    "title": "Deactivation of the boron acceptor in silicon by hydrogen",
+    "year": 1983,
+    "abstract": "Two new experiments are presented which suggest that the \u2018\u2018bulk-compensating donor\u2019\u2019 phenomenon observed in p-Si is probably a deactivation process of the boron acceptor by hydrogen with the formation of a B\u2212H+ pair. The two experiments are (i) avalanche hole injection in Al-gate metal-oxide-silicon capacitor from boron-diffused n-Si substrate and (ii) 5-keV electron irradiation of Al/p-Si Schottky diodes. Atomic hydrogen may be released by the avalanche injected energetic electrons or holes or keV electrons from the Al\u2013H, AlO\u2013H, Si\u2013H, and SiO\u2013H sites in the Al gate and the SiO2 film as well as at the Al/SiO2 and SiO2/Si interfaces, which may then migrate to the boron acceptor sites to form the B\u2212H+ pair. Observed hydrogen bond breaking rate by holes is as much as two orders of magnitude larger than by electrons, which is consistent with the thermal hole capture and energetic electron impact bond-breaking models.",
+    "biblio": {
+     "volume": "43",
+     "issue": "2",
+     "first_page": "204",
+     "last_page": "206"
+    }
+   },
+   "bibkey": "Sah1983",
+   "topic_label": "H passivation of B acceptors; B-H LVM"
+  },
+  {
+   "topic": 6,
+   "doi": "10.1016/s0031-8914(56)90039-8",
+   "crossref": {
+    "title": [
+     "On the permeation of hydrogen and helium in single crystal silicon and germanium at elevated temperatures"
+    ],
+    "author": [
+     {
+      "given": "A.",
+      "family": "Van Wieringen",
+      "name": null
+     },
+     {
+      "given": "N.",
+      "family": "Warmoltz",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physica"
+    ],
+    "volume": "22",
+    "issue": "6-12",
+    "page": "849-865",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1956,
+       1
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2028764930",
+    "title": "On the permeation of hydrogen and helium in single crystal silicon and germanium at elevated temperatures",
+    "year": 1956,
+    "abstract": null,
+    "biblio": {
+     "volume": "22",
+     "issue": "6-12",
+     "first_page": "849",
+     "last_page": "865"
+    }
+   },
+   "bibkey": "VanWieringen1956",
+   "topic_label": "H/He permeation in c-Si; H in SiGe"
+  },
+  {
+   "topic": 6,
+   "doi": "10.1103/physrevb.73.085201",
+   "crossref": {
+    "title": [
+     "Antibonding configurations of hydrogen in silicon-germanium alloys"
+    ],
+    "author": [
+     {
+      "given": "R. N.",
+      "family": "Pereira",
+      "name": null
+     },
+     {
+      "given": "B. Bech",
+      "family": "Nielsen",
+      "name": null
+     },
+     {
+      "given": "A. R.",
+      "family": "Peaker",
+      "name": null
+     },
+     {
+      "given": "N. V.",
+      "family": "Abrosimov",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review B"
+    ],
+    "volume": "73",
+    "issue": "8",
+    "page": null,
+    "article-number": "085201",
+    "issued": {
+     "date-parts": [
+      [
+       2006,
+       2,
+       2
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2068195220",
+    "title": "Antibonding configurations of hydrogen in silicon-germanium alloys",
+    "year": 2006,
+    "abstract": "Defects with a hydrogen atom at an antibonding site are identified in germanium-rich SiGe alloys $({\\mathrm{Ge}}_{1\\ensuremath{-}x}{\\mathrm{Si}}_{x})$ implanted with protons at low temperatures. Infrared absorption spectra of proton-implanted ${\\mathrm{Ge}}_{1\\ensuremath{-}x}{\\mathrm{Si}}_{x}$ reveal hydrogen-related absorption lines, which are similar to those observed previously in pure germanium, together with three unreported absorption lines. For crystals with a silicon content of 1.2 at. % these three lines are observed at 815.8, 1430.2, and $1630.7\\phantom{\\rule{0.3em}{0ex}}{\\mathrm{cm}}^{\\ensuremath{-}1}$. The three lines are ascribed to the wag mode, the stretch mode, and to the first overtone of the wag mode, respectively, of the negatively charged state of a hydrogen atom located at an antibonding site and attached to a substitutional silicon atom. The assignment is based on the comparison between the observed frequencies and those known for similar structures, the variation of line intensities with the alloy composition, the absorption frequency shifts resulting when hydrogen is replaced by deuterium, and the thermal stability of the absorption lines, as well as comparison with the results of ab initio calculations. A conversion process takes place at temperatures in the range 20-125 K between negatively charged hydrogen at a germanium antibonding site to a silicon antibonding site. This provides direct evidence that silicon acts as an effective trap for negatively charged hydrogen in SiGe alloys. Based on the data obtained for samples with different silicon contents we give an estimate of the low temperature diffusion length of hydrogen in Ge-rich SiGe before it becomes trapped at an antibonding site attached to Ge and discuss why local vibrational modes of negatively charged hydrogen remain unobserved for silicon and silicon-rich SiGe alloys.",
+    "biblio": {
+     "volume": "73",
+     "issue": "8",
+     "first_page": null,
+     "last_page": null
+    }
+   },
+   "bibkey": "Pereira2006",
+   "topic_label": "H/He permeation in c-Si; H in SiGe"
+  },
+  {
+   "topic": 6,
+   "doi": "10.1016/j.physb.2003.09.220",
+   "crossref": {
+    "title": [
+     "Hydrogen behaviour in bulk Si1\u2212xGex alloys as modelled by muonium"
+    ],
+    "author": [
+     {
+      "given": "P.J.C.",
+      "family": "King",
+      "name": null
+     },
+     {
+      "given": "R.L.",
+      "family": "Lichti",
+      "name": null
+     },
+     {
+      "given": "I.",
+      "family": "Yonenaga",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physica B: Condensed Matter"
+    ],
+    "volume": "340-342",
+    "issue": null,
+    "page": "835-839",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2003,
+       12
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1982655146",
+    "title": "Hydrogen behaviour in bulk Si1\u2212xGex alloys as modelled by muonium",
+    "year": 2003,
+    "abstract": null,
+    "biblio": {
+     "volume": "340-342",
+     "issue": null,
+     "first_page": "835",
+     "last_page": "839"
+    }
+   },
+   "bibkey": "King2003",
+   "topic_label": "H/He permeation in c-Si; H in SiGe"
+  },
+  {
+   "topic": 7,
+   "doi": "10.1049/el:19950805",
+   "crossref": {
+    "title": [
+     "Silicon on insulator material technology"
+    ],
+    "author": [
+     {
+      "given": "M.",
+      "family": "Bruel",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Electronics Letters"
+    ],
+    "volume": "31",
+    "issue": "14",
+    "page": "1201-1202",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1995,
+       7,
+       6
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Institution of Engineering and Technology (IET)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1973671776",
+    "title": "Silicon on insulator material technology",
+    "year": 1995,
+    "abstract": "A silicon on insulator material technology based on wafer bonding is described, in which a heat treatment induces an in-depth microslicing of one of the two bonded wafers previously implanted with hydrogen. The basic phenomena, and the first physical and electrical characterisations are discussed briefly.",
+    "biblio": {
+     "volume": "31",
+     "issue": "14",
+     "first_page": "1201",
+     "last_page": "1202"
+    }
+   },
+   "bibkey": "Bruel1995",
+   "topic_label": "H-implant platelets / Smart Cut"
+  },
+  {
+   "topic": 7,
+   "doi": "10.1116/1.589416",
+   "crossref": {
+    "title": [
+     "On the mechanism of the hydrogen-induced exfoliation of silicon"
+    ],
+    "author": [
+     {
+      "given": "M. K.",
+      "family": "Weldon",
+      "name": null
+     },
+     {
+      "given": "V. E.",
+      "family": "Marsico",
+      "name": null
+     },
+     {
+      "given": "Y. J.",
+      "family": "Chabal",
+      "name": null
+     },
+     {
+      "given": "A.",
+      "family": "Agarwal",
+      "name": null
+     },
+     {
+      "given": "D. J.",
+      "family": "Eaglesham",
+      "name": null
+     },
+     {
+      "given": "J.",
+      "family": "Sapjeta",
+      "name": null
+     },
+     {
+      "given": "W. L.",
+      "family": "Brown",
+      "name": null
+     },
+     {
+      "given": "D. C.",
+      "family": "Jacobson",
+      "name": null
+     },
+     {
+      "given": "Y.",
+      "family": "Caudano",
+      "name": null
+     },
+     {
+      "given": "S. B.",
+      "family": "Christman",
+      "name": null
+     },
+     {
+      "given": "E. E.",
+      "family": "Chaban",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Journal of Vacuum Science &amp; Technology B: Microelectronics and Nanometer Structures Processing, Measurement, and Phenomena"
+    ],
+    "volume": "15",
+    "issue": "4",
+    "page": "1065-1073",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1997,
+       7,
+       1
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Vacuum Society",
+    "abstract": "<jats:p>We have investigated the fundamental mechanism underlying the hydrogen-induced exfoliation of silicon, using a combination of spectroscopic and microscopic techniques. We have studied the evolution of the internal defect structure as a function of implanted hydrogen concentration and annealing temperature and found that the mechanism consists of a number of essential components in which hydrogen plays a key role. Specifically, we show that the chemical action of hydrogen leads to the formation of (100) and (111) internal surfaces above 400\u2009\u00b0C via agglomeration of the initial defect structure. In addition, molecular hydrogen is evolved between 200 and 400\u2009\u00b0C and subsequently traps in the microvoids bounded by the internal surfaces, resulting in the build-up of internal pressure. This, in turn, leads to the observed \u201cblistering\u201d of unconstrained silicon samples, or complete layer transfer for silicon wafers joined to a supporting (handle) wafer which acts as a mechanical \u201cstiffener.\u201d</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2119733759",
+    "title": "On the mechanism of the hydrogen-induced exfoliation of silicon",
+    "year": 1997,
+    "abstract": "We have investigated the fundamental mechanism underlying the hydrogen-induced exfoliation of silicon, using a combination of spectroscopic and microscopic techniques. We have studied the evolution of the internal defect structure as a function of implanted hydrogen concentration and annealing temperature and found that the mechanism consists of a number of essential components in which hydrogen plays a key role. Specifically, we show that the chemical action of hydrogen leads to the formation of (100) and (111) internal surfaces above 400 \u00b0C via agglomeration of the initial defect structure. In addition, molecular hydrogen is evolved between 200 and 400 \u00b0C and subsequently traps in the microvoids bounded by the internal surfaces, resulting in the build-up of internal pressure. This, in turn, leads to the observed \u201cblistering\u201d of unconstrained silicon samples, or complete layer transfer for silicon wafers joined to a supporting (handle) wafer which acts as a mechanical \u201cstiffener.\u201d",
+    "biblio": {
+     "volume": "15",
+     "issue": "4",
+     "first_page": "1065",
+     "last_page": "1073"
+    }
+   },
+   "bibkey": "Weldon1997",
+   "topic_label": "H-implant platelets / Smart Cut"
+  },
+  {
+   "topic": 7,
+   "doi": "10.1063/1.125606",
+   "crossref": {
+    "title": [
+     "A transmission electron microscopy quantitative study of the growth kinetics of H platelets in Si"
+    ],
+    "author": [
+     {
+      "given": "J.",
+      "family": "Grisolia",
+      "name": null
+     },
+     {
+      "given": "G.",
+      "family": "Ben Assayag",
+      "name": null
+     },
+     {
+      "given": "A.",
+      "family": "Claverie",
+      "name": null
+     },
+     {
+      "given": "B.",
+      "family": "Aspar",
+      "name": null
+     },
+     {
+      "given": "C.",
+      "family": "Lagahe",
+      "name": null
+     },
+     {
+      "given": "L.",
+      "family": "Laanab",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "76",
+    "issue": "7",
+    "page": "852-854",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2000,
+       2,
+       14
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Proton implantation and thermal annealing of silicon result in the formation of a specific type of extended defects involving hydrogen, named \u201cplatelets\u201d or \u201ccavities.\u201d These defects have been related to the exfoliation mechanism on which a newly developed process to transfer thin films of silicon onto various substrates is based. The density and the size of these platelets depend on the implantation and annealing conditions. In this letter, rigorous statistical methods based on transmission electron microscopy have been used to quantitatively study the thermal behavior of these defects. Upon annealing, it is shown that the cavities grow in size, reduce their density, while the overall volume they occupy remains constant. This phenomenon is due to a conservative ripening of the cavities. The transfer of hydrogen atoms from small to large cavities leads to a decrease of the elastic energy within the implanted layer while the strain locally increases around the projected range of the protons.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W1973216004",
+    "title": "A transmission electron microscopy quantitative study of the growth kinetics of H platelets in Si",
+    "year": 2000,
+    "abstract": "Proton implantation and thermal annealing of silicon result in the formation of a specific type of extended defects involving hydrogen, named \u201cplatelets\u201d or \u201ccavities.\u201d These defects have been related to the exfoliation mechanism on which a newly developed process to transfer thin films of silicon onto various substrates is based. The density and the size of these platelets depend on the implantation and annealing conditions. In this letter, rigorous statistical methods based on transmission electron microscopy have been used to quantitatively study the thermal behavior of these defects. Upon annealing, it is shown that the cavities grow in size, reduce their density, while the overall volume they occupy remains constant. This phenomenon is due to a conservative ripening of the cavities. The transfer of hydrogen atoms from small to large cavities leads to a decrease of the elastic energy within the implanted layer while the strain locally increases around the projected range of the protons.",
+    "biblio": {
+     "volume": "76",
+     "issue": "7",
+     "first_page": "852",
+     "last_page": "854"
+    }
+   },
+   "bibkey": "Grisolia2000",
+   "topic_label": "H-implant platelets / Smart Cut"
+  },
+  {
+   "topic": 7,
+   "doi": "10.1063/1.122875",
+   "crossref": {
+    "title": [
+     "Mechanism of silicon exfoliation induced by hydrogen/helium co-implantation"
+    ],
+    "author": [
+     {
+      "given": "M. K.",
+      "family": "Weldon",
+      "name": null
+     },
+     {
+      "given": "M.",
+      "family": "Collot",
+      "name": null
+     },
+     {
+      "given": "Y. J.",
+      "family": "Chabal",
+      "name": null
+     },
+     {
+      "given": "V. C.",
+      "family": "Venezia",
+      "name": null
+     },
+     {
+      "given": "A.",
+      "family": "Agarwal",
+      "name": null
+     },
+     {
+      "given": "T. E.",
+      "family": "Haynes",
+      "name": null
+     },
+     {
+      "given": "D. J.",
+      "family": "Eaglesham",
+      "name": null
+     },
+     {
+      "given": "S. B.",
+      "family": "Christman",
+      "name": null
+     },
+     {
+      "given": "E. E.",
+      "family": "Chaban",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Applied Physics Letters"
+    ],
+    "volume": "73",
+    "issue": "25",
+    "page": "3721-3723",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       1998,
+       12,
+       21
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "AIP Publishing",
+    "abstract": "<jats:p>Infrared spectroscopy and secondary ion mass spectrometry are used to elucidate the mechanism by which co-implantation of He with H facilitates the shearing of crystalline Si. By studying different implant conditions, we can separate the relative contributions of damage, internal pressure generation, and chemical passivation to the enhanced exfoliation process. We find that the He acts physically as a source of internal pressure but also in an indirect chemical sense, leading to the reconversion of molecular H2 to bound Si\u2013H in \u201cVH2-like\u201d defects. We postulate that it is the formation of these hydrogenated defects at the advancing front of the expanding microcavities that enhances the exfoliation process.</jats:p>"
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2015839281",
+    "title": "Mechanism of silicon exfoliation induced by hydrogen/helium co-implantation",
+    "year": 1998,
+    "abstract": "Infrared spectroscopy and secondary ion mass spectrometry are used to elucidate the mechanism by which co-implantation of He with H facilitates the shearing of crystalline Si. By studying different implant conditions, we can separate the relative contributions of damage, internal pressure generation, and chemical passivation to the enhanced exfoliation process. We find that the He acts physically as a source of internal pressure but also in an indirect chemical sense, leading to the reconversion of molecular H2 to bound Si\u2013H in \u201cVH2-like\u201d defects. We postulate that it is the formation of these hydrogenated defects at the advancing front of the expanding microcavities that enhances the exfoliation process.",
+    "biblio": {
+     "volume": "73",
+     "issue": "25",
+     "first_page": "3721",
+     "last_page": "3723"
+    }
+   },
+   "bibkey": "Weldon1998",
+   "topic_label": "H-implant platelets / Smart Cut"
+  },
+  {
+   "topic": 8,
+   "doi": "10.1103/physrevlett.102.035901",
+   "crossref": {
+    "title": [
+     "High Thermal Conductivity of a Hydrogenated Amorphous Silicon Film"
+    ],
+    "author": [
+     {
+      "given": "Xiao",
+      "family": "Liu",
+      "name": null
+     },
+     {
+      "given": "J. L.",
+      "family": "Feldman",
+      "name": null
+     },
+     {
+      "given": "D. G.",
+      "family": "Cahill",
+      "name": null
+     },
+     {
+      "given": "R. S.",
+      "family": "Crandall",
+      "name": null
+     },
+     {
+      "given": "N.",
+      "family": "Bernstein",
+      "name": null
+     },
+     {
+      "given": "D. M.",
+      "family": "Photiadis",
+      "name": null
+     },
+     {
+      "given": "M. J.",
+      "family": "Mehl",
+      "name": null
+     },
+     {
+      "given": "D. A.",
+      "family": "Papaconstantopoulos",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Physical Review Letters"
+    ],
+    "volume": "102",
+    "issue": "3",
+    "page": null,
+    "article-number": "035901",
+    "issued": {
+     "date-parts": [
+      [
+       2009,
+       1,
+       21
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Physical Society (APS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2015308619",
+    "title": "High Thermal Conductivity of a Hydrogenated Amorphous Silicon Film",
+    "year": 2009,
+    "abstract": "We measured the thermal conductivity kappa of an 80 microm thick hydrogenated amorphous silicon film prepared by hot-wire chemical-vapor deposition with the 3omega (80-300 K) and the time-domain thermo-reflectance (300 K) methods. The kappa is higher than any of the previous temperature dependent measurements and shows a strong phonon mean free path dependence. We also applied a Kubo based theory using a tight-binding method on three 1000 atom continuous random network models. The theory gives higher kappa for more ordered models, but not high enough to explain our results, even after extrapolating to lower frequencies with a Boltzmann approach. Our results show that this material is more ordered than any amorphous silicon previously studied.",
+    "biblio": {
+     "volume": "102",
+     "issue": "3",
+     "first_page": "035901",
+     "last_page": "035901"
+    }
+   },
+   "bibkey": "Liu2009",
+   "topic_label": "Thermal conductivity of hydrogenated Si; isotope mass disorder"
+  },
+  {
+   "topic": 8,
+   "doi": "10.1016/s0038-1098(01)00428-8",
+   "crossref": {
+    "title": [
+     "Thermal conductivity of hydrogenated amorphous silicon"
+    ],
+    "author": [
+     {
+      "given": "N.",
+      "family": "Attaf",
+      "name": null
+     },
+     {
+      "given": "M.S.",
+      "family": "Aida",
+      "name": null
+     },
+     {
+      "given": "L.",
+      "family": "Hadjeris",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Solid State Communications"
+    ],
+    "volume": "120",
+    "issue": "12",
+    "page": "525-530",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2001,
+       11
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2018644713",
+    "title": "Thermal conductivity of hydrogenated amorphous silicon",
+    "year": 2001,
+    "abstract": null,
+    "biblio": {
+     "volume": "120",
+     "issue": "12",
+     "first_page": "525",
+     "last_page": "530"
+    }
+   },
+   "bibkey": "Attaf2001",
+   "topic_label": "Thermal conductivity of hydrogenated Si; isotope mass disorder"
+  },
+  {
+   "topic": 8,
+   "doi": "10.1021/nl0725998",
+   "crossref": {
+    "title": [
+     "Ultralow Thermal Conductivity of Isotope-Doped Silicon Nanowires"
+    ],
+    "author": [
+     {
+      "given": "Nuo",
+      "family": "Yang",
+      "name": null
+     },
+     {
+      "given": "Gang",
+      "family": "Zhang",
+      "name": null
+     },
+     {
+      "given": "Baowen",
+      "family": "Li",
+      "name": null
+     }
+    ],
+    "container-title": [
+     "Nano Letters"
+    ],
+    "volume": "8",
+    "issue": "1",
+    "page": "276-280",
+    "article-number": null,
+    "issued": {
+     "date-parts": [
+      [
+       2007,
+       12,
+       21
+      ]
+     ]
+    },
+    "type": "journal-article",
+    "publisher": "American Chemical Society (ACS)",
+    "abstract": null
+   },
+   "openalex": {
+    "id": "https://openalex.org/W2067673358",
+    "title": "Ultralow Thermal Conductivity of Isotope-Doped Silicon Nanowires",
+    "year": 2007,
+    "abstract": "The thermal conductivity of silicon nanowires (SiNWs) is investigated by molecular dynamics (MD) simulation. It is found that the thermal conductivity of SiNWs can be reduced exponentially by isotopic defects at room temperature. The thermal conductivity reaches the minimum, which is about 27% of that of pure 28Si NW, when doped with 50% isotope atoms. The thermal conductivity of isotopic-superlattice structured SiNWs depends clearly on the period of superlattice. At a critical period of 1.09 nm, the thermal conductivity is only 25% of the value of pure Si NW. An anomalous enhancement of thermal conductivity is observed when the superlattice period is smaller than this critical length. The ultralow thermal conductivity of superlattice structured SiNWs is explained with phonon spectrum theory.",
+    "biblio": {
+     "volume": "8",
+     "issue": "1",
+     "first_page": "276",
+     "last_page": "280"
+    }
+   },
+   "bibkey": "Yang2007",
+   "topic_label": "Thermal conductivity of hydrogenated Si; isotope mass disorder"
+  }
+ ]
+}

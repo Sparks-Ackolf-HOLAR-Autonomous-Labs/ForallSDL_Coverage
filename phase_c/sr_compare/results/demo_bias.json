@@ -1,0 +1,54 @@
+{
+ "demo1_oversampling": {
+  "replicated_regime": "x3T0 (x=0.5, 300 K) 5x",
+  "pooled_drift": 0.2612,
+  "balanced_drift": 0.0,
+  "pooled_terms_before": [
+   "1",
+   "x",
+   "x^2",
+   "1/L"
+  ],
+  "pooled_terms_after": [
+   "1",
+   "x",
+   "x^2",
+   "1/L"
+  ],
+  "balanced_terms_before": [
+   "x",
+   "x^2",
+   "1/L"
+  ],
+  "balanced_terms_after": [
+   "x",
+   "x^2",
+   "1/L"
+  ]
+ },
+ "demo2_biased_party": {
+  "injected": "6 rows, +40% kappa, party BIASED-MD",
+  "clean_model": {
+   "x": 3.114736543056279,
+   "x^2": -3.1925021027082368,
+   "1/L": 65.679479986008
+  },
+  "tainted_model": {
+   "x": 3.425325260312886,
+   "T": -0.0003105980255045193,
+   "x^2": -3.4281209724163038,
+   "1/L": 72.84854698792113
+  },
+  "coef_drift_from_bias": 0.1092,
+  "provenance_blast_radius_of_biased_party": [
+   "T"
+  ],
+  "term_labels_under_taint": {
+   "x": "scope:CHPC-MD",
+   "T": "scope:BIASED-MD,CHPC-MD",
+   "x^2": "scope:CHPC-MD",
+   "1/L": "multi-supported"
+  },
+  "unlearn_exact_bitwise": true
+ }
+}

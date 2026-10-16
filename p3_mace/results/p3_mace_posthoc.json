@@ -1,0 +1,15 @@
+{
+ "hidden_log_kappa_sd": 0.24333135528772637,
+ "hidden_kappa_range_W_mK": [
+  0.3236436850528876,
+  0.7654135233038624
+ ],
+ "CA1_percentile_in_RND15": 0.93,
+ "OFAT_percentile_in_RND12": 0.805,
+ "x_and_T_only_log_rmse": {
+  "CA1": 0.08134576166261774,
+  "CA2": 0.07909925529786163,
+  "OFAT": 0.11714115109440162,
+  "RND_pool": 0.06375366603479092
+ }
+}

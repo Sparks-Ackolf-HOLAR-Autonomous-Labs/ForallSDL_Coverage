@@ -1,0 +1,138 @@
+{
+ "task": "mace",
+ "n_train": 71,
+ "n_hidden": 16,
+ "engines": [
+  {
+   "engine": "v2",
+   "expression": "r = 0.6735*1 + 0.4192*x + 8.563*x(1-x) + -2.585*x(1-x)*t",
+   "fit_s": 29.43,
+   "hidden": {
+    "log_rmse": 0.0627,
+    "medape_pct": 6.046,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   },
+   "n_basis": 40,
+   "proposals": []
+  },
+  {
+   "engine": "+I1 shape filter",
+   "expression": "r = 0.6735*1 + 0.4192*x + 8.563*x(1-x) + -2.585*x(1-x)*t",
+   "fit_s": 23.03,
+   "hidden": {
+    "log_rmse": 0.0627,
+    "medape_pct": 6.046,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   },
+   "n_basis": 40,
+   "proposals": []
+  },
+  {
+   "engine": "+I4 noise weights",
+   "expression": "r = 0.6735*1 + 0.4192*x + 8.563*x(1-x) + -2.585*x(1-x)*t",
+   "fit_s": 14.79,
+   "hidden": {
+    "log_rmse": 0.0627,
+    "medape_pct": 6.046,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   },
+   "n_basis": 40,
+   "proposals": []
+  },
+  {
+   "engine": "+I2 PySR proposals",
+   "expression": "r = -5.048*(1-x) + -0.963*x*1/t + 10.82*pysr:sqrt(t + 0.5034176/x) + -10.26*pysr:sqrt(t + x - 1.4144264 + 0.4368421/x)",
+   "fit_s": 51.73,
+   "hidden": {
+    "log_rmse": 0.0713,
+    "medape_pct": 4.186,
+    "spearman": 0.9801,
+    "pick_regret": 0.0
+   },
+   "n_basis": 51,
+   "proposals": [
+    "pysr:sqrt(x)",
+    "pysr:1/x",
+    "pysr:sqrt(t + 0.5034176/x)",
+    "pysr:sqrt(t**2 + 0.5034176/x)",
+    "pysr:sqrt(t + x - 1.4144264 + 0.4368421/x)",
+    "pysr:sqrt(t + 2*x - 2.181996 + 0.5125164/x)",
+    "pysr:sqrt(sqrt(t) + 2*x - 2.4707072 + 0.46830726/x)",
+    "pysr:sqrt(t + x**2 + x - 1.888009 + 0.47697186/x)",
+    "pysr:sqrt(t + x**2 + x - 1.91832288 + 0.49768487/x)",
+    "pysr:sqrt(sqrt(t) + x**2 + 0.6551619*x - 1.9095117 + 0.40983292/x)",
+    "pysr:sqrt(-t*x**2 + t + 2*x - 2.0313416 + 0.40832415/x)"
+   ]
+  },
+  {
+   "engine": "full v2 (+I3 beam)",
+   "expression": "r = 2.047*x + 2.474*pysr:sqrt(t + 0.5034176/x) + -2.45*pysr:sqrt(t + x**2 + x - 1.91832288 + 0.49768487/x)",
+   "fit_s": 8.58,
+   "hidden": {
+    "log_rmse": 0.065,
+    "medape_pct": 4.238,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   },
+   "n_basis": 51,
+   "proposals": [
+    "pysr:sqrt(x)",
+    "pysr:1/x",
+    "pysr:sqrt(t + 0.5034176/x)",
+    "pysr:sqrt(t**2 + 0.5034176/x)",
+    "pysr:sqrt(t + x - 1.4144264 + 0.4368421/x)",
+    "pysr:sqrt(t + 2*x - 2.181996 + 0.5125164/x)",
+    "pysr:sqrt(sqrt(t) + 2*x - 2.4707072 + 0.46830726/x)",
+    "pysr:sqrt(t + x**2 + x - 1.888009 + 0.47697186/x)",
+    "pysr:sqrt(t + x**2 + x - 1.91832288 + 0.49768487/x)",
+    "pysr:sqrt(sqrt(t) + x**2 + 0.6551619*x - 1.9095117 + 0.40983292/x)",
+    "pysr:sqrt(-t*x**2 + t + 2*x - 2.0313416 + 0.40832415/x)"
+   ]
+  },
+  {
+   "engine": "extratrees",
+   "expression": "ExtraTrees(300)",
+   "fit_s": 0.28,
+   "hidden": {
+    "log_rmse": 0.0683,
+    "medape_pct": 5.064,
+    "spearman": 0.9706,
+    "pick_regret": 0.0
+   }
+  },
+  {
+   "engine": "pysr",
+   "expression": "1/r, r = (-x + 0.17432979 - 2.3481452/(-x - 0.70354444/(x - (-1)*13.056566/T)))*2.7397377",
+   "fit_s": 4.06,
+   "hidden": {
+    "log_rmse": 0.0752,
+    "medape_pct": 5.459,
+    "spearman": 0.9476,
+    "pick_regret": 0.0
+   }
+  },
+  {
+   "engine": "sisso",
+   "expression": "1/r, r = 0.0004923421*T - 0.0001137346*T/x - 0.0004923421*x + 1.8239554522419268 + 409.1253291333*x/T",
+   "fit_s": 0.1,
+   "hidden": {
+    "log_rmse": 0.1111,
+    "medape_pct": 10.203,
+    "spearman": 0.9653,
+    "pick_regret": 0.1943
+   }
+  }
+ ],
+ "I3_beam_vs_exhaustive": {
+  "same_selected": false,
+  "same_front": false,
+  "n_basis": 51,
+  "evaluated_exhaustive": 272051,
+  "evaluated_beam": 13178,
+  "s_exhaustive": 92.89,
+  "s_beam": 4.66
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "campaign": "sigec-small-sic-md-r50-2026-10-07",
+ "paper": "P1",
+ "parent_campaign": "sigec-small-sic-md-r30-2026-10-06",
+ "trigger": "ledger 105 (decision of the R = 3 nm check, branch keeps_falling, correct): the measured SiC contrast curve lam2(R) is known at R = 1.0, 1.5, 2.0 and 3.0 nm; beyond 3 nm P1 extends it with the 2.0-to-3.0 nm log-log slope (-3.9). The 5 nm Ge saving at equal kappa_L (9% at 300 K, 7% at 1100 K; x = 0.2, 0.3 um grains, 1 at% C) is the only P1 number resting on that extrapolation (session 73 reply, item 9). Operator go: issue 55, 2026-10-07 ('do item 6-10').",
+ "question": "At fixed volume fraction (phi_eff 10%), does the SiC scattering contrast keep falling between R = 3 and 5 nm with the measured 2-to-3 nm slope, or does it stop falling?",
+ "method": {
+  "engine": "identical to r30_design.json (ledger 103) and md_design.json (ledger 58): LAMMPS, Tersoff 1989 + inert Ge-C triplets, Muller-Plathe rNEMD, NPT 50 ps, warm 100 ps, production 500 ps, swap every 50 steps, 20 z-bins, x = 0.2, T = 300 K; in.sic_particle, SiCGe_GeC.tersoff and analyze_mp.py are byte-identical copies of ../r30/",
+  "only_change": "box size via -var ncxy/ncz by the same geometric scaling as ledger 103: R = 5.0 nm in 30 x 30 x 100 cells (5/3 x the R = 3.0 nm box; phi_eff 10.1%, as R = 3.0 nm in ledger 104 and R = 2.0 nm in ledger 59), 720000 lattice sites. The Si-rich pocket stays R + 7 A (not scaled)",
+  "runs": "points.txt: pocket-only control and particle, seeds 20261007 and 20261008; 4 runs",
+  "reference": "R = 3.0 nm, phi 10% runs of ledger 104 (../r30/results) and the measured curve of ../r30/r30_results.json",
+  "placement": "execution detail: grn061 (granite sparks-gpu-grn, 64 cores) when no sparks-partition job runs there, otherwise notchpeak-guest / owner-guest, 64 ranks, requeue; restarts from scratch on preemption (each start logged in results/*.attempts); the DGX is not used; moving between the two needs only a placement note",
+  "cost_estimate": "ledger-104 R = 3 nm runs (155520 sites): 49-86 min on 64 ranks. 720000 sites scale to about 4-7 h per run on 64 ranks; 4 runs, 16-28 node-hours"
+ },
+ "model_predictions_at_registration": {
+  "note": "computed before any run with ../radius_contrast/fit_radius_contrast.py (registered frame, x = 0.2, 300 K, phi 0.101, R = 50 A), lam2(3 nm) = geometric mean of ledger-104 seeds = 1.0525e-3",
+  "r_if_constant": 0.460,
+  "r_if_keeps_falling_slope_-3.9": 0.180,
+  "r_if_half_slope": 0.315,
+  "seed_scatter_reference": "ledger-104 particle reductions at R = 3 nm: 0.247 and 0.254"
+ },
+ "gates": {
+  "G1": "as ledger 58 and 103: Ge-to-centre minus C-to-centre gap >= 5.7 A at start and end of every particle run",
+  "G2": "every run gives a finite positive kappa",
+  "G3": "mean C coordination at the end >= 3.3",
+  "G4": "the two pocket-only seeds agree within 10%"
+ },
+ "analysis": {
+  "inversion": "analyze_r50.py: each seed-paired reduction r = 1 - kappa(particle)/kappa(pocket-only) is inverted to lam2 exactly as analyze_r30.py does (same model side, boundary length matched to the pocket-only control of the same box, phi_eff by the analyze_md.py convention)",
+  "ratio": "ratio_R5 = lam2(5.0 nm, phi 10%) / lam2(3.0 nm, phi 10%, ledger 104) over the 4 pairings of 2 new and 2 earlier seeds",
+  "threshold": "t = sqrt((5/3)^-3.9) = 0.369, the log-midpoint between a constant lam2 (ratio 1) and the measured 2-to-3 nm slope (ratio 0.136)",
+  "measured_curve": "lam2(R): geometric seed means at R = 1.0, 1.5, 2.0 (ledger 59), 3.0 (ledger 104) and 5.0 nm (new), log-log interpolation; beyond 5 nm the 3.0-to-5.0 nm slope (never rising). Ge saving and screening pick recomputed through fit_radius_contrast.claims and .pick"
+ },
+ "predictions": {
+  "PrF1": "branch keeps_falling: every ratio_R5 < 0.369",
+  "PrF2": "mean r(R = 5 nm) >= 0.05 (the particle still measurably lowers kappa)",
+  "PrF3": "the measured-curve 5 nm Ge saving at 300 K lies within 3 percentage points of the extrapolated 8.7% (ledger 105)"
+ },
+ "decision_rule": {
+  "keeps_falling": "every ratio_R5 < 0.369: strengthen the ledger-105 measured-curve claims; the 5 nm Ge saving and the preferred radius are recomputed with the measured 5 nm point and P1's label 'extrapolated beyond 3 nm' is replaced by 'measured to 5 nm'",
+  "stops_falling": "every ratio_R5 >= 0.369: correct the 5 nm Ge saving and the screening pick to the measured-curve values with the 5 nm point; the extrapolated 7-9% at 5 nm is withdrawn",
+  "undecided": "the ratios straddle 0.369 or a value is missing: retain the ledger-105 values with the 'extrapolated beyond 3 nm' label and record the ratios",
+  "gates_fail": "if a gate fails, the failing runs are reported and the decision is taken only if the branch is the same without them; otherwise undecided",
+  "not_affected": "the R <= 3 nm measured curve, the recipe composition (x = 0.3) and carbon content (3 at%), every coarse-SiC claim (bracketed at both limits in session 73), and all non-SiC claims"
+ }
+}

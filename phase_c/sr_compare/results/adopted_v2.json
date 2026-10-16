@@ -1,0 +1,110 @@
+{
+ "config": "shape filter + noise weights + beam 200 (no PySR proposals)",
+ "A": {
+  "md": {
+   "same_selected": true,
+   "n_basis": 24,
+   "evaluated_exhaustive": 12950,
+   "evaluated_beam": 4214,
+   "s_exhaustive": 2.03,
+   "s_beam": 0.6,
+   "law": {
+    "(1-x)*l^-1/2": -0.03636322515180926,
+    "x(1-x)*1/l": -3.3765667212452612,
+    "x(1-x)*l^-1/2": 8.597659052065856,
+    "1/t*1/l": 0.09631568750317651
+   }
+  },
+  "md-alloy": {
+   "same_selected": true,
+   "n_basis": 24,
+   "evaluated_exhaustive": 12950,
+   "evaluated_beam": 4733,
+   "s_exhaustive": 0.61,
+   "s_beam": 0.23,
+   "law": {
+    "(1-x)": 0.31973253852343037,
+    "1/l": -0.129808097027847,
+    "x(1-x)*l^-1/2": 5.936600735223073
+   }
+  },
+  "mace": {
+   "same_selected": true,
+   "n_basis": 40,
+   "evaluated_exhaustive": 102090,
+   "evaluated_beam": 9121,
+   "s_exhaustive": 14.56,
+   "s_beam": 1.33,
+   "law": {
+    "1": 0.6735029311256582,
+    "x": 0.41923188319984483,
+    "x(1-x)": 8.563136879979405,
+    "x(1-x)*t": -2.58493638924496
+   }
+  }
+ },
+ "B": [
+  {
+   "max_terms": 4,
+   "beam": {
+    "s": 0.6,
+    "n_basis": 43,
+    "evaluated": 12190,
+    "law": {
+     "x(1-x)*l^-1/2": 7.641868011762725,
+     "1/t*l^-1/2": -0.0787313700610313,
+     "(1-x)^2": 0.3873509992251797,
+     "x(1-x)*t*1/l": -2.025442254758721
+    },
+    "holdout_medape": 3.53
+   },
+   "exhaustive": {
+    "s": 6.3,
+    "n_basis": 43,
+    "evaluated": 136697,
+    "law": {
+     "x(1-x)*l^-1/2": 7.641868011762725,
+     "1/t*l^-1/2": -0.0787313700610313,
+     "(1-x)^2": 0.3873509992251797,
+     "x(1-x)*t*1/l": -2.025442254758721
+    },
+    "holdout_medape": 3.53
+   },
+   "same_selected": true
+  },
+  {
+   "max_terms": 5,
+   "beam": {
+    "s": 0.9,
+    "n_basis": 43,
+    "evaluated": 18479,
+    "law": {
+     "x(1-x)*l^-1/2": 7.641868011762725,
+     "1/t*l^-1/2": -0.0787313700610313,
+     "(1-x)^2": 0.3873509992251797,
+     "x(1-x)*t*1/l": -2.025442254758721
+    },
+    "holdout_medape": 3.53
+   },
+   "exhaustive": "skipped: est. > 1 h (subsets grow as n^5)"
+  }
+ ],
+ "C": {
+  "clean_law": {
+   "(1-x)": 0.31973253852343037,
+   "1/l": -0.129808097027847,
+   "x(1-x)*l^-1/2": 5.936600735223073
+  },
+  "deterministic": true,
+  "replication_same_terms": true,
+  "replication_max_rel_coef_drift": 1.7105605120872954e-15,
+  "biased_law_terms": [
+   "1/t",
+   "x(1-x)*l^-1/2"
+  ],
+  "blast_radius_biased_party": [
+   "1/t"
+  ],
+  "unlearn_bitwise_exact": true
+ }
+}

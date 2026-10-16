@@ -1,0 +1,36 @@
+{
+ "campaign": "nano-sigec-m1c-converged-2026-09-30",
+ "parent_campaign": "nano-sigec-doping-2026-09-29 (design sha ff5445d5, ledger seq 46; M1b gate failure seq 48)",
+ "paper": "P1",
+ "operator_go": "issue 55, 2026-09-30 UTC: 'Converged MACE rerun (longer step cap, about 3 to 5 guest CPU-hours per task) to validate the where-carbon-goes energies - go'",
+ "question": "Do the where-carbon-goes energies (dE_prec, dE_site, delta_C) from stage M1 hold once every relaxation reaches the pre-registered force threshold?",
+ "model": "MACE-MP-0 medium, float64, CPU (module mace/0.3.16_cu126 on CHPC; same model and dtype as M1)",
+ "structures": "identical to M1: 3x3x3 conventional diamond supercell (216 sites), random Ge by numpy default_rng(seed), C on Si sites by default_rng(1000+seed) permutation; bulk Si, Ge, 3C-SiC 8-atom cubic cells; site-preference pair maxGe / minGe as in M1",
+ "tasks": "51 independent relaxations, one per SLURM array task: 3 bulk + x=0 (seeds 1-3 x nC 0,1,2,4) + x in {0.2, 0.5} (seeds 1-3 x nC 0,1,2,4 + maxGe + minGe)",
+ "relaxation": {
+  "filter": "ase.filters.FrechetCellFilter(hydrostatic_strain=True) (M1 used the deprecated ExpCellFilter, same degrees of freedom)",
+  "stage1": "FIRE until filter fmax <= 0.05 or 800 steps",
+  "stage2": "LBFGS (maxstep 0.1 A) until filter fmax <= 0.005",
+  "step_cap_total": 5000,
+  "checkpoint": "positions and cell written every 25 steps; a preempted/requeued task resumes from the last checkpoint and its step count accumulates",
+  "wall_limit": "8 h per task on notchpeak-guest, 16 cores"
+ },
+ "gates": {
+  "M1c-a": "every one of the 51 relaxations: max atomic force <= 0.01 eV/A AND |pressure| <= 0.1 GPa (the M1b force threshold, now with an explicit cell criterion)",
+  "M1c-b": "ln a vs y_C fit R^2 >= 0.9 at every x (unchanged from M1b)",
+  "M1c-c": "bulk lattice constants within 2.5% of experiment (unchanged from M1a)"
+ },
+ "predictions": {
+  "PM1": "gates M1c-a/b/c all pass",
+  "PM2": "converged mean dE_prec at each x in {0, 0.2, 0.5} within 0.10 eV/C of the M1 unvalidated value (-1.446, -1.553, -1.692), still < -0.5 eV and still more negative at x=0.5 than at x=0 (PrC2 holds)",
+  "PM3": "converged mean dE_site > 0 at x=0.2 and x=0.5 and within 0.05 eV of M1 (0.203, 0.306) (PrC2b holds)",
+  "PM4": "converged delta_C at each x within 5% of M1 (-0.392, -0.409, -0.371) and x=0 within 30% of modified Vegard -0.394 (PrC1 holds)"
+ },
+ "decision_rule": {
+  "if gates pass and PM2-PM4 hold": "ledger 'strengthen' on the M1 where-carbon-goes claims (unvalidated flag lifted); analyze_sigec.py re-run on the M1c summary as results/sigec_results_m1c.json (its existing pre-registered branch uses MACE delta_C once gates pass); differences vs the committed results reported, no conclusion re-worded unless it changes",
+  "if gates pass but a prediction fails": "ledger 'correct' on the affected claim with the converged value; RESULTS.md and P1 updated to the converged number",
+  "if M1c-a fails again": "ledger 'gate_failure'; energies stay unvalidated; report the residual force distribution; no third rerun without a new pre-registration"
+ },
+ "deviation_policy": "infrastructure reruns (node failures, preemptions) allowed with a ledger deviation entry; any change to structures, thresholds, gates or predictions is a new pre-registration",
+ "placement": "notchpeak-guest / owner-guest only (grn061 off-limits by operator directive; DGX reserved by operator)"
+}

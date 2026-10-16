@@ -1,0 +1,94 @@
+{
+  "campaign": "p3-sigec-design-study-2026-09-30",
+  "paper": "P3",
+  "operator_go": "issue 55, 2026-09-30: 'P1-P3 can all use SiGeC + dopant'",
+  "question": "For the nanostructured SiGeC + light-dopant design space, how many runs does a campaign need to (i) sample every two-factor combination, (ii) stay complete when runs are lost, (iii) recover the Ge-saving screening decision, and (iv) where should follow-up runs go? Compared against random batches and one-factor-at-a-time (OFAT) of equal or natural size.",
+  "response_model": "The committed SiGeC lattice-thermal-conductivity model (nano_sigec/analyze_sigec.py: almaBTE per-mode host data, ledger seq 45, plus gray grain boundary, substitutional-C point-defect or SiC-nanoinclusion scattering, dopant point-defect scattering; converged MACE size misfit, ledger seq 55). It plays the role of the expensive measurement: every design sees only the runs it selects. No new BTE or MD runs.",
+  "factors": {
+    "x_Ge": [
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "y_C_at_frac": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.03
+    ],
+    "carbon_form": [
+      "substitutional_eps0",
+      "SiC_R2.5nm",
+      "SiC_R5nm",
+      "SiC_R25nm",
+      "SiC_R100nm"
+    ],
+    "d_eff_um": [
+      0.1,
+      0.3,
+      0.5,
+      0.9
+    ],
+    "dopant": [
+      "none",
+      "B_1e20cm-3",
+      "P_1e20cm-3"
+    ],
+    "T_K": [
+      300,
+      500,
+      700,
+      900,
+      1100
+    ]
+  },
+  "full_factorial_size": 9000,
+  "model_settings": {
+    "SiC_contrast_primary": "stiffness",
+    "SiC_contrast_check": "density",
+    "dopant_strain_eps": 0.0,
+    "carbon_form_ignored_when_y_C_is_0": true
+  },
+  "designs": {
+    "CA1": "strength-2 covering array: every level pair of every two factors at least once; greedy construction (as p3_strain/design_strain_batch.py), 20 construction seeds, the smallest kept as the reference and all 20 used as replicates",
+    "CA2": "2-fold strength-2 covering (every pair at least twice), built by extending CA1; the 1-erasure-tolerant variant",
+    "RND_n": "uniform random subsets of the full factorial without replacement, n = |CA1| and n = |CA2|, 200 replicates each",
+    "OFAT": "one-factor-at-a-time around the baseline (x=0.2, y_C=0.01, SiC_R25nm, d=0.3 um, none, 700 K): 1 + sum(levels-1) = 23 runs; single deterministic design"
+  },
+  "surrogate": "ExtraTreesRegressor(n_estimators=300, min_samples_leaf=1, random_state=0) on features [x, y_C, is_substitutional, log10(R_nm) (0 for substitutional), log10(d_um), is_B, is_P, T/1000], target ln kappa_L; carbon-form features set to a fixed 'no carbon' code when y_C = 0",
+  "metrics": {
+    "pair_coverage": "fraction of all two-factor level pairs present in the batch",
+    "log_rmse": "RMSE of surrogate ln kappa_L over the full 9000-point factorial",
+    "screening_regret": "Ge-saving decision: among full-factorial points with x_Ge <= 0.2 and T = 1100 K, the surrogate's argmin; regret = true kappa_L(pick) / true minimum - 1",
+    "factor_ranking": "permutation importance of the six factors (grouped carbon-form features) on the full factorial, from the batch-trained surrogate"
+  },
+  "erasure_test": "for CA1, CA2 and RND at |CA2|: delete k in {1, 2, 3} rows uniformly at random, 500 trials each; report fraction of trials with complete pair coverage and median screening regret after refit",
+  "transversal_followup": {
+    "uncertain_hyperedges": "after fitting on the reference CA2 batch: every two-factor level cell over the four material factors (x_Ge, y_C, carbon_form, d_eff) with y_C > 0 cells only for carbon_form pairs; cell uncertainty = mean over its grid points of the per-tree standard deviation of ln kappa_L; uncertain set = top 20% of cells",
+    "transversal": "greedy minimum hitting set: repeatedly add the full-factorial point hitting the most not-yet-hit uncertain cells (ties broken by larger predicted uncertainty) until all are hit; size m is its natural size",
+    "baselines": [
+      "m uniform random points (200 replicates)",
+      "m points of largest pointwise per-tree standard deviation"
+    ],
+    "metric": "log_rmse and screening_regret after refitting on CA2 + follow-up"
+  },
+  "predictions": {
+    "P3-1": "|CA1| <= 40 (lower bound 30 = 6 x 5) and uniform random batches of size |CA1| cover < 90% of level pairs on median",
+    "P3-2": "median screening regret over the 20 CA1 replicates <= median over the 200 random batches of size |CA1|",
+    "P3-3": "under k = 1 deletion, CA2 keeps complete pair coverage in 100% of trials and CA1 in < 50%",
+    "P3-4": "the price of 1-erasure tolerance |CA2| / |CA1| lies between 1.6 and 2.2",
+    "P3-5": "the transversal follow-up gives lower log_rmse than the median of equal-size random follow-ups",
+    "P3-6": "materials check: the CA2-trained surrogate ranks dopant last among the six factors by permutation importance (the relative order of carbon form and y_C is reported, not predicted)",
+    "P3-7": "OFAT (23 runs) has higher screening regret than the median random batch of |CA1| runs"
+  },
+  "declared_limits": [
+    "the response is a physics model, not a measurement: the study measures design properties on a known response surface; P3's measured campaign remains the strain batch (p3_strain)",
+    "the SiC scattering strength at R <= 5 nm is uncertain by a factor of about 2 (stiffness vs density contrast); the density-contrast surface is evaluated as a sensitivity check",
+    "run cost is treated as uniform across the space"
+  ],
+  "deviation_policy": "any change to factors, designs, surrogate, metrics or predictions after registration is a new pre-registration; infrastructure fixes are recorded as ledger deviations"
+}

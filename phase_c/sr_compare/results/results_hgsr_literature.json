@@ -1,0 +1,77 @@
+{
+ "engine": "hgsr",
+ "task": "literature",
+ "available": true,
+ "n_rows": 17,
+ "expression": "1/r, r = 3.85*x + -3.78*x^2",
+ "complexity": 3,
+ "fit_seconds": 0.0,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 136.70716691363717,
+  "medape_pct": 100.0,
+  "n_nonfinite_pred": 12
+ },
+ "cv_5fold": {
+  "rmse_kappa": 123.54131738894664,
+  "medape_pct": 100.0,
+  "n_nonfinite_pred": 8
+ },
+ "provenance": {
+  "selected": {
+   "terms": [
+    1,
+    6
+   ],
+   "names": [
+    "x",
+    "x^2"
+   ],
+   "coefs": [
+    3.8455597643097583,
+    -3.78167087542087
+   ],
+   "complexity": 3,
+   "mse": 0.027129364038403336
+  },
+  "term_provenance": {
+   "x": [
+    {
+     "edge": "regime:x1T0",
+     "effect": "deselected"
+    }
+   ],
+   "x^2": [
+    {
+     "edge": "regime:x1T0",
+     "effect": "deselected"
+    },
+    {
+     "edge": "regime:x5T0",
+     "effect": "deselected"
+    }
+   ]
+  },
+  "term_labels": {
+   "x": "regime-sensitive",
+   "x^2": "regime-sensitive"
+  },
+  "blast_radius": {
+   "regime:x1T0": [
+    "x",
+    "x^2"
+   ],
+   "regime:x5T0": [
+    "x^2"
+   ]
+  },
+  "covered_regimes": [
+   "x0T0",
+   "x0T1",
+   "x0T2",
+   "x1T0",
+   "x5T0"
+  ]
+ }
+}

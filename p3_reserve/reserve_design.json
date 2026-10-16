@@ -1,0 +1,41 @@
+{
+  "campaign": "p3-replication-reserve-2026-10-09",
+  "paper": "P3",
+  "operator_go": "issue 55, 2026-10-09: 'go for P2 and P3 addition as well' (P3 addition = a reserve of runs held back to replicate exceptional points, papers/26 section 5)",
+  "question": "In a covering-designed SiGeC campaign whose runs are noisy and occasionally wrong in the favourable direction (kappa reads low), does holding back a small reserve of runs to replicate points that look exceptional (a) stop the campaign from reporting a wrong value as its best recipe, (b) keep true sweet spots, and (c) cost little when nothing is wrong, compared with spending the same runs on random or lowest-predicted points?",
+  "response_model": "the committed SiGeC response of the registered P3 study (p3_sigec/results/response_stiffness.npy, ledger seq 56-57), 9000-point factorial; it plays the measurement; no new BTE or MD",
+  "response_sha256": "096f24b0d1c75f8d01ab1e3c0efcc68920e087f51497c71906b9b915e427ff7e",
+  "base_batch": "CA2_ref from p3_sigec/results/designs.json (62 runs, every factor-level pair at least twice)",
+  "budget_extra": 9,
+  "measurement_model": {
+    "noise": "ln y_obs = ln y_true + N(0, sigma^2), sigma = 0.05 (seed scatter of the campaign rNEMD points is 3 to 4 percent)",
+    "favourable_fault": "with probability f, independently per run (replicates included), ln y_obs is further shifted by ln m, m ~ Uniform(0.4, 0.7): a run that reads 30 to 60 percent low, e.g. a mis-measured density or contact loss",
+    "f_values": [0.0, 0.05, 0.10],
+    "trials_per_f": 60,
+    "common_random_numbers": "within a trial every policy sees the same base-batch observations"
+  },
+  "surrogate": "ExtraTreesRegressor(n_estimators=60, random_state=0) on the registered P3 features, target ln kappa; refit on the accepted data after each policy",
+  "decision_region": "x_Ge <= 0.2 and T = 1100 K (the registered Ge-saving question)",
+  "policies": {
+    "CA2+random": "9 extra runs uniformly at random from the unmeasured factorial; every observed value accepted",
+    "CA2+exploit": "9 extra runs at the unmeasured decision-region points of lowest surrogate prediction (fit on the base batch); every observed value accepted",
+    "CA2+reserve": "flag base-batch runs whose 5-fold cross-validated residual ln y_obs - ln y_cv < -0.15 (3 sigma, the favourable direction); in order of most negative residual, at most 6 flagged runs: replicate once; confirmed if |ln y_rep - ln y_obs| <= 0.141 (2 sigma sqrt 2): keep both, value = geometric mean, label exceptional, and if reserve remains run its unmeasured one-factor neighbour of lowest prediction; not confirmed: set the first value aside (kept in the record, not used) and use the replicate; leftover reserve goes to the exploit rule after refitting on accepted data"
+  },
+  "metrics": {
+    "reported_best": "the accepted decision-region run with the lowest accepted value; this is the recipe and value the campaign would report",
+    "false_claim": "reported value / true kappa of that recipe < 0.8",
+    "report_regret": "true kappa(reported recipe) / true decision-region minimum - 1",
+    "surrogate_regret": "true kappa(surrogate argmin over decision region) / true minimum - 1",
+    "log_rmse": "surrogate RMSE in ln kappa over the 9000-point factorial",
+    "set_aside_frac": "reserve only: fraction of flagged-and-replicated runs set aside",
+    "confirmed_true_frac": "reserve only: fraction of confirmed exceptional runs whose base observation was not a fault"
+  },
+  "predictions": {
+    "PR1": "f = 0.05: false_claim rate of CA2+exploit >= 0.15, and CA2+reserve <= half of it",
+    "PR2": "f = 0.05: median report_regret of CA2+reserve <= that of CA2+exploit",
+    "PR3": "f = 0: median log_rmse of CA2+reserve <= 1.10 x that of CA2+random",
+    "PR4": "f = 0: set_aside_frac <= 0.10 (with no faults present, statistics alone rarely remove a value)",
+    "PR5": "f = 0.10: false_claim rate of CA2+reserve <= 0.7 x that of CA2+exploit"
+  },
+  "limits_stated_in_advance": "the response is a model, not measurements; the fault model is one-sided by design (only favourable faults can create false discoveries); a 9-run reserve is about 15 percent of the base batch and the result is not claimed for other sizes"
+}

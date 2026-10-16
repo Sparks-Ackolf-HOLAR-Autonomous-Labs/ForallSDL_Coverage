@@ -1,0 +1,49 @@
+{
+  "counting_rule": "one method family plus one provenance chain",
+  "n_sources": 8,
+  "n_askable": 5,
+  "n_fixed": 3,
+  "n_method_families": 4,
+  "sources": {
+    "BTE-DFT": {
+      "name": "first-principles phonon BTE",
+      "method_family": "first-principles BTE",
+      "role": "askable"
+    },
+    "CHPC-MD": {
+      "name": "Tersoff MD (CHPC)",
+      "method_family": "Tersoff MD",
+      "role": "askable"
+    },
+    "DGX-MD": {
+      "name": "Tersoff MD (DGX Spark)",
+      "method_family": "Tersoff MD",
+      "role": "askable"
+    },
+    "GPUMD-HNEMD": {
+      "name": "Tersoff HNEMD (GPUMD)",
+      "method_family": "Tersoff MD",
+      "role": "askable"
+    },
+    "MACE-MD": {
+      "name": "MACE-MP-0 MD",
+      "method_family": "machine-learned MD",
+      "role": "askable"
+    },
+    "DB-CITRINE": {
+      "name": "Citrine compilation",
+      "method_family": "measurement",
+      "role": "fixed"
+    },
+    "DB-STARRY": {
+      "name": "Starrydata2 compilation",
+      "method_family": "measurement",
+      "role": "fixed"
+    },
+    "LIT": {
+      "name": "literature extraction",
+      "method_family": "measurement",
+      "role": "fixed"
+    }
+  }
+}

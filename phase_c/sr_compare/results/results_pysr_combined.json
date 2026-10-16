@@ -1,0 +1,21 @@
+{
+ "engine": "pysr",
+ "task": "combined",
+ "available": true,
+ "n_rows": 20,
+ "expression": "1/r, r = -x + x/(x + 0.038095742)",
+ "complexity": 7,
+ "fit_seconds": 1.81,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 127.40248453227784,
+  "medape_pct": 100.0,
+  "n_nonfinite_pred": 12
+ },
+ "cv_5fold": {
+  "rmse_kappa": 119.93371921959822,
+  "medape_pct": 100.0,
+  "n_nonfinite_pred": 10
+ }
+}

@@ -1,0 +1,816 @@
+{
+ "protocol": {
+  "model": "small",
+  "ncx": 3,
+  "ncy": 3,
+  "ncz": 16,
+  "relax_steps": 150,
+  "dt_fs": 1.0,
+  "equil": 8000,
+  "prod": 50000,
+  "swap_every": 50
+ },
+ "points": {
+  "x0.1_C0.01_clus_none_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 100
+  },
+  "x0.1_C0.03_disp_B_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 101
+  },
+  "x0.3_C0.01_disp_P_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 102
+  },
+  "x0.5_C0.03_clus_P_T1100": {
+   "x_Ge": 0.5,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 103
+  },
+  "x0.7_C0.03_disp_none_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 104
+  },
+  "x0.7_C0.01_clus_B_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 105
+  },
+  "x0.2_C0.0_none_P_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 106
+  },
+  "x0.2_C0.01_disp_none_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 107
+  },
+  "x0.5_C0.0_none_none_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 108
+  },
+  "x0.3_C0.0_none_B_T1100": {
+   "x_Ge": 0.3,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 109
+  },
+  "x0.5_C0.01_disp_B_T300": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 110
+  },
+  "x0.2_C0.03_clus_B_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 111
+  },
+  "x0.3_C0.03_clus_none_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 112
+  },
+  "x0.7_C0.0_none_P_T1100": {
+   "x_Ge": 0.7,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 113
+  },
+  "x0.1_C0.0_none_P_T700": {
+   "x_Ge": 0.1,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 114
+  },
+  "x0.1_C0.03_disp_P_T700": {
+   "x_Ge": 0.1,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 115
+  },
+  "x0.7_C0.01_clus_P_T1100": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 116
+  },
+  "x0.2_C0.0_none_B_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 117
+  },
+  "x0.3_C0.01_disp_none_T1100": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 118
+  },
+  "x0.2_C0.03_clus_none_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 119
+  },
+  "x0.5_C0.03_disp_P_T300": {
+   "x_Ge": 0.5,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 120
+  },
+  "x0.7_C0.03_disp_B_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 121
+  },
+  "x0.2_C0.01_disp_P_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 122
+  },
+  "x0.5_C0.01_clus_none_T1100": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 123
+  },
+  "x0.1_C0.0_none_none_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 124
+  },
+  "x0.3_C0.03_clus_B_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 125
+  },
+  "x0.1_C0.01_clus_B_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 126
+  },
+  "x0.7_C0.0_none_none_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 127
+  },
+  "x0.5_C0.0_none_B_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 128
+  },
+  "x0.3_C0.0_none_P_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 129
+  },
+  "x0.2_C0.01_clus_none_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 130
+  },
+  "x0.1_C0.01_clus_none_T700": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 131
+  },
+  "x0.3_C0.01_clus_none_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 132
+  },
+  "x0.5_C0.01_clus_none_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 133
+  },
+  "x0.7_C0.01_clus_none_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 134
+  },
+  "x0.2_C0.0_none_none_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 135
+  },
+  "x0.2_C0.01_disp_none_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 136
+  },
+  "x0.2_C0.01_clus_B_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 137
+  },
+  "x0.2_C0.01_clus_P_T700": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 138
+  },
+  "x0.2_C0.01_clus_none_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 139
+  },
+  "x0.2_C0.01_clus_none_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 140
+  },
+  "x0.5_C0.01_disp_B_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 141
+  },
+  "x0.3_C0.03_clus_B_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 142
+  },
+  "x0.7_C0.01_disp_P_T1100": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 143
+  },
+  "x0.2_C0.03_disp_none_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 144
+  },
+  "x0.7_C0.03_disp_P_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 145
+  },
+  "x0.3_C0.01_disp_none_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 146
+  },
+  "x0.7_C0.01_clus_none_T1100": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 147
+  },
+  "x0.5_C0.01_clus_P_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 148
+  },
+  "x0.7_C0.01_clus_B_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 149
+  },
+  "x0.3_C0.03_clus_P_T1100": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 150
+  },
+  "x0.1_C0.0_none_P_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 151
+  },
+  "x0.1_C0.01_disp_B_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 152
+  },
+  "x0.5_C0.03_clus_P_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 153
+  },
+  "x0.3_C0.0_none_none_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 154
+  },
+  "x0.5_C0.01_disp_B_T1100": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 155
+  },
+  "x0.7_C0.0_none_B_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 156
+  },
+  "x0.5_C0.0_none_B_T300": {
+   "x_Ge": 0.5,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 157
+  },
+  "x0.1_C0.0_none_P_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 158
+  },
+  "x0.1_C0.01_disp_B_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 159
+  },
+  "x0.5_C0.01_clus_P_T300": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 160
+  },
+  "x0.1_C0.01_clus_P_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 161
+  },
+  "x0.2_C0.01_disp_B_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 162
+  },
+  "x0.7_C0.01_disp_B_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 163
+  },
+  "x0.5_C0.03_disp_P_T700": {
+   "x_Ge": 0.5,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 164
+  },
+  "x0.3_C0.01_clus_P_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 165
+  },
+  "x0.1_C0.01_clus_P_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 166
+  },
+  "x0.3_C0.03_disp_B_T700": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 167
+  },
+  "x0.3_C0.01_disp_P_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 168
+  },
+  "x0.1_C0.01_clus_none_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 169
+  },
+  "x0.7_C0.03_clus_P_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 170
+  },
+  "H_x0.2_C0.0_none_none_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 500
+  },
+  "H_x0.1_C0.0_none_none_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.0,
+   "carbon_form": "none",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 501
+  },
+  "H_x0.7_C0.03_clus_B_T700": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 700,
+   "seed": 502
+  },
+  "H_x0.7_C0.03_disp_P_T1100": {
+   "x_Ge": 0.7,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 503
+  },
+  "H_x0.2_C0.01_clus_B_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 504
+  },
+  "H_x0.7_C0.01_clus_none_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 505
+  },
+  "H_x0.3_C0.03_disp_none_T300": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 506
+  },
+  "H_x0.7_C0.01_disp_P_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 507
+  },
+  "H_x0.3_C0.03_clus_none_T1100": {
+   "x_Ge": 0.3,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 508
+  },
+  "H_x0.5_C0.01_disp_none_T1100": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 509
+  },
+  "H_x0.1_C0.01_clus_B_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 510
+  },
+  "H_x0.1_C0.03_disp_P_T1100": {
+   "x_Ge": 0.1,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 511
+  },
+  "H_x0.5_C0.01_disp_P_T300": {
+   "x_Ge": 0.5,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 512
+  },
+  "H_x0.2_C0.03_clus_B_T300": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "clustered",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 513
+  },
+  "H_x0.1_C0.01_disp_P_T300": {
+   "x_Ge": 0.1,
+   "y_C": 0.01,
+   "carbon_form": "dispersed",
+   "dopant": "P",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 514
+  },
+  "H_x0.2_C0.03_disp_B_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 515
+  },
+  "R_x0.2_C0.03_disp_B_T1100": {
+   "x_Ge": 0.2,
+   "y_C": 0.03,
+   "carbon_form": "dispersed",
+   "dopant": "B",
+   "dopant_at_frac": 0.002,
+   "T_K": 1100,
+   "seed": 900
+  },
+  "R_x0.7_C0.01_clus_none_T300": {
+   "x_Ge": 0.7,
+   "y_C": 0.01,
+   "carbon_form": "clustered",
+   "dopant": "none",
+   "dopant_at_frac": 0.002,
+   "T_K": 300,
+   "seed": 901
+  }
+ }
+}

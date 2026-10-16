@@ -1,0 +1,21 @@
+{
+ "engine": "minisr-pooled",
+ "task": "md",
+ "available": true,
+ "n_rows": 24,
+ "expression": "1/r, r = -0.148*1 + 3.19*x + -3.18*x^2 + 94.2*1/L",
+ "complexity": 6,
+ "fit_seconds": 0.01,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 19.478596401203628,
+  "medape_pct": 7.797927940450217,
+  "n_nonfinite_pred": 0
+ },
+ "cv_5fold": {
+  "rmse_kappa": 23.20907185957653,
+  "medape_pct": 8.300909482608427,
+  "n_nonfinite_pred": 0
+ }
+}

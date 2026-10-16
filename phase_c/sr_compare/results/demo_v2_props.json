@@ -1,0 +1,20 @@
+{
+ "clean_law": {
+  "(1-x)": 0.31922453931483985,
+  "1/l": -0.12013168509580893,
+  "x(1-x)*l^-1/2": 5.8976636776785645
+ },
+ "deterministic": true,
+ "replicated_cell": "x1T0L1",
+ "replication_same_terms": true,
+ "replication_max_rel_coef_drift": 1.0396931514838755e-15,
+ "biased_law_terms": [
+  "(1-x)",
+  "x(1-x)*l^-1/2",
+  "t*l^-1/2"
+ ],
+ "blast_radius_biased_party": [
+  "t*l^-1/2"
+ ],
+ "unlearn_bitwise_exact": true
+}

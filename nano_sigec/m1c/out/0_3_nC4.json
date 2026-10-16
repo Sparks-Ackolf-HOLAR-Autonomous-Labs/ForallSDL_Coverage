@@ -1,0 +1,20 @@
+{
+ "task": "0_3_nC4",
+ "model": "MACE-MP-0 medium float64",
+ "x": 0.0,
+ "seed": 3,
+ "n_sites": 216,
+ "n_C": 4,
+ "E_eV": -1165.8554078321804,
+ "V_A3": 4280.826262453898,
+ "a_A": 5.412375831329116,
+ "n_atoms": 216,
+ "fmax_norm": 0.004445777124588946,
+ "fmax_component": 0.0035518789179694484,
+ "pressure_GPa": -0.001215099918048807,
+ "optimizer_converged": true,
+ "steps": 81,
+ "restarts": 0,
+ "gate_pass": true,
+ "wall_s": 95.93345046043396
+}

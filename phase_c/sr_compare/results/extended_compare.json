@@ -1,0 +1,187 @@
+{
+ "config": "adopted v2 (shape + noise + beam 200), standard vs extended basis",
+ "md": [
+  {
+   "engine": "adopted v2",
+   "n_basis": 24,
+   "law": {
+    "(1-x)*l^-1/2": -0.03636322515180926,
+    "x(1-x)*1/l": -3.3765667212452612,
+    "x(1-x)*l^-1/2": 8.597659052065856,
+    "1/t*1/l": 0.09631568750317651
+   },
+   "fit_s": 0.25,
+   "cv5_rows": {
+    "rmse_kappa": 2.1873,
+    "medape_pct": 4.1852,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.032,
+    "medape_pct": 3.7095,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.3094,
+    "medape_pct": 10.9453,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    Infinity,
+    Infinity,
+    Infinity
+   ]
+  },
+  {
+   "engine": "adopted v2 + extended",
+   "n_basis": 43,
+   "law": {
+    "(1-x)*l^-1/2": -0.03636322515180926,
+    "x(1-x)*1/l": -3.3765667212452612,
+    "x(1-x)*l^-1/2": 8.597659052065856,
+    "1/t*1/l": 0.09631568750317651
+   },
+   "fit_s": 0.67,
+   "cv5_rows": {
+    "rmse_kappa": 2.1873,
+    "medape_pct": 4.1852,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.0321,
+    "medape_pct": 3.7095,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.3094,
+    "medape_pct": 10.9453,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    Infinity,
+    Infinity,
+    Infinity
+   ]
+  }
+ ],
+ "md-alloy": [
+  {
+   "engine": "adopted v2",
+   "n_basis": 24,
+   "law": {
+    "(1-x)": 0.31973253852343037,
+    "1/l": -0.129808097027847,
+    "x(1-x)*l^-1/2": 5.936600735223073
+   },
+   "fit_s": 0.23,
+   "cv5_rows": {
+    "rmse_kappa": 0.1149,
+    "medape_pct": 4.9465,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 0.1595,
+    "medape_pct": 9.2978,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.1498,
+    "medape_pct": 4.2756,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    3.68,
+    6.255,
+    20.851
+   ]
+  },
+  {
+   "engine": "adopted v2 + extended",
+   "n_basis": 43,
+   "law": {
+    "x(1-x)*l^-1/2": 7.641868011762725,
+    "1/t*l^-1/2": -0.0787313700610313,
+    "(1-x)^2": 0.3873509992251797,
+    "x(1-x)*t*1/l": -2.025442254758721
+   },
+   "fit_s": 0.57,
+   "cv5_rows": {
+    "rmse_kappa": 0.1021,
+    "medape_pct": 3.1317,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 0.1446,
+    "medape_pct": 8.369,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.1591,
+    "medape_pct": 3.5274,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    3.573,
+    10.327,
+    114.739
+   ]
+  }
+ ],
+ "mace": [
+  {
+   "engine": "adopted v2",
+   "n_basis": 40,
+   "law": {
+    "1": 0.6735029311256582,
+    "x": 0.41923188319984483,
+    "x(1-x)": 8.563136879979405,
+    "x(1-x)*t": -2.58493638924496
+   },
+   "hidden": {
+    "log_rmse": 0.0627,
+    "medape_pct": 6.046,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   }
+  },
+  {
+   "engine": "adopted v2 + extended",
+   "n_basis": 93,
+   "law": {
+    "1": 0.6735029311256582,
+    "x": 0.41923188319984483,
+    "x(1-x)": 8.563136879979405,
+    "x(1-x)*t": -2.58493638924496
+   },
+   "hidden": {
+    "log_rmse": 0.0627,
+    "medape_pct": 6.046,
+    "spearman": 0.9889,
+    "pick_regret": 0.0
+   }
+  }
+ ],
+ "properties_extended_md-alloy": {
+  "clean_law": {
+   "x(1-x)*l^-1/2": 7.641868011762725,
+   "1/t*l^-1/2": -0.0787313700610313,
+   "(1-x)^2": 0.3873509992251797,
+   "x(1-x)*t*1/l": -2.025442254758721
+  },
+  "deterministic": true,
+  "replication_same_terms": true,
+  "replication_max_rel_coef_drift": 3.28883143032111e-15,
+  "biased_law_terms": [
+   "(1-x)",
+   "x(1-x)*l^-1/2",
+   "x*1/t*l^-1/2"
+  ],
+  "blast_radius_biased_party": [
+   "(1-x)",
+   "x(1-x)*l^-1/2",
+   "x*1/t*l^-1/2"
+  ],
+  "unlearn_bitwise_exact": true
+ },
+ "adopt_extended": false
+}

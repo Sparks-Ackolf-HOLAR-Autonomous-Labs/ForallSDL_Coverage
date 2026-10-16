@@ -1,0 +1,144 @@
+{
+ "not_preregistered": true,
+ "after_ledger_seq": 105,
+ "lam2_nm": {
+  "R2.5": 0.002138614431580136,
+  "R5": 0.000144408300404878,
+  "R10": 9.751059806707408e-06,
+  "R25": 2.764914226344325e-07,
+  "R50": 1.8669871403450772e-08,
+  "R100": 1.2606687574617812e-09
+ },
+ "true_min_candidate": {
+  "x_Ge": 0.2,
+  "y_C_at_frac": 0.03,
+  "carbon_form": "SiC_R2.5nm",
+  "d_eff_um": 0.1,
+  "dopant": "B_1e20cm-3",
+  "T_K": 1100
+ },
+ "true_min_kappa": 1.8096586013519396,
+ "rank_corr_vs_stiffness_all9000": 0.8617299934205351,
+ "designs": {
+  "CA1": {
+   "regret_median": 0.09122791165424349,
+   "regret_q25_q75": [
+    0.046134471825619194,
+    0.10282181373295979
+   ],
+   "log_rmse_median": 0.11746475119815718,
+   "n_seed0": 36,
+   "n_ref": 33
+  },
+  "CA2": {
+   "regret_median": 0.07283281933602404,
+   "regret_q25_q75": [
+    0.03369690345410131,
+    0.09818018428887598
+   ],
+   "log_rmse_median": 0.08778540014554935,
+   "n_seed0": 63,
+   "n_ref": 62
+  },
+  "RND_nCA1": {
+   "regret_median": 0.09163704209271062,
+   "regret_q25_q75": [
+    0.0646622509031003,
+    0.10190912282610065
+   ],
+   "log_rmse_median": 0.12222686018609662,
+   "n_seed0": 33
+  },
+  "RND_nCA2": {
+   "regret_median": 0.06673512392831205,
+   "regret_q25_q75": [
+    0.032476417941885716,
+    0.09813975971133088
+   ],
+   "log_rmse_median": 0.09671867536718877,
+   "n_seed0": 62
+  },
+  "OFAT": {
+   "regret": 0.22303144536632735,
+   "pick": {
+    "x_Ge": 0.15,
+    "y_C_at_frac": 0.0,
+    "carbon_form": "substitutional_eps0",
+    "d_eff_um": 0.1,
+    "dopant": "none",
+    "T_K": 1100
+   },
+   "n_seed0": 23
+  },
+  "CA2_ref": {
+   "regret": 0.0665901932557178,
+   "pick": {
+    "x_Ge": 0.2,
+    "y_C_at_frac": 0.03,
+    "carbon_form": "substitutional_eps0",
+    "d_eff_um": 0.1,
+    "dopant": "P_1e20cm-3",
+    "T_K": 1100
+   },
+   "importance": {
+    "x_Ge": 0.022331995682318816,
+    "y_C_at_frac": 0.00021659713345541405,
+    "carbon_form": 9.581791148398529e-05,
+    "d_eff_um": 0.08696049473251616,
+    "dopant": -8.002288139174508e-05,
+    "T_K": 0.0016788099839982924
+   }
+  }
+ },
+ "erasure": {
+  "CA1": {
+   "k1": {
+    "regret_median_60trials": 0.10363414318102304
+   },
+   "k2": {
+    "regret_median_60trials": 0.10363414318102304
+   },
+   "k3": {
+    "regret_median_60trials": 0.10363414318102304
+   }
+  },
+  "CA2": {
+   "k1": {
+    "regret_median_60trials": 0.0665901932557178
+   },
+   "k2": {
+    "regret_median_60trials": 0.0665901932557178
+   },
+   "k3": {
+    "regret_median_60trials": 0.0665901932557178
+   }
+  }
+ },
+ "wall_seconds": 164.28523349761963,
+ "importance_pct_CA2_ref": {
+  "x_Ge": 20.1,
+  "y_C_at_frac": 0.2,
+  "carbon_form": 0.1,
+  "d_eff_um": 78.1,
+  "dopant": 0.0,
+  "T_K": 1.5
+ },
+ "main_effect_pct_of_var_lnkappa_full_factorial": {
+  "stiffness_registered": {
+   "x_Ge": 21.85,
+   "y_C_at_frac": 9.38,
+   "carbon_form": 17.38,
+   "d_eff_um": 37.74,
+   "dopant": 0.0,
+   "T_K": 1.94
+  },
+  "measured_curve": {
+   "x_Ge": 25.35,
+   "y_C_at_frac": 0.9,
+   "carbon_form": 1.05,
+   "d_eff_um": 68.59,
+   "dopant": 0.0,
+   "T_K": 2.88
+  }
+ }
+}

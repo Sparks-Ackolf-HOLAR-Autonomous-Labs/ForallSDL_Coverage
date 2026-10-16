@@ -1,0 +1,547 @@
+{
+ "C1_size": 25,
+ "C2_size": 50,
+ "analysis_preregistered": [
+  "per point: kappa from analyze_mp.py; ratio to the unstrained reference kappa(x,T,eps=0,dir) from a fitted smooth model",
+  "strain law: fit ln kappa = f(x,T) + (a + b x + c T/1000) eps + d eps * dir by weighted least squares over C2; report a, b, c, d with bootstrap CIs",
+  "erasure analysis: for every run lost to preemption (never completed), check pair coverage of C1-only vs C2; report the fraction of pairs C1 would have lost",
+  "materials call: kappa change of pseudomorphic SiGe on Si(001) (eps = -0.042 x) and on relaxed Ge (eps = +0.04 (1-x)) vs relaxed bulk, cross-plane and in-plane, at 300 and 1100 K"
+ ],
+ "campaign": "p3-strain-seed-2026-09-29",
+ "factors": {
+  "T": [
+   300,
+   700,
+   1100
+  ],
+  "dir": {
+   "0": "cross-plane",
+   "1": "in-plane"
+  },
+  "eps": [
+   -0.03,
+   -0.02,
+   -0.01,
+   0.0,
+   0.01
+  ],
+  "x": [
+   0.1,
+   0.3,
+   0.5,
+   0.7,
+   0.9
+  ]
+ },
+ "full_factorial": 150,
+ "gate": "p3_strain/GATE.md must pass before submission",
+ "paper": "P3 (coverage-designed campaigns), own materials experiment",
+ "points": [
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": -0.03,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S00_x0.1_e-0.03_T300_ip",
+   "seed": 29100,
+   "x": 0.1
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S01_x0.1_e-0.02_T1100_cp",
+   "seed": 29101,
+   "x": 0.1
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S02_x0.1_e-0.01_T700_cp",
+   "seed": 29102,
+   "x": 0.1
+  },
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": 0.0,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S03_x0.1_e+0.00_T300_ip",
+   "seed": 29103,
+   "x": 0.1
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S04_x0.1_e+0.01_T700_cp",
+   "seed": 29104,
+   "x": 0.1
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.03,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S05_x0.3_e-0.03_T700_cp",
+   "seed": 29105,
+   "x": 0.3
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.02,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S06_x0.3_e-0.02_T1100_ip",
+   "seed": 29106,
+   "x": 0.3
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S07_x0.3_e-0.01_T300_cp",
+   "seed": 29107,
+   "x": 0.3
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": 0.0,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S08_x0.3_e+0.00_T300_cp",
+   "seed": 29108,
+   "x": 0.3
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": 0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S09_x0.3_e+0.01_T700_ip",
+   "seed": 29109,
+   "x": 0.3
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.03,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S10_x0.5_e-0.03_T1100_ip",
+   "seed": 29110,
+   "x": 0.5
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S11_x0.5_e-0.02_T700_cp",
+   "seed": 29111,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": -0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S12_x0.5_e-0.01_T300_ip",
+   "seed": 29112,
+   "x": 0.5
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": 0.0,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S13_x0.5_e+0.00_T1100_ip",
+   "seed": 29113,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": 0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S14_x0.5_e+0.01_T300_ip",
+   "seed": 29114,
+   "x": 0.5
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.03,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S15_x0.7_e-0.03_T700_cp",
+   "seed": 29115,
+   "x": 0.7
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.02,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S16_x0.7_e-0.02_T1100_ip",
+   "seed": 29116,
+   "x": 0.7
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S17_x0.7_e-0.01_T1100_ip",
+   "seed": 29117,
+   "x": 0.7
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": 0.0,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S18_x0.7_e+0.00_T1100_cp",
+   "seed": 29118,
+   "x": 0.7
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S19_x0.7_e+0.01_T300_cp",
+   "seed": 29119,
+   "x": 0.7
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": -0.03,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S20_x0.9_e-0.03_T700_ip",
+   "seed": 29120,
+   "x": 0.9
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S21_x0.9_e-0.02_T300_cp",
+   "seed": 29121,
+   "x": 0.9
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": -0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S22_x0.9_e-0.01_T700_ip",
+   "seed": 29122,
+   "x": 0.9
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": 0.0,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S23_x0.9_e+0.00_T700_ip",
+   "seed": 29123,
+   "x": 0.9
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": 0.01,
+   "in_C1": true,
+   "ncz": 48,
+   "run_id": "S24_x0.9_e+0.01_T1100_ip",
+   "seed": 29124,
+   "x": 0.9
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S25_x0.9_e-0.01_T1100_cp",
+   "seed": 29125,
+   "x": 0.9
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S26_x0.5_e-0.02_T700_cp",
+   "seed": 29126,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S27_x0.9_e-0.02_T300_cp",
+   "seed": 29127,
+   "x": 0.9
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": -0.03,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S28_x0.1_e-0.03_T1100_cp",
+   "seed": 29128,
+   "x": 0.1
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.03,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S29_x0.7_e-0.03_T300_cp",
+   "seed": 29129,
+   "x": 0.7
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": 0.0,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S30_x0.7_e+0.00_T700_ip",
+   "seed": 29130,
+   "x": 0.7
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S31_x0.3_e+0.01_T1100_cp",
+   "seed": 29131,
+   "x": 0.3
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S32_x0.1_e-0.01_T700_cp",
+   "seed": 29132,
+   "x": 0.1
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S33_x0.3_e-0.01_T1100_cp",
+   "seed": 29133,
+   "x": 0.3
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": 0.0,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S34_x0.1_e+0.00_T1100_ip",
+   "seed": 29134,
+   "x": 0.1
+  },
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": -0.02,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S35_x0.3_e-0.02_T300_ip",
+   "seed": 29135,
+   "x": 0.3
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S36_x0.1_e+0.01_T700_cp",
+   "seed": 29136,
+   "x": 0.1
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": -0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S37_x0.5_e-0.01_T1100_cp",
+   "seed": 29137,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S38_x0.1_e-0.02_T300_cp",
+   "seed": 29138,
+   "x": 0.1
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S39_x0.7_e-0.01_T1100_ip",
+   "seed": 29139,
+   "x": 0.7
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": -0.02,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S40_x0.7_e-0.02_T700_cp",
+   "seed": 29140,
+   "x": 0.7
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S41_x0.7_e+0.01_T700_cp",
+   "seed": 29141,
+   "x": 0.7
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": -0.03,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S42_x0.9_e-0.03_T300_cp",
+   "seed": 29142,
+   "x": 0.9
+  },
+  {
+   "T": 1100,
+   "dir": 1,
+   "eps": -0.03,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S43_x0.5_e-0.03_T1100_ip",
+   "seed": 29143,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 1,
+   "eps": 0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S44_x0.5_e+0.01_T300_ip",
+   "seed": 29144,
+   "x": 0.5
+  },
+  {
+   "T": 300,
+   "dir": 0,
+   "eps": 0.0,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S45_x0.5_e+0.00_T300_cp",
+   "seed": 29145,
+   "x": 0.5
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": 0.0,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S46_x0.9_e+0.00_T1100_cp",
+   "seed": 29146,
+   "x": 0.9
+  },
+  {
+   "T": 700,
+   "dir": 0,
+   "eps": 0.0,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S47_x0.3_e+0.00_T700_cp",
+   "seed": 29147,
+   "x": 0.3
+  },
+  {
+   "T": 1100,
+   "dir": 0,
+   "eps": 0.01,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S48_x0.9_e+0.01_T1100_cp",
+   "seed": 29148,
+   "x": 0.9
+  },
+  {
+   "T": 700,
+   "dir": 1,
+   "eps": -0.03,
+   "in_C1": false,
+   "ncz": 48,
+   "run_id": "S49_x0.3_e-0.03_T700_ip",
+   "seed": 29149,
+   "x": 0.3
+  }
+ ],
+ "predictions": [
+  "compressive in-plane strain raises kappa and tensile lowers it (stiffer bonds, higher group velocities), in line with strained-Si literature (Parrish et al. PRB 2014)",
+  "the strain sensitivity |d ln kappa / d eps| is smaller in the alloy than in pure Si because mass-disorder scattering dominates"
+ ],
+ "price_of_1_erasure_tolerance_runs": 25,
+ "protocol": "p3_strain/in.mp_strain (Tersoff-1989 SiCGe.tersoff, MP rNEMD along z, 500 ps production, 4x4 cross-section, swap 50), notchpeak-guest 16 ranks, requeue on preemption (erasure events counted from sacct + per-run attempts files)"
+}

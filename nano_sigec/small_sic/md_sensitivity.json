@@ -1,0 +1,30 @@
+{
+ "d_host_m": 2.689658271530454e-07,
+ "kappa_host_mean": 1.0935000000000001,
+ "rows": {
+  "R10A": {
+   "r_md_vs_shell": 0.07627392611241746,
+   "r_md_vs_host": -0.03932327389117485,
+   "shell_gain_vs_host": 0.12665752171925004,
+   "r_model_density_dhost": 0.013883171307446651,
+   "r_model_stiffness_dhost": 0.2874073256439069,
+   "r_model_cap_dhost": 0.40872183160729314
+  },
+  "R15A": {
+   "r_md_vs_shell": 0.18559498956158665,
+   "r_md_vs_host": -0.06401463191586632,
+   "shell_gain_vs_host": 0.3063557384545039,
+   "r_model_density_dhost": 0.1001677780103094,
+   "r_model_stiffness_dhost": 0.5011483492644253,
+   "r_model_cap_dhost": 0.5288880903213025
+  },
+  "R20A": {
+   "r_md_vs_shell": 0.3030723909915203,
+   "r_md_vs_host": -0.14220393232738915,
+   "shell_gain_vs_host": 0.6396890717878372,
+   "r_model_density_dhost": 0.28047552340431314,
+   "r_model_stiffness_dhost": 0.5970911643208187,
+   "r_model_cap_dhost": 0.6034324160053571
+  }
+ }
+}

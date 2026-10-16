@@ -1,0 +1,104 @@
+{
+ "lam2_density_edge_x0.2": 0.00927590029561946,
+ "rows": [
+  {
+   "R_nm": 2.5,
+   "constant_pct": -12.52105422499411,
+   "measured_extrapolated_pct": -6.328722549179155
+  },
+  {
+   "R_nm": 5,
+   "constant_pct": -14.697838854566147,
+   "measured_extrapolated_pct": -3.512306316018199
+  },
+  {
+   "R_nm": 10,
+   "constant_pct": -10.61030993712243,
+   "measured_extrapolated_pct": -1.9005188404915718
+  },
+  {
+   "R_nm": 25,
+   "constant_pct": -4.981052245239804,
+   "measured_extrapolated_pct": -0.8257274842878082
+  },
+  {
+   "R_nm": 50,
+   "constant_pct": -2.620609101758764,
+   "measured_extrapolated_pct": -0.43562275909643233
+  },
+  {
+   "R_nm": 100,
+   "constant_pct": -1.345302414840377,
+   "measured_extrapolated_pct": -0.22887339105066573
+  },
+  {
+   "R_nm": 150,
+   "constant_pct": -0.9049550679954388,
+   "measured_extrapolated_pct": -0.15687730214665185
+  }
+ ],
+ "zhao": [
+  {
+   "R_nm": 50,
+   "d_eff_m": 1e-07,
+   "constant_pct": -2.467547163499728,
+   "measured_extrapolated_pct": -0.6645969319889367
+  },
+  {
+   "R_nm": 50,
+   "d_eff_m": 3e-07,
+   "constant_pct": -6.221819093296799,
+   "measured_extrapolated_pct": -1.0540999408248042
+  },
+  {
+   "R_nm": 50,
+   "d_eff_m": 5e-07,
+   "constant_pct": -8.943998951871224,
+   "measured_extrapolated_pct": -1.2382658064878926
+  },
+  {
+   "R_nm": 100,
+   "d_eff_m": 1e-07,
+   "constant_pct": -1.2673944478554522,
+   "measured_extrapolated_pct": -0.3468362674679093
+  },
+  {
+   "R_nm": 100,
+   "d_eff_m": 3e-07,
+   "constant_pct": -3.3258831598600436,
+   "measured_extrapolated_pct": -0.5569660799491061
+  },
+  {
+   "R_nm": 100,
+   "d_eff_m": 5e-07,
+   "constant_pct": -4.92345277161591,
+   "measured_extrapolated_pct": -0.6576151311451395
+  },
+  {
+   "R_nm": 150,
+   "d_eff_m": 1e-07,
+   "constant_pct": -0.8527115434055599,
+   "measured_extrapolated_pct": -0.23665561461038154
+  },
+  {
+   "R_nm": 150,
+   "d_eff_m": 3e-07,
+   "constant_pct": -2.270335034838855,
+   "measured_extrapolated_pct": -0.3825029300107641
+  },
+  {
+   "R_nm": 150,
+   "d_eff_m": 5e-07,
+   "constant_pct": -3.3993249261279224,
+   "measured_extrapolated_pct": -0.45283013765266
+  }
+ ],
+ "verdict": {
+  "large_SiC_ge100nm_below_2pct_both_limits": true,
+  "zhao_below_10pct_both_limits": true,
+  "zhao_largest_pct": {
+   "constant": -8.943998951871224,
+   "measured_extrapolated": -1.2382658064878926
+  }
+ }
+}

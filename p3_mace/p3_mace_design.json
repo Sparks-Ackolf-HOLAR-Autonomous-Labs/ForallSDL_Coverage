@@ -1,0 +1,33 @@
+{
+  "campaign": "p3-mace-hidden-subset-2026-09-30",
+  "paper": "P3",
+  "operator_go": "issue 55, 2026-09-30: 'work on P3 - try score the designs against a MACE-MD subset that the planner cannot see first and then see if it completes the story'",
+  "question": "Do the P3 batch designs (strength-2 covering CA1, its 1-loss-tolerant double CA2, one-factor-at-a-time OFAT, uniform random) keep their ranking when the measurement is an independent method family (MACE-MP foundation potential MD) instead of the model the planner was built around, and do the model's materials conclusions (dopant irrelevant, carbon form matters, mid-composition minimum) hold on that evidence?",
+  "space": "the part of the SiGeC + dopant space an MD box can represent: x_Ge {0.1,0.2,0.3,0.5,0.7} x y_C {0,0.01,0.03} x carbon form {dispersed substitutional (no C-C bonds), clustered (sub-nanometre 3C-SiC cluster: C on one sublattice around a centre, all C neighbours Si)} x dopant {none, B, P at 0.2 at%} x T {300,700,1100 K}; 225 distinct points (form undefined at y_C = 0). Grain size and SiC radii of 2.5-100 nm are outside what the box can hold; the box length (about 8.7 nm) plays the role of a fixed small grain.",
+  "planner": "design_p3_mace.py builds CA1 (greedy, 20 seeds, smallest kept), CA2 (extends CA1 to every pair twice), OFAT (baseline x=0.2, y_C=0.01, clustered, none, 700 K) and a uniform random pool of |CA2| points, from factor levels alone. planner_designs.json and chpc/points.json are fixed by this registration.",
+  "hidden_set": "drawn by reveal_hidden.py AFTER this registration: seed = int(sha256(entry_hash of this ledger entry)) ; 16 points uniformly from the space minus all design points, plus 2 seed replicates (repeat of two hidden points with new seeds) as the noise floor. Appended to points.json and to the ledger before any production run. No surrogate is ever trained on hidden points.",
+  "measurement": "p3_mace/mace_rnemd.py: MACE-MP-0 small (2023-12-10), float32, 3x3x16 conventional cells (1152 atoms), hydrostatic cell + position relaxation (FIRE, fmax 0.05, <=150 steps), Langevin 8 ps, NVE Muller-Plathe 50 ps (swap every 50 steps, species-matched), kappa from both half-box gradients, first 20% discarded; unit handling as the corrected party-4b script (ledger seq 1). CHPC notchpeak-gpu-guest, checkpoints every 5000 steps.",
+  "surrogate": "ExtraTreesRegressor(n_estimators 300, random_state 0) on [x, y_C, is_clustered, is_B, is_P, T/1000], target ln kappa (as p3_sigec, carbon-form feature 0 when y_C = 0)",
+  "metrics": {
+    "hidden_log_rmse": "RMSE of surrogate ln kappa on the 16 hidden points",
+    "hidden_spearman": "rank correlation of predicted and measured kappa on the hidden points",
+    "hidden_pick": "which hidden point the surrogate ranks lowest; regret = measured kappa(pick) / min measured hidden kappa - 1",
+    "comparisons": "CA1 (15) vs 200 random 15-subsets of the random pool; OFAT (12) vs 200 random 12-subsets; CA2 (30) vs the random pool (30) and 200 bootstrap resamples of it",
+    "noise_floor": "seed scatter of the 2 replicate pairs",
+    "loss": "runs that fail QC (profile R2 < 0.9 on either half, or no output after 3 attempts) are counted as lost runs and removed; the pair coverage of each design after the real losses is reported"
+  },
+  "predictions": {
+    "Q1": "CA1 hidden log_rmse <= median of the 200 random 15-subsets",
+    "Q2": "OFAT hidden log_rmse > median of the 200 random 12-subsets",
+    "Q3": "materials: a surrogate trained on all 71 design points ranks dopant last of the five factors by permutation importance (as the model-based study did, P3-6)",
+    "Q4": "materials: at equal y_C > 0, dispersed carbon gives lower kappa than clustered carbon in the MD box (mean paired ratio over matched design+hidden points, or the surrogate contrast if fewer than 4 matched pairs)",
+    "Q5": "materials: at y_C = 0 and 300 K the surrogate minimum over x lies in [0.3, 0.7]"
+  },
+  "declared_limits": [
+    "one box size and one seed per point: kappa is box-limited (absolute values are not bulk values); the study compares designs and effect directions, not absolute kappa",
+    "MACE-MP small float32 suppresses kappa relative to Tersoff by about 1.8x (party 4b); a uniform offset does not change rankings",
+    "0.2 at% dopant is 2 atoms in 1152: the dopant effect is expected to sit below the noise floor",
+    "the random baseline draws subsets of one measured random pool of 30, not independent fresh batches"
+  ],
+  "deviation_policy": "changes to space, designs, measurement protocol, surrogate, metrics or predictions after registration are recorded as ledger deviations with reasons; infrastructure fixes (resubmission, node exclusion) are recorded as placement deviations"
+}

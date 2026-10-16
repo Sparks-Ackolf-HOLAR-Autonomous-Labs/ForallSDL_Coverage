@@ -1,0 +1,2405 @@
+{
+ "campaigns": {
+  "gpumd_endpoint_v2": {
+   "source": "gpumd/production_v2/raw/*/attempts",
+   "runs": 63,
+   "starts": 137,
+   "first_attempt_outcomes": {
+    "cancelled_by_operator_and_resubmitted": 23,
+    "completed": 8,
+    "node_fault_at_startup": 32
+   },
+   "first_attempt_loss_rate": 0.873015873015873,
+   "node_fault_rate": 0.5079365079365079,
+   "midrun_preemptions": 1,
+   "first_attempt_losses_by_host": {
+    "notch168": 11,
+    "notch294": 12,
+    "notch204": 32
+   },
+   "sequence_first_attempt_lost": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "sequence_node_fault": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "per_run": [
+    {
+     "run": "Si_T300_fe1e-5_8x8x8_s56001",
+     "first_start": "2026-09-29T08:46:37Z",
+     "first_job": "15890768",
+     "first_host": "notch168",
+     "n_starts": 2,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T300_fe1e-5_8x8x8_s56002",
+     "first_start": "2026-09-29T08:46:37Z",
+     "first_job": "15890769",
+     "first_host": "notch168",
+     "n_starts": 2,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T300_fe1e-5_8x8x8_s56003",
+     "first_start": "2026-09-29T08:46:37Z",
+     "first_job": "15890770",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe1e-5_8x8x8_s56004",
+     "first_start": "2026-09-29T08:46:37Z",
+     "first_job": "15890771",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe2e-5_8x8x8_s56009",
+     "first_start": "2026-09-29T08:46:37Z",
+     "first_job": "15890776",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe1e-5_8x8x8_s56005",
+     "first_start": "2026-09-29T08:46:38Z",
+     "first_job": "15890772",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe2e-5_8x8x8_s56006",
+     "first_start": "2026-09-29T08:46:38Z",
+     "first_job": "15890773",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe2e-5_8x8x8_s56007",
+     "first_start": "2026-09-29T08:46:38Z",
+     "first_job": "15890774",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe2e-5_8x8x8_s56008",
+     "first_start": "2026-09-29T08:46:38Z",
+     "first_job": "15890775",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe2e-5_8x8x8_s56010",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890777",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe1e-5_8x8x8_s56011",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890778",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe1e-5_8x8x8_s56012",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890779",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe1e-5_8x8x8_s56013",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890780",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe1e-5_8x8x8_s56014",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890781",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe1e-5_8x8x8_s56015",
+     "first_start": "2026-09-29T08:46:54Z",
+     "first_job": "15890782",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe2e-5_8x8x8_s56020",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890766",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe2e-5_8x8x8_s56016",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890785",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe2e-5_8x8x8_s56017",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890786",
+     "first_host": "notch168",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe2e-5_8x8x8_s56018",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890787",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Ge_T300_fe2e-5_8x8x8_s56019",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890788",
+     "first_host": "notch294",
+     "n_starts": 3,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch299"
+     ]
+    },
+    {
+     "run": "Si_T300_fe1e-5_16x8x8_s56021",
+     "first_start": "2026-09-29T08:47:11Z",
+     "first_job": "15890789",
+     "first_host": "notch294",
+     "n_starts": 2,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T300_fe1e-5_16x8x8_s56023",
+     "first_start": "2026-09-29T08:47:25Z",
+     "first_job": "15890767",
+     "first_host": "notch168",
+     "n_starts": 2,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T300_fe1e-5_16x8x8_s56022",
+     "first_start": "2026-09-29T08:47:25Z",
+     "first_job": "15890790",
+     "first_host": "notch168",
+     "n_starts": 2,
+     "first_attempt_outcome": "cancelled_by_operator_and_resubmitted",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T700_fe1e-5_8x8x8_s56025",
+     "first_start": "2026-09-29T12:25:14Z",
+     "first_job": "15891769",
+     "first_host": "notch368",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T700_fe1e-5_8x8x8_s56024",
+     "first_start": "2026-09-29T12:25:15Z",
+     "first_job": "15891768",
+     "first_host": "notch215",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T700_fe1e-5_8x8x8_s56026",
+     "first_start": "2026-09-29T12:25:15Z",
+     "first_job": "15891770",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T700_fe1e-5_8x8x8_s56027",
+     "first_start": "2026-09-29T12:28:15Z",
+     "first_job": "15891777",
+     "first_host": "notch367",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T700_fe1e-5_8x8x8_s56028",
+     "first_start": "2026-09-29T12:33:10Z",
+     "first_job": "15891791",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T700_fe2e-5_8x8x8_s56029",
+     "first_start": "2026-09-29T12:33:34Z",
+     "first_job": "15891792",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T700_fe2e-5_8x8x8_s56030",
+     "first_start": "2026-09-29T12:33:49Z",
+     "first_job": "15891793",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T700_fe2e-5_8x8x8_s56031",
+     "first_start": "2026-09-29T12:34:03Z",
+     "first_job": "15891794",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T700_fe2e-5_8x8x8_s56032",
+     "first_start": "2026-09-29T12:34:17Z",
+     "first_job": "15891795",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T700_fe2e-5_8x8x8_s56033",
+     "first_start": "2026-09-29T12:34:20Z",
+     "first_job": "15891796",
+     "first_host": "notch215",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T1100_fe2e-5_8x8x8_s56034",
+     "first_start": "2026-09-29T12:34:20Z",
+     "first_job": "15891797",
+     "first_host": "notch367",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T1100_fe2e-5_8x8x8_s56035",
+     "first_start": "2026-09-29T12:34:20Z",
+     "first_job": "15891798",
+     "first_host": "notch367",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T1100_fe2e-5_8x8x8_s56036",
+     "first_start": "2026-09-29T12:34:20Z",
+     "first_job": "15891799",
+     "first_host": "notch368",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "Si_T1100_fe2e-5_8x8x8_s56037",
+     "first_start": "2026-09-29T12:34:31Z",
+     "first_job": "15891801",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe2e-5_8x8x8_s56038",
+     "first_start": "2026-09-29T12:34:45Z",
+     "first_job": "15891802",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe4e-5_8x8x8_s56039",
+     "first_start": "2026-09-29T12:34:58Z",
+     "first_job": "15891805",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe4e-5_8x8x8_s56040",
+     "first_start": "2026-09-29T12:35:12Z",
+     "first_job": "15891813",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe4e-5_8x8x8_s56041",
+     "first_start": "2026-09-29T12:35:27Z",
+     "first_job": "15891815",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe4e-5_8x8x8_s56042",
+     "first_start": "2026-09-29T12:35:40Z",
+     "first_job": "15891816",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Si_T1100_fe4e-5_8x8x8_s56043",
+     "first_start": "2026-09-29T12:35:54Z",
+     "first_job": "15891817",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe2e-5_8x8x8_s56044",
+     "first_start": "2026-09-29T12:36:11Z",
+     "first_job": "15891818",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe2e-5_8x8x8_s56045",
+     "first_start": "2026-09-29T12:36:25Z",
+     "first_job": "15891819",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe2e-5_8x8x8_s56046",
+     "first_start": "2026-09-29T12:36:39Z",
+     "first_job": "15891820",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe2e-5_8x8x8_s56047",
+     "first_start": "2026-09-29T12:36:53Z",
+     "first_job": "15891821",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe2e-5_8x8x8_s56048",
+     "first_start": "2026-09-29T12:37:06Z",
+     "first_job": "15891822",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe4e-5_8x8x8_s56049",
+     "first_start": "2026-09-29T12:37:20Z",
+     "first_job": "15891823",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe4e-5_8x8x8_s56050",
+     "first_start": "2026-09-29T12:37:34Z",
+     "first_job": "15891824",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe4e-5_8x8x8_s56051",
+     "first_start": "2026-09-29T12:38:00Z",
+     "first_job": "15891825",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe4e-5_8x8x8_s56052",
+     "first_start": "2026-09-29T12:38:19Z",
+     "first_job": "15891826",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T700_fe4e-5_8x8x8_s56053",
+     "first_start": "2026-09-29T12:38:33Z",
+     "first_job": "15891827",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe4e-5_8x8x8_s56054",
+     "first_start": "2026-09-29T12:38:47Z",
+     "first_job": "15891828",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe4e-5_8x8x8_s56055",
+     "first_start": "2026-09-29T12:39:02Z",
+     "first_job": "15891829",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe4e-5_8x8x8_s56056",
+     "first_start": "2026-09-29T12:39:17Z",
+     "first_job": "15891830",
+     "first_host": "notch204",
+     "n_starts": 3,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 1,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe4e-5_8x8x8_s56057",
+     "first_start": "2026-09-29T12:39:31Z",
+     "first_job": "15891831",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe4e-5_8x8x8_s56058",
+     "first_start": "2026-09-29T12:39:45Z",
+     "first_job": "15891832",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe8e-5_8x8x8_s56059",
+     "first_start": "2026-09-29T12:40:03Z",
+     "first_job": "15891833",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe8e-5_8x8x8_s56060",
+     "first_start": "2026-09-29T12:40:17Z",
+     "first_job": "15891835",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe8e-5_8x8x8_s56061",
+     "first_start": "2026-09-29T12:40:31Z",
+     "first_job": "15891836",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe8e-5_8x8x8_s56062",
+     "first_start": "2026-09-29T12:40:45Z",
+     "first_job": "15891837",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    },
+    {
+     "run": "Ge_T1100_fe8e-5_8x8x8_s56063",
+     "first_start": "2026-09-29T12:40:58Z",
+     "first_job": "15891766",
+     "first_host": "notch204",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch204"
+     ]
+    }
+   ]
+  },
+  "gpumd_sizefree": {
+   "source": "gpumd/sizefree/raw/*/attempts",
+   "runs": 66,
+   "starts": 101,
+   "first_attempt_outcomes": {
+    "node_fault_at_startup": 35,
+    "completed": 31
+   },
+   "first_attempt_loss_rate": 0.5303030303030303,
+   "node_fault_rate": 0.5303030303030303,
+   "midrun_preemptions": 0,
+   "first_attempt_losses_by_host": {
+    "notch458": 6,
+    "notch215": 29
+   },
+   "sequence_first_attempt_lost": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sequence_node_fault": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "per_run": [
+    {
+     "run": "SiGe_x0.2_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:23:39Z",
+     "first_job": "16005847",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.2_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:23:39Z",
+     "first_job": "16005848",
+     "first_host": "notch458",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:40Z",
+     "first_job": "16005843",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:23:40Z",
+     "first_job": "16005844",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:23:40Z",
+     "first_job": "16005845",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.2_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:40Z",
+     "first_job": "16005846",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.3_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:40Z",
+     "first_job": "16005849",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:48Z",
+     "first_job": "2099532",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.3_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005855",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.3_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005856",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005857",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005858",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005859",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:23:56Z",
+     "first_job": "16005860",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005861",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005862",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T700_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005863",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T700_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005864",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T700_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005865",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:11Z",
+     "first_job": "16005866",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005868",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005869",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.2_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005870",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.2_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005871",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.2_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005872",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.3_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:25Z",
+     "first_job": "16005873",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.3_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005875",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.3_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005876",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005877",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005878",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.5_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005879",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:43Z",
+     "first_job": "16005880",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:58Z",
+     "first_job": "16005841",
+     "first_host": "notch458",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch458"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:59Z",
+     "first_job": "16005884",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.7_T1100_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:24:59Z",
+     "first_job": "16005885",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T1100_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T05:24:59Z",
+     "first_job": "16005886",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.85_T1100_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:24:59Z",
+     "first_job": "16005887",
+     "first_host": "notch215",
+     "n_starts": 2,
+     "first_attempt_outcome": "node_fault_at_startup",
+     "midrun_preemptions": 0,
+     "fault_hosts": [
+      "notch215"
+     ]
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T05:38:12Z",
+     "first_job": "2099533",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T05:52:43Z",
+     "first_job": "2099534",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.2_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T06:07:27Z",
+     "first_job": "2099535",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.2_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T06:21:52Z",
+     "first_job": "2099536",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.2_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T06:36:35Z",
+     "first_job": "2099537",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.3_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T06:51:00Z",
+     "first_job": "2099546",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.3_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T07:05:26Z",
+     "first_job": "2099575",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.3_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T07:19:52Z",
+     "first_job": "2099593",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.5_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T07:34:17Z",
+     "first_job": "2099636",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.5_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T07:48:47Z",
+     "first_job": "2099702",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.5_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T08:03:41Z",
+     "first_job": "2099797",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.7_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T08:18:06Z",
+     "first_job": "2099878",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.7_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T08:33:12Z",
+     "first_job": "2099987",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.7_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T08:48:11Z",
+     "first_job": "2099531",
+     "first_host": "grn061",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T12:02:30Z",
+     "first_job": "16025708",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T12:25:17Z",
+     "first_job": "16026950",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T12:27:07Z",
+     "first_job": "16027048",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe1e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T12:34:24Z",
+     "first_job": "16027412",
+     "first_host": "notch414",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_16x8x8_s57001",
+     "first_start": "2026-10-03T12:37:42Z",
+     "first_job": "16027629",
+     "first_host": "notch329",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe1e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T12:39:58Z",
+     "first_job": "16027762",
+     "first_host": "notch414",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_16x8x8_s57002",
+     "first_start": "2026-10-03T12:49:16Z",
+     "first_job": "16028264",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe1e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T12:50:19Z",
+     "first_job": "16028298",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.15_T300_fe2e-4_16x8x8_s57003",
+     "first_start": "2026-10-03T12:52:39Z",
+     "first_job": "16028399",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe1e-4_8x8x8_s57001",
+     "first_start": "2026-10-03T12:55:09Z",
+     "first_job": "16028501",
+     "first_host": "notch414",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_16x8x8_s57001",
+     "first_start": "2026-10-03T12:57:16Z",
+     "first_job": "16028630",
+     "first_host": "notch447",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe1e-4_8x8x8_s57002",
+     "first_start": "2026-10-03T13:00:18Z",
+     "first_job": "16028829",
+     "first_host": "notch414",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_16x8x8_s57002",
+     "first_start": "2026-10-03T13:06:55Z",
+     "first_job": "16029222",
+     "first_host": "notch329",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe1e-4_8x8x8_s57003",
+     "first_start": "2026-10-03T13:09:03Z",
+     "first_job": "16029321",
+     "first_host": "notch448",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "SiGe_x0.85_T300_fe2e-4_16x8x8_s57003",
+     "first_start": "2026-10-03T13:13:26Z",
+     "first_job": "16005930",
+     "first_host": "notch472",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    }
+   ]
+  },
+  "p3_strain": {
+   "source": "p3_strain/results/*.attempts",
+   "runs": 50,
+   "starts": 50,
+   "first_attempt_outcomes": {
+    "completed": 50
+   },
+   "first_attempt_loss_rate": 0.0,
+   "node_fault_rate": 0.0,
+   "midrun_preemptions": 0,
+   "first_attempt_losses_by_host": {},
+   "sequence_first_attempt_lost": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sequence_node_fault": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "per_run": [
+    {
+     "run": "S00_x0.1_e-0.03_T300_ip",
+     "first_start": "2026-09-29T09:10:47Z",
+     "first_job": "15890855_0",
+     "first_host": "notch244",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S10_x0.5_e-0.03_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_10",
+     "first_host": "notch240",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S11_x0.5_e-0.02_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_11",
+     "first_host": "notch230",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S12_x0.5_e-0.01_T300_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_12",
+     "first_host": "notch230",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S13_x0.5_e+0.00_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_13",
+     "first_host": "notch230",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S14_x0.5_e+0.01_T300_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_14",
+     "first_host": "notch230",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S15_x0.7_e-0.03_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_15",
+     "first_host": "notch318",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S16_x0.7_e-0.02_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_16",
+     "first_host": "notch318",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S17_x0.7_e-0.01_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_17",
+     "first_host": "notch318",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S18_x0.7_e+0.00_T1100_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_18",
+     "first_host": "notch318",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S27_x0.9_e-0.02_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_27",
+     "first_host": "notch130",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S29_x0.7_e-0.03_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_29",
+     "first_host": "notch132",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S03_x0.1_e+0.00_T300_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_3",
+     "first_host": "notch303",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S30_x0.7_e+0.00_T700_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_30",
+     "first_host": "notch132",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S32_x0.1_e-0.01_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_32",
+     "first_host": "notch335",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S33_x0.3_e-0.01_T1100_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_33",
+     "first_host": "notch335",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S34_x0.1_e+0.00_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_34",
+     "first_host": "notch335",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S37_x0.5_e-0.01_T1100_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_37",
+     "first_host": "notch356",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S38_x0.1_e-0.02_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_38",
+     "first_host": "notch356",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S39_x0.7_e-0.01_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_39",
+     "first_host": "notch356",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S04_x0.1_e+0.01_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_4",
+     "first_host": "notch303",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S41_x0.7_e+0.01_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_41",
+     "first_host": "notch358",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S42_x0.9_e-0.03_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_42",
+     "first_host": "notch358",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S43_x0.5_e-0.03_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_43",
+     "first_host": "notch358",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S44_x0.5_e+0.01_T300_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_44",
+     "first_host": "notch358",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S45_x0.5_e+0.00_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_45",
+     "first_host": "notch446",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S46_x0.9_e+0.00_T1100_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_46",
+     "first_host": "notch446",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S47_x0.3_e+0.00_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_47",
+     "first_host": "notch446",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S48_x0.9_e+0.01_T1100_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_48",
+     "first_host": "notch446",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S49_x0.3_e-0.03_T700_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_49",
+     "first_host": "notch446",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S05_x0.3_e-0.03_T700_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_5",
+     "first_host": "notch303",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S06_x0.3_e-0.02_T1100_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_6",
+     "first_host": "notch301",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S07_x0.3_e-0.01_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_7",
+     "first_host": "notch301",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S08_x0.3_e+0.00_T300_cp",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_8",
+     "first_host": "notch301",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S09_x0.3_e+0.01_T700_ip",
+     "first_start": "2026-09-29T09:10:48Z",
+     "first_job": "15890855_9",
+     "first_host": "notch240",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S01_x0.1_e-0.02_T1100_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_1",
+     "first_host": "notch404",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S19_x0.7_e+0.01_T300_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_19",
+     "first_host": "notch413",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S02_x0.1_e-0.01_T700_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_2",
+     "first_host": "notch404",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S20_x0.9_e-0.03_T700_ip",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_20",
+     "first_host": "notch413",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S21_x0.9_e-0.02_T300_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_21",
+     "first_host": "notch413",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S22_x0.9_e-0.01_T700_ip",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_22",
+     "first_host": "notch413",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S28_x0.1_e-0.03_T1100_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_28",
+     "first_host": "notch131",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S35_x0.3_e-0.02_T300_ip",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_35",
+     "first_host": "notch355",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S36_x0.1_e+0.01_T700_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_36",
+     "first_host": "notch355",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S40_x0.7_e-0.02_T700_cp",
+     "first_start": "2026-09-29T09:10:49Z",
+     "first_job": "15890855_40",
+     "first_host": "notch359",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S23_x0.9_e+0.00_T700_ip",
+     "first_start": "2026-09-29T09:10:50Z",
+     "first_job": "15890855_23",
+     "first_host": "notch159",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S24_x0.9_e+0.01_T1100_ip",
+     "first_start": "2026-09-29T09:10:50Z",
+     "first_job": "15890855_24",
+     "first_host": "notch159",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S25_x0.9_e-0.01_T1100_cp",
+     "first_start": "2026-09-29T09:10:50Z",
+     "first_job": "15890855_25",
+     "first_host": "notch158",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S26_x0.5_e-0.02_T700_cp",
+     "first_start": "2026-09-29T09:10:50Z",
+     "first_job": "15890855_26",
+     "first_host": "notch158",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    },
+    {
+     "run": "S31_x0.3_e+0.01_T1100_cp",
+     "first_start": "2026-09-29T09:10:50Z",
+     "first_job": "15890855_31",
+     "first_host": "notch336",
+     "n_starts": 1,
+     "first_attempt_outcome": "completed",
+     "midrun_preemptions": 0,
+     "fault_hosts": []
+    }
+   ]
+  }
+ },
+ "aggregate_only": {
+  "p3_mace": {
+   "runs": 89,
+   "node_fault_at_startup": 19,
+   "host": "notch458",
+   "source": "p3_mace/README.md (uncorrectable GPU ECC error; rerun as array 15950354); which 19 runs is not recorded"
+  },
+  "chpc_phase_b": {
+   "runs": 29,
+   "losses": 0,
+   "source": "chpc/RESULTS.md, chpc/JOBS.md"
+  },
+  "party4_bte": {
+   "runs": 6,
+   "losses": 0,
+   "source": "party4_bte/RESULTS.md"
+  }
+ },
+ "readme_statement_not_reproduced": "gpumd/production_v2/README.md states 205 attempts for the 63 endpoint runs; the committed per-run files record 137 starts. The difference is not in any committed per-run record."
+}

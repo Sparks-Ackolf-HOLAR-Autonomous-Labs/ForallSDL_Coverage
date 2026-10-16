@@ -1,0 +1,36 @@
+{
+ "campaign": "sigec-small-sic-md-x03-2026-10-01",
+ "paper": "P1",
+ "parent_campaign": "sigec-small-sic-md-2026-09-30",
+ "trigger": "ledger seq 77 (scope_limit): the density-only SiC contrast nearly vanishes at x = 0.3 (host density 3.23 g/cm3 vs SiC 3.21; contrast 2.8e-5 against 9.3e-3 at x = 0.2). If density mismatch is what makes SiC scatter, the recipe pick moves to x = 0.5, R = 2.5 nm; if SiC also scatters through stiffness and interface strain, the x = 0.2 calibration carries over and the pick stays x = 0.3, R = 5 nm. The previous MD check calibrated only x = 0.2.",
+ "question": "Does an embedded SiC particle still lower kappa in a Si0.7Ge0.3 host whose mass density equals that of SiC, and by how much relative to the same particle in Si0.8Ge0.2?",
+ "method": {
+  "engine": "identical to md_design.json (ledger seq 58): LAMMPS, Tersoff 1989 + inert Ge-C triplets, Muller-Plathe rNEMD, NPT 50 ps, warm 100 ps, production 500 ps, swap every 50 steps, 20 z-bins, 12 x 12 x 40 cells",
+  "only_change": "-var x 0.3 (host composition); in.sic_particle, potential file and analyze_mp.py are byte-identical copies of ../md/",
+  "runs": "points.txt: host (2 seeds); R = 15 and 20 A: shell-only control and particle, 2 seeds each; 10 runs, T = 300 K. R = 10 A is dropped: at x = 0.2 its two seeds disagreed by a factor 2.5 (0.11 vs 0.04)",
+  "reference": "x = 0.2 runs of ledger seq 59 (../md/results), same seeds, same radii",
+  "placement": "notchpeak-guest / owner-guest, 32 ranks, requeue; grn061 and the DGX are not used"
+ },
+ "gates": {
+  "G1": "as seq 58: Ge-to-centre minus C-to-centre gap >= 5.7 A at start and end of every particle run",
+  "G2": "every run gives a finite positive kappa",
+  "G3": "mean C coordination at the end >= 3.3",
+  "G4": "the two host seeds agree within 8%"
+ },
+ "analysis": {
+  "reduction": "r(x, R) = 1 - kappa(particle) / kappa(shell-only), seed-paired; mean and two-seed half range",
+  "ratio": "rho = mean over R in {15, 20} A of r(0.3, R) / r(0.2, R), each r a two-seed mean"
+ },
+ "predictions": {
+  "PrX1": "r(0.3, 20 A) >= 0.10 (SiC still scatters when the density contrast vanishes)",
+  "PrX2": "mean host kappa at x = 0.3 is below the x = 0.2 host mean (1.094 W/mK)",
+  "PrX3": "rho >= 0.5"
+ },
+ "decision_rule": {
+  "density_tracks": "rho < 0.25: the density contrast is the mechanism; the per-x density pick of seq 77 (x = 0.5, 3 at% C, R = 2.5 nm) is supported; correct operation replaces the pick and lifts the seq-77 scope limit",
+  "insensitive": "rho >= 0.75: SiC scatters through stiffness or interface strain, so the x = 0.2 calibration carries to other compositions; the pick x = 0.3, 3 at% C, R = 5 nm is restored by a correct operation and the seq-77 scope limit is lifted",
+  "intermediate": "0.25 <= rho < 0.75: the seq-77 scope limit (x = 0.3 to 0.5) stays; rho is recorded as the measured fraction of the x = 0.2 scattering retained at density match",
+  "gates_fail": "if any gate fails, the run is reported and the decision is taken only if the rho branch is the same with and without the failing run; otherwise the scope limit stays",
+  "not_affected": "the 27 to 33% Ge-saving claim (matches at x <= 0.15) is outside this question and no branch changes it"
+ }
+}

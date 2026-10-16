@@ -1,0 +1,21 @@
+{
+ "engine": "sisso",
+ "task": "combined",
+ "available": true,
+ "n_rows": 20,
+ "expression": "1/r, r = -0.000364592800000008*T + 2.0216653238*x + 0.31317868583897635 - 582.1891283907*x/T",
+ "complexity": 7,
+ "fit_seconds": 0.01,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 124.71592370584115,
+  "medape_pct": 96.47720442477467,
+  "n_nonfinite_pred": 0
+ },
+ "cv_5fold": {
+  "rmse_kappa": 123.38212118844805,
+  "medape_pct": 97.21070601244769,
+  "n_nonfinite_pred": 0
+ }
+}

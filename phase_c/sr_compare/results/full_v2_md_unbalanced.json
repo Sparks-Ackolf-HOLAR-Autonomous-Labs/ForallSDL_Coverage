@@ -1,0 +1,207 @@
+{
+ "task": "md",
+ "n": 24,
+ "n_holdout": 111,
+ "engines": [
+  {
+   "engine": "v2",
+   "expression": "r = -0.03637*(1-x)*l^-1/2 + -3.597*x(1-x)*1/l + 8.752*x(1-x)*l^-1/2 + 0.09632*1/t*1/l",
+   "fit_s": 1.21,
+   "n_basis": 24,
+   "proposals": [],
+   "cv5_rows": {
+    "rmse_kappa": 2.1851,
+    "medape_pct": 4.2298,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.0346,
+    "medape_pct": 3.8852,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.3052,
+    "medape_pct": 10.9014,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    Infinity,
+    Infinity,
+    Infinity
+   ]
+  },
+  {
+   "engine": "+I1 shape filter",
+   "expression": "r = -0.03637*(1-x)*l^-1/2 + -3.597*x(1-x)*1/l + 8.752*x(1-x)*l^-1/2 + 0.09632*1/t*1/l",
+   "fit_s": 2.14,
+   "n_basis": 24,
+   "proposals": [],
+   "cv5_rows": {
+    "rmse_kappa": 2.1851,
+    "medape_pct": 4.2298,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.0346,
+    "medape_pct": 3.8852,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.3052,
+    "medape_pct": 10.9014,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    Infinity,
+    Infinity,
+    Infinity
+   ]
+  },
+  {
+   "engine": "+I4 noise weights",
+   "expression": "r = -0.03636*(1-x)*l^-1/2 + -3.377*x(1-x)*1/l + 8.598*x(1-x)*l^-1/2 + 0.09632*1/t*1/l",
+   "fit_s": 1.97,
+   "n_basis": 24,
+   "proposals": [],
+   "cv5_rows": {
+    "rmse_kappa": 2.1873,
+    "medape_pct": 4.1852,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.032,
+    "medape_pct": 3.7095,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.3094,
+    "medape_pct": 10.9453,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    Infinity,
+    Infinity,
+    Infinity
+   ]
+  },
+  {
+   "engine": "+I2 PySR proposals",
+   "expression": "r = 0.3192*1/l + -0.03634*(1-x)*l^-1/2 + 3.964*x(1-x)*l^-1/2 + 0.4121*pysr:(sqrt(x) - x)**(1/4)",
+   "fit_s": 24.92,
+   "n_basis": 36,
+   "proposals": [
+    "pysr:sqrt(il*x)",
+    "pysr:sqrt(sqrt(x) - x)",
+    "pysr:sqrt(-x**2 + x)",
+    "pysr:sqrt(-x**3 + x)",
+    "pysr:x**2",
+    "pysr:x**(3/2)",
+    "pysr:il*(sqrt(x) - x)**(1/16)",
+    "pysr:sqrt(x)*(sqrt(x) - x)**(1/16)",
+    "pysr:(sqrt(x) - x)**(1/4)",
+    "pysr:x*(sqrt(x) - x)**(1/4)",
+    "pysr:sqrt(x)",
+    "pysr:il*sqrt(x)"
+   ],
+   "cv5_rows": {
+    "rmse_kappa": 2.1712,
+    "medape_pct": 6.6493,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.1744,
+    "medape_pct": 11.0026,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.2497,
+    "medape_pct": 10.7753,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    3.477,
+    3.597,
+    4.685
+   ]
+  },
+  {
+   "engine": "full v2 (+I3 beam)",
+   "expression": "r = 0.3192*1/l + -0.03634*(1-x)*l^-1/2 + 3.964*x(1-x)*l^-1/2 + 0.4121*pysr:(sqrt(x) - x)**(1/4)",
+   "fit_s": 5.44,
+   "n_basis": 36,
+   "proposals": [
+    "pysr:sqrt(il*x)",
+    "pysr:sqrt(sqrt(x) - x)",
+    "pysr:sqrt(-x**2 + x)",
+    "pysr:sqrt(-x**3 + x)",
+    "pysr:x**2",
+    "pysr:x**(3/2)",
+    "pysr:il*(sqrt(x) - x)**(1/16)",
+    "pysr:sqrt(x)*(sqrt(x) - x)**(1/16)",
+    "pysr:(sqrt(x) - x)**(1/4)",
+    "pysr:x*(sqrt(x) - x)**(1/4)",
+    "pysr:sqrt(x)",
+    "pysr:il*sqrt(x)"
+   ],
+   "cv5_rows": {
+    "rmse_kappa": 2.1712,
+    "medape_pct": 6.6493,
+    "n_nonfinite_pred": 0
+   },
+   "loco": {
+    "rmse_kappa": 2.1744,
+    "medape_pct": 11.0026,
+    "n_nonfinite_pred": 0
+   },
+   "holdout": {
+    "rmse_kappa": 0.2497,
+    "medape_pct": 10.7753,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    3.477,
+    3.597,
+    4.685
+   ]
+  }
+ ],
+ "I3_beam_vs_exhaustive": {
+  "same_selected": true,
+  "same_front": true,
+  "n_basis": 36,
+  "evaluated_exhaustive": 66711,
+  "evaluated_beam": 9384,
+  "s_exhaustive": 9.83,
+  "s_beam": 0.58
+ },
+ "rejected_I1_variants": [
+  {
+   "variant": "I1a term-wise signs (NNLS)",
+   "expression": "r = 0.9755*x(1-x) + 0.03594*x*l^-1/2 + 4.785*x(1-x)*l^-1/2 + 0.0716*1/t*1/l",
+   "holdout": {
+    "rmse_kappa": 0.307,
+    "medape_pct": 10.9603,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    8.04,
+    4.101,
+    8.04
+   ]
+  },
+  {
+   "variant": "I1b demanded bulk limit",
+   "expression": "r = 1.063*x(1-x) + -0.03614*(1-x)*l^-1/2 + 4.61*x(1-x)*l^-1/2 + 0.09616*1/t*1/l",
+   "holdout": {
+    "rmse_kappa": 0.3188,
+    "medape_pct": 10.48,
+    "n_nonfinite_pred": 0
+   },
+   "kappa_Linf_300K_x0.15_0.5_0.85": [
+    7.375,
+    3.761,
+    7.375
+   ]
+  }
+ ]
+}

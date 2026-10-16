@@ -1,0 +1,21 @@
+{
+ "engine": "feyn",
+ "task": "md",
+ "available": true,
+ "n_rows": 24,
+ "expression": "1/r, r = -7.85542e-5*T + 2.08078*exp(-2.0*(1.38819 - 3.89661*x)**2 - 2.0*(-0.00062634*L - 1.07172*x + 0.469669)**2) + 0.0543342 + 2.08078*exp(-2.0*(0.00244932*L + 0.658291)**2)",
+ "complexity": 10,
+ "fit_seconds": 459.33,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 5.934377448177493,
+  "medape_pct": 2.1921042497704506,
+  "n_nonfinite_pred": 0
+ },
+ "cv_5fold": {
+  "rmse_kappa": 38.68714741441859,
+  "medape_pct": 6.0748694465937945,
+  "n_nonfinite_pred": 0
+ }
+}

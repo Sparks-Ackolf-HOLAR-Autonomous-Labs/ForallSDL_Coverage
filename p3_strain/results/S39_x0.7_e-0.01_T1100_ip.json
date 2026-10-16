@@ -1,0 +1,29 @@
+{
+  "x": 0.7,
+  "T": 1100.0,
+  "ncz": 48,
+  "seed": 29139,
+  "method": "Muller-Plathe rNEMD",
+  "party": "CHPC-MD",
+  "machine": "notchpeak-guest",
+  "natoms": 6144,
+  "box_A": [
+    22.32,
+    22.73,
+    267.71
+  ],
+  "kappa_W_mK": 1.282,
+  "slopes_K_per_A": [
+    7.73758,
+    -7.80534
+  ],
+  "deltaT_across_half_box_K": 1040.3,
+  "swapped_eV": 3153.9,
+  "equil_warm_prod_steps": [
+    50000,
+    100000,
+    500000
+  ],
+  "ncxy": 4,
+  "swap_every": 50
+}

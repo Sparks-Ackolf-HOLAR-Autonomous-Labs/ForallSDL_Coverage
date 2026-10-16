@@ -1,0 +1,54 @@
+{
+ "campaign": "sigec-light-dopants-2026-10-01",
+ "paper": "P1 (worked example); P2 ledger record; P3 factor list",
+ "extends": "sigec campaign (ledger seq 46, adopted SiC contrast = density edge per ledger seq 61)",
+ "question": "Which of H, D, He, B and P, in the physical form each takes in sintered Si-Ge-C, lowers the lattice thermal conductivity enough to act as a design lever, and does any of them change the recipe (x_Ge, carbon as few-nm SiC) or the Ge saving?",
+ "forms": {
+  "B, P": "substitutional point defect, mass and size (Tamura), n = 1e19..3e20 cm^-3, as in the nano campaign",
+  "H, D (isolated)": "interstitial point defect: an added mass m_X at a site, Gamma = c (m_X/mbar)^2 (lower bound); upper bound adds a local-strain term eps*delta^2 with eps = 39 and delta = 0.3 (bond-centre relaxation, deliberately generous); n = 1e18..1e20 cm^-3. H and D differ only in mass, so the H-vs-D difference isolates the isotope effect.",
+  "He (isolated)": "interstitial point defect, mass-only and the same generous strain bound, n = 1e18..1e20 cm^-3",
+  "He or H (cavities)": "implanted He (or H) plus anneal forms nanocavities; modelled as spherical voids with the same inclusion cross-section as SiC (Rayleigh with lam2 -> geometric limit 2 pi R^2), lam2 bracketed by 1 (one contrast term) and 4 (density and stiffness terms both -1, Rayleigh weight 1+3), plus the Maxwell-Eucken porosity factor (1-phi)/(1+phi/2); R = 2.5, 5, 10, 25 nm; phi = 0.1, 0.3, 1, 3 vol%"
+ },
+ "grid": {
+  "x_Ge": "nano campaign host grid (committed almaBTE modes)",
+  "T_K": "nano campaign T grid",
+  "d_eff_m": [
+   1e-07,
+   3e-07,
+   5e-07
+  ]
+ },
+ "constants": {
+  "mass_amu": {
+   "H": 1.008,
+   "D": 2.014,
+   "He": 4.0026
+  },
+  "eps_upper": 39.0,
+  "delta_upper": 0.3,
+  "void_lam2": [
+   1.0,
+   4.0
+  ]
+ },
+ "reference_point": "x = 0.2, d_eff = 0.3 um, 300 K and 1100 K; SiC comparison at equal volume fraction (1 at% C as SiC = 1.0 vol%), density-edge contrast",
+ "predictions": {
+  "PrL1": "isolated H and D at <= 1e20 cm^-3 change kappa_L by less than 1% (mass-only) at the reference point, all T",
+  "PrL2": "isolated H, D or He change kappa_L by less than 5% even at the generous strain bound",
+  "PrL3": "the H-vs-D difference in kappa_L is below 0.5% of kappa_L at every grid point (no thermal isotope lever)",
+  "PrL4": "at equal volume fraction (1 vol%) and radius (5 nm), He cavities lower kappa_L more than SiC (density edge), both T",
+  "PrL5": "1 vol% of 5 nm cavities saves at least 25% Ge at equal kappa_L versus carbon-free x = 0.2 (300 K)",
+  "PrL6": "SiC (1 at% C, 5 nm) plus cavities (1 vol%, 5 nm) together give less than the sum of their separate reductions",
+  "PrL7": "B and P stay below 1% change of kappa_L on top of the SiC recipe (x = 0.2..0.5, 1e19..1e20 cm^-3)"
+ },
+ "decision_rule": {
+  "lever": "a dopant form is a thermal design lever if it changes kappa_L by >= 5% at the reference point",
+  "inert": "below 1%: recorded as thermally inert; it stays in the factor list only for electrical reasons",
+  "recipe": "if any lever changes the screening pick (argmin over x, carbon, dopant form) the pick is corrected on the ledger; otherwise the recipe is strengthened"
+ },
+ "out_of_scope_stated_in_advance": [
+  "electrical effects (B-H passivation, carrier scattering by cavities), which decide zT",
+  "retention: whether H, D or He stay in the solid at 1100 K service; cavity coarsening kinetics",
+  "local vibrational modes of Si-H / Si-D (far above the Si phonon band; no resonant term modelled)"
+ ]
+}

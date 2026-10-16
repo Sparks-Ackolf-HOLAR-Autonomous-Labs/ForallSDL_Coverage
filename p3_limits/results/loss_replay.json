@@ -1,0 +1,375 @@
+{
+ "rates": {
+  "gpumd_endpoint_v2:first_attempt": 0.873015873015873,
+  "gpumd_endpoint_v2:node_fault_only": 0.5079365079365079,
+  "gpumd_sizefree:first_attempt": 0.5303030303030303,
+  "gpumd_sizefree:node_fault_only": 0.5303030303030303,
+  "p3_strain:first_attempt": 0.0,
+  "p3_mace:node_fault (aggregate only)": 0.21348314606741572,
+  "midrun_preemption (per-run records + zero-loss aggregates)": 0.004672897196261682,
+  "pooled first-attempt (all campaigns)": 0.35973597359735976
+ },
+ "replay": {
+  "gpumd_endpoint_v2:first_attempt": {
+   "single": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.18518518518518517,
+     "coverage_q10": 0.0,
+     "lost_mean": 30.511904761904763
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.18209876543209877,
+     "coverage_q10": 0.0,
+     "lost_mean": 30.423
+    }
+   },
+   "doubled": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.3395061728395062,
+     "coverage_q10": 0.31790123456790126,
+     "lost_mean": 55.08730158730159
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.32407407407407407,
+     "coverage_q10": 0.3055555555555556,
+     "lost_mean": 55.074
+    }
+   }
+  },
+  "gpumd_endpoint_v2:node_fault_only": {
+   "single": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.6527777777777778,
+     "coverage_q10": 0.2777777777777778,
+     "lost_mean": 17.752380952380953
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.6388888888888888,
+     "coverage_q10": 0.2716049382716049,
+     "lost_mean": 17.565
+    }
+   },
+   "doubled": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8796296296296297,
+     "coverage_q10": 0.8364197530864198,
+     "lost_mean": 32.05079365079365
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8333333333333334,
+     "coverage_q10": 0.8055555555555556,
+     "lost_mean": 32.057
+    }
+   }
+  },
+  "gpumd_sizefree:first_attempt": {
+   "single": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.6358024691358025,
+     "coverage_q10": 0.17901234567901234,
+     "lost_mean": 18.53409090909091
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.5864197530864198,
+     "coverage_q10": 0.1388888888888889,
+     "lost_mean": 18.899
+    }
+   },
+   "doubled": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8827160493827161,
+     "coverage_q10": 0.7962962962962963,
+     "lost_mean": 33.46212121212121
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8148148148148148,
+     "coverage_q10": 0.7716049382716049,
+     "lost_mean": 33.471
+    }
+   }
+  },
+  "gpumd_sizefree:node_fault_only": {
+   "single": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.6358024691358025,
+     "coverage_q10": 0.17901234567901234,
+     "lost_mean": 18.53409090909091
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.6126543209876543,
+     "coverage_q10": 0.17901234567901234,
+     "lost_mean": 18.362
+    }
+   },
+   "doubled": {
+    "construction_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8827160493827161,
+     "coverage_q10": 0.7962962962962963,
+     "lost_mean": 33.46212121212121
+    },
+    "random_order": {
+     "complete_frac": 0.0,
+     "coverage_median": 0.8148148148148148,
+     "coverage_q10": 0.7746913580246914,
+     "lost_mean": 33.421
+    }
+   }
+  },
+  "p3_strain:first_attempt": {
+   "single": {
+    "construction_order": {
+     "complete_frac": 1.0,
+     "coverage_median": 1.0,
+     "coverage_q10": 1.0,
+     "lost_mean": 0.0
+    },
+    "random_order": {
+     "complete_frac": 1.0,
+     "coverage_median": 1.0,
+     "coverage_q10": 1.0,
+     "lost_mean": 0.0
+    }
+   },
+   "doubled": {
+    "construction_order": {
+     "complete_frac": 1.0,
+     "coverage_median": 1.0,
+     "coverage_q10": 1.0,
+     "lost_mean": 0.0
+    },
+    "random_order": {
+     "complete_frac": 1.0,
+     "coverage_median": 1.0,
+     "coverage_q10": 1.0,
+     "lost_mean": 0.0
+    }
+   }
+  }
+ },
+ "bernoulli": {
+  "gpumd_endpoint_v2:first_attempt": {
+   "single": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.18209876543209877,
+    "coverage_q10": 0.09259259259259259,
+    "lost_mean": 30.484
+   },
+   "doubled": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.31790123456790126,
+    "coverage_q10": 0.2037037037037037,
+    "lost_mean": 55.0922
+   }
+  },
+  "gpumd_endpoint_v2:node_fault_only": {
+   "single": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.6234567901234568,
+    "coverage_q10": 0.5123456790123457,
+    "lost_mean": 17.7768
+   },
+   "doubled": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.8302469135802469,
+    "coverage_q10": 0.7530864197530864,
+    "lost_mean": 32.0618
+   }
+  },
+  "gpumd_sizefree:first_attempt": {
+   "single": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.5987654320987654,
+    "coverage_q10": 0.48425925925925933,
+    "lost_mean": 18.5864
+   },
+   "doubled": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.8117283950617284,
+    "coverage_q10": 0.7314814814814815,
+    "lost_mean": 33.4506
+   }
+  },
+  "gpumd_sizefree:node_fault_only": {
+   "single": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.6049382716049383,
+    "coverage_q10": 0.4876543209876543,
+    "lost_mean": 18.4658
+   },
+   "doubled": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.8148148148148148,
+    "coverage_q10": 0.7314814814814815,
+    "lost_mean": 33.4188
+   }
+  },
+  "p3_strain:first_attempt": {
+   "single": {
+    "complete_frac": 1.0,
+    "coverage_median": 1.0,
+    "coverage_q10": 1.0,
+    "lost_mean": 0.0
+   },
+   "doubled": {
+    "complete_frac": 1.0,
+    "coverage_median": 1.0,
+    "coverage_q10": 1.0,
+    "lost_mean": 0.0
+   }
+  },
+  "p3_mace:node_fault (aggregate only)": {
+   "single": {
+    "complete_frac": 0.0002,
+    "coverage_median": 0.8703703703703703,
+    "coverage_q10": 0.7962962962962963,
+    "lost_mean": 7.4448
+   },
+   "doubled": {
+    "complete_frac": 0.0184,
+    "coverage_median": 0.9783950617283951,
+    "coverage_q10": 0.9537037037037037,
+    "lost_mean": 13.4748
+   }
+  },
+  "midrun_preemption (per-run records + zero-loss aggregates)": {
+   "single": {
+    "complete_frac": 0.8544,
+    "coverage_median": 1.0,
+    "coverage_q10": 0.9876543209876543,
+    "lost_mean": 0.1598
+   },
+   "doubled": {
+    "complete_frac": 0.9966,
+    "coverage_median": 1.0,
+    "coverage_q10": 1.0,
+    "lost_mean": 0.308
+   }
+  },
+  "pooled first-attempt (all campaigns)": {
+   "single": {
+    "complete_frac": 0.0,
+    "coverage_median": 0.7592592592592593,
+    "coverage_q10": 0.6635802469135802,
+    "lost_mean": 12.5232
+   },
+   "doubled": {
+    "complete_frac": 0.0002,
+    "coverage_median": 0.9259259259259259,
+    "coverage_q10": 0.8765432098765432,
+    "lost_mean": 22.7466
+   }
+  }
+ },
+ "reference_regret": {
+  "gpumd_endpoint_v2:first_attempt": {
+   "CA1_ref": {
+    "regret_median": 0.34003424737965404,
+    "found_best_frac": 0.015873015873015872
+   },
+   "CA2_ref": {
+    "regret_median": 0.33944816275612477,
+    "found_best_frac": 0.015873015873015872
+   }
+  },
+  "gpumd_sizefree:first_attempt": {
+   "CA1_ref": {
+    "regret_median": 0.11517067805190684,
+    "found_best_frac": 0.15151515151515152
+   },
+   "CA2_ref": {
+    "regret_median": 0.11663573946942418,
+    "found_best_frac": 0.07575757575757576
+   }
+  },
+  "gpumd_endpoint_v2:node_fault_only": {
+   "CA1_ref": {
+    "regret_median": 0.11517067805190684,
+    "found_best_frac": 0.20634920634920634
+   },
+   "CA2_ref": {
+    "regret_median": 0.11517067805190684,
+    "found_best_frac": 0.06349206349206349
+   }
+  }
+ },
+ "no_loss_reference_regret": {
+  "CA1_ref": 0.11517067805190684,
+  "CA2_ref": 0.0
+ },
+ "multiplicity_needed": {
+  "midrun_preemption (per-run records + zero-loss aggregates)": {
+   "1": {
+    "runs": 33,
+    "complete_frac": 0.84
+   },
+   "2": {
+    "runs": 64,
+    "complete_frac": 1.0
+   }
+  },
+  "p3_mace:node_fault (aggregate only)": {
+   "1": {
+    "runs": 33,
+    "complete_frac": 0.0
+   },
+   "2": {
+    "runs": 64,
+    "complete_frac": 0.016666666666666666
+   },
+   "3": {
+    "runs": 93,
+    "complete_frac": 0.3333333333333333
+   },
+   "4": {
+    "runs": 121,
+    "complete_frac": 0.7366666666666667
+   },
+   "6": {
+    "runs": 180,
+    "complete_frac": 0.9833333333333333
+   }
+  },
+  "pooled first-attempt (all campaigns)": {
+   "1": {
+    "runs": 33,
+    "complete_frac": 0.0
+   },
+   "2": {
+    "runs": 64,
+    "complete_frac": 0.0
+   },
+   "3": {
+    "runs": 93,
+    "complete_frac": 0.016666666666666666
+   },
+   "4": {
+    "runs": 121,
+    "complete_frac": 0.1
+   },
+   "6": {
+    "runs": 180,
+    "complete_frac": 0.7766666666666666
+   },
+   "8": {
+    "runs": 240,
+    "complete_frac": 0.98
+   }
+  }
+ },
+ "wall_seconds": 77.50067353248596
+}

@@ -1,0 +1,35 @@
+{
+ "config": "full v2: shape filter + noise weights + PySR proposals + beam 200",
+ "clean_law": {
+  "x": -0.4069723983206066,
+  "t": 0.057117342949821785,
+  "l^-1/2": -0.3756470759288147,
+  "pysr:sqrt(5.48713855875367*sqrt(il)*x + 0.229241707630442*sqrt(il) - il*t*x - 0.041778006*il*t - x**2 - 0.604135076*x - 0.0234941570446024)": 1.393525681058236
+ },
+ "proposals_clean": [
+  "pysr:sqrt(il - 0.093843095)",
+  "pysr:sqrt(il*x)",
+  "pysr:sqrt(-il*t*x + 5.1856112*il*x + 0.19839066)",
+  "pysr:sqrt(-il*sqrt(t)*x + 5.1856112*il*x + 0.19839066)",
+  "pysr:sqrt(-il**2*t*x + 4.8734493*il*x + 0.18081613)",
+  "pysr:sqrt(-1.51139432625593*il**2*t*x + 5.071124*il*x + 0.16912602)",
+  "pysr:sqrt(5.218542*il*x + 0.16371389)",
+  "pysr:il**2*t",
+  "pysr:sqrt(5.48713855875367*sqrt(il)*x + 0.229241707630442*sqrt(il) - il*t*x - 0.041778006*il*t - x**2 - 0.604135076*x - 0.0234941570446024)"
+ ],
+ "deterministic_including_pysr": true,
+ "replicated_cell": "x1T0L1",
+ "replication_same_terms": true,
+ "replication_max_rel_coef_drift": 1.0083245548208698e-14,
+ "replication_proposals_changed": false,
+ "biased_law_terms": [
+  "x(1-x)*l^-1/2",
+  "1/t*1/l",
+  "1/t*l^-1/2"
+ ],
+ "blast_radius_biased_party": [
+  "1/t*1/l",
+  "1/t*l^-1/2"
+ ],
+ "unlearn_bitwise_exact": true
+}

@@ -1,0 +1,30 @@
+{
+ "config": "full v2: shape filter + noise weights + PySR proposals + beam 200",
+ "clean_law": {
+  "(1-x)": 0.31973253852343037,
+  "1/l": -0.129808097027847,
+  "x(1-x)*l^-1/2": 5.936600735223073
+ },
+ "proposals_clean": [
+  "pysr:sqrt(il - 0.08928026)",
+  "pysr:sqrt(il*x)",
+  "pysr:sqrt(3.267589*il*x - 0.15560433*x)",
+  "pysr:il**2*t"
+ ],
+ "deterministic_including_pysr": true,
+ "replicated_cell": "x1T0L1",
+ "replication_same_terms": false,
+ "replication_max_rel_coef_drift": null,
+ "replication_proposals_changed": true,
+ "biased_law_terms": [
+  "1",
+  "(1-x)",
+  "pysr:x/sqrt(t + x/il)"
+ ],
+ "blast_radius_biased_party": [
+  "1",
+  "(1-x)",
+  "pysr:x/sqrt(t + x/il)"
+ ],
+ "unlearn_bitwise_exact": true
+}

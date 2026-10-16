@@ -1,0 +1,14 @@
+{
+ "literature": {
+  "seconds": 40.6,
+  "solution_lines": []
+ },
+ "md": {
+  "seconds": 54.0,
+  "error": "LinAlgError('Array must not contain infs or NaNs')"
+ },
+ "combined": {
+  "seconds": 36.5,
+  "solution_lines": []
+ }
+}

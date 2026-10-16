@@ -1,0 +1,21 @@
+{
+ "engine": "pysr",
+ "task": "literature",
+ "available": true,
+ "n_rows": 17,
+ "expression": "1/r, r = 0.0046229726/(0.20748435 - x)",
+ "complexity": 5,
+ "fit_seconds": 7.66,
+ "deterministic": true,
+ "expression_second_run": null,
+ "in_sample": {
+  "rmse_kappa": 131.504982639394,
+  "medape_pct": 74.20623273641188,
+  "n_nonfinite_pred": 0
+ },
+ "cv_5fold": {
+  "rmse_kappa": 125.75748240957331,
+  "medape_pct": 87.24637757218842,
+  "n_nonfinite_pred": 0
+ }
+}

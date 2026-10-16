@@ -1,0 +1,1458 @@
+{
+ "grid": {
+  "x_columns": [
+   "Si",
+   "x0",
+   "x1",
+   "x2",
+   "x3",
+   "x4",
+   "Ge"
+  ],
+  "T_bands": [
+   "T0",
+   "T1",
+   "T2",
+   "T3",
+   "T4"
+  ],
+  "n_cells": 35
+ },
+ "families": {
+  "CHPC-MD": "Tersoff-MD",
+  "DGX-MD": "Tersoff-MD",
+  "GPUMD-HNEMD": "Tersoff-MD",
+  "MACE-MD": "MLIP-MD",
+  "BTE-DFT": "DFT-BTE"
+ },
+ "lit_families": {
+  "experiment": "experiment",
+  "MD": "other-MD",
+  "BTE/DFT": "DFT-BTE"
+ },
+ "cost_base_min": {
+  "CHPC-MD": 23.0,
+  "DGX-MD": 12.5,
+  "MACE-MD": 246.0,
+  "BTE-DFT": 75.0,
+  "GPUMD-HNEMD": 20.0
+ },
+ "cost_fidelity_min": {
+  "CHPC-MD": 69.0,
+  "DGX-MD": 37.5,
+  "MACE-MD": 738.0,
+  "BTE-DFT": 75.0,
+  "GPUMD-HNEMD": 80.0
+ },
+ "fixed_coverage": {
+  "x1/T0": {
+   "LIT": [
+    "experiment"
+   ],
+   "DB-CITRINE": [
+    "experiment"
+   ],
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "Si/T3": {
+   "LIT": [
+    "experiment"
+   ]
+  },
+  "Si/T2": {
+   "LIT": [
+    "experiment",
+    "other-MD"
+   ],
+   "DB-CITRINE": [
+    "experiment"
+   ]
+  },
+  "Si/T0": {
+   "LIT": [
+    "experiment",
+    "other-MD"
+   ],
+   "DB-CITRINE": [
+    "experiment"
+   ],
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x1/T2": {
+   "DB-CITRINE": [
+    "experiment"
+   ],
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x1/T3": {
+   "DB-CITRINE": [
+    "experiment"
+   ],
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x2/T0": {
+   "DB-CITRINE": [
+    "experiment"
+   ],
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "Si/T4": {
+   "DB-CITRINE": [
+    "experiment"
+   ]
+  },
+  "x0/T0": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x0/T1": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x0/T2": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x0/T3": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x0/T4": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x1/T1": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x1/T4": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x2/T1": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x2/T2": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x2/T3": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  },
+  "x2/T4": {
+   "DB-STARRY": [
+    "experiment"
+   ]
+  }
+ },
+ "scenarios": {
+  "A_base": {
+   "description": "task-brief capabilities, per-point midpoint costs",
+   "infeasible_cells": [
+    "Ge/T4"
+   ],
+   "optimal": {
+    "cost_min": 1469.5,
+    "cost_h": 24.491666666666667,
+    "n_assignments": 48,
+    "bte_runs": {
+     "Si": 1,
+     "x3": 2,
+     "x4": 2,
+     "Ge": 2
+    },
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T4"
+     ]
+    }
+   },
+   "greedy": {
+    "cost_min": 1569.5,
+    "cost_h": 26.158333333333335,
+    "gap_rel": 0.06805035726437558,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T3",
+      "Si/T4",
+      "x3/T3",
+      "x3/T4",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ]
+    }
+   },
+   "actual": {
+    "spent_min_at_base_costs": 5892.0,
+    "spent_h": 98.2,
+    "points": {
+     "DGX-MD": 4,
+     "CHPC-MD": 180,
+     "MACE-MD": 2,
+     "BTE-DFT": 21,
+     "GPUMD-HNEMD": 38
+    },
+    "invalid_points": [
+     [
+      "BTE-DFT",
+      "Ge/T4"
+     ],
+     [
+      "BTE-DFT",
+      "Si/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x0/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x1/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x2/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x3/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x4/T4"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T0"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T2"
+     ],
+     [
+      "CHPC-MD",
+      "Si/T0"
+     ]
+    ],
+    "cells_satisfied": [
+     "Si/T0",
+     "x0/T0",
+     "x1/T0",
+     "x2/T0",
+     "x3/T0",
+     "x4/T0",
+     "Ge/T0",
+     "x0/T1",
+     "x1/T1",
+     "x2/T1",
+     "Si/T2",
+     "x0/T2",
+     "x1/T2",
+     "x2/T2",
+     "x3/T2",
+     "x4/T2",
+     "Ge/T2",
+     "x0/T3",
+     "x1/T3",
+     "x2/T3",
+     "Si/T4",
+     "x0/T4",
+     "x1/T4",
+     "x2/T4"
+    ],
+    "n_cells_satisfied": 24,
+    "cells_missed_but_feasible": [
+     "Si/T1",
+     "x3/T1",
+     "x4/T1",
+     "Ge/T1",
+     "Si/T3",
+     "x3/T3",
+     "x4/T3",
+     "Ge/T3",
+     "x3/T4",
+     "x4/T4"
+    ]
+   },
+   "optimal_for_same_cells_as_campaign": {
+    "cost_min": 522.5,
+    "greedy_cost_min": 522.5,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T2",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T2",
+      "Si/T4"
+     ]
+    }
+   },
+   "topup_to_full_grid": {
+    "cost_min": 864.5,
+    "assignment": {
+     "DGX-MD": [
+      "x4/T1"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T1",
+      "x3/T3",
+      "x4/T1",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1"
+     ]
+    },
+    "bte_runs": {
+     "Si": 1,
+     "x3": 1,
+     "x4": 1,
+     "Ge": 1
+    }
+   }
+  },
+  "B_fidelity": {
+   "description": "as A, costs per usable estimate (rNEMD x3 lengths, HNEMD x4 runs)",
+   "infeasible_cells": [
+    "Ge/T4"
+   ],
+   "optimal": {
+    "cost_min": 3386.0,
+    "cost_h": 56.43333333333333,
+    "n_assignments": 48,
+    "bte_runs": {
+     "Si": 1,
+     "x0": 1,
+     "x1": 1,
+     "x2": 1,
+     "x3": 2,
+     "x4": 2,
+     "Ge": 2
+    },
+    "assignment": {
+     "DGX-MD": [
+      "x0/T2",
+      "x0/T4",
+      "x1/T1",
+      "x1/T4",
+      "x2/T0",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x0/T0",
+      "x0/T1",
+      "x0/T3",
+      "x1/T0",
+      "x1/T2",
+      "x1/T3",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T4"
+     ]
+    }
+   },
+   "greedy": {
+    "cost_min": 3524.0,
+    "cost_h": 58.733333333333334,
+    "gap_rel": 0.040756054341405834,
+    "assignment": {
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x1/T0",
+      "x1/T2",
+      "x1/T3",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "DGX-MD": [
+      "x0/T3",
+      "x0/T4",
+      "x1/T1",
+      "x1/T4",
+      "x2/T0",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T4"
+     ],
+     "CHPC-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ]
+    }
+   },
+   "actual": {
+    "spent_min_at_base_costs": 5892.0,
+    "spent_h": 98.2,
+    "points": {
+     "DGX-MD": 4,
+     "CHPC-MD": 180,
+     "MACE-MD": 2,
+     "BTE-DFT": 21,
+     "GPUMD-HNEMD": 38
+    },
+    "invalid_points": [
+     [
+      "BTE-DFT",
+      "Ge/T4"
+     ],
+     [
+      "BTE-DFT",
+      "Si/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x0/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x1/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x2/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x3/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x4/T4"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T0"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T2"
+     ],
+     [
+      "CHPC-MD",
+      "Si/T0"
+     ]
+    ],
+    "cells_satisfied": [
+     "Si/T0",
+     "x0/T0",
+     "x1/T0",
+     "x2/T0",
+     "x3/T0",
+     "x4/T0",
+     "Ge/T0",
+     "x0/T1",
+     "x1/T1",
+     "x2/T1",
+     "Si/T2",
+     "x0/T2",
+     "x1/T2",
+     "x2/T2",
+     "x3/T2",
+     "x4/T2",
+     "Ge/T2",
+     "x0/T3",
+     "x1/T3",
+     "x2/T3",
+     "Si/T4",
+     "x0/T4",
+     "x1/T4",
+     "x2/T4"
+    ],
+    "n_cells_satisfied": 24,
+    "cells_missed_but_feasible": [
+     "Si/T1",
+     "x3/T1",
+     "x4/T1",
+     "Ge/T1",
+     "Si/T3",
+     "x3/T3",
+     "x4/T3",
+     "Ge/T3",
+     "x3/T4",
+     "x4/T4"
+    ]
+   },
+   "optimal_for_same_cells_as_campaign": {
+    "cost_min": 1065.0,
+    "greedy_cost_min": 1065.0,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T2",
+      "x0/T4",
+      "x1/T1",
+      "x1/T4",
+      "x2/T0",
+      "x2/T4",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T2",
+      "x0/T0",
+      "x0/T1",
+      "x0/T3",
+      "x1/T0",
+      "x1/T2",
+      "x1/T3",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T2",
+      "Si/T4"
+     ]
+    }
+   },
+   "topup_to_full_grid": {
+    "cost_min": 2053.5,
+    "assignment": {
+     "DGX-MD": [
+      "x4/T1"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T1",
+      "x3/T3",
+      "x4/T1",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1"
+     ]
+    },
+    "bte_runs": {
+     "Si": 1,
+     "x3": 1,
+     "x4": 1,
+     "Ge": 1
+    }
+   }
+  },
+  "C_measured_gpumd": {
+   "description": "as A, but GPUMD endpoint validity as measured by the pre-registered campaign (linearity gate passed only at 1100 K)",
+   "infeasible_cells": [
+    "Ge/T0",
+    "Si/T1",
+    "Ge/T1",
+    "Ge/T2",
+    "Ge/T3",
+    "Ge/T4"
+   ],
+   "optimal": {
+    "cost_min": 1369.5,
+    "cost_h": 22.825,
+    "n_assignments": 43,
+    "bte_runs": {
+     "Si": 1,
+     "x3": 2,
+     "x4": 2,
+     "Ge": 2
+    },
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T4",
+      "Si/T4"
+     ]
+    }
+   },
+   "greedy": {
+    "cost_min": 1449.5,
+    "cost_h": 24.158333333333335,
+    "gap_rel": 0.05841548010222719,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T4",
+      "Si/T4",
+      "x3/T3",
+      "x3/T4",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ]
+    }
+   },
+   "actual": {
+    "spent_min_at_base_costs": 5892.0,
+    "spent_h": 98.2,
+    "points": {
+     "DGX-MD": 4,
+     "CHPC-MD": 180,
+     "MACE-MD": 2,
+     "BTE-DFT": 21,
+     "GPUMD-HNEMD": 38
+    },
+    "invalid_points": [
+     [
+      "BTE-DFT",
+      "Ge/T4"
+     ],
+     [
+      "BTE-DFT",
+      "Si/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x0/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x1/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x2/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x3/T4"
+     ],
+     [
+      "BTE-DFT",
+      "x4/T4"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T0"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T2"
+     ],
+     [
+      "CHPC-MD",
+      "Si/T0"
+     ],
+     [
+      "GPUMD-HNEMD",
+      "Ge/T0"
+     ],
+     [
+      "GPUMD-HNEMD",
+      "Ge/T2"
+     ],
+     [
+      "GPUMD-HNEMD",
+      "Si/T0"
+     ],
+     [
+      "GPUMD-HNEMD",
+      "Si/T2"
+     ]
+    ],
+    "cells_satisfied": [
+     "Si/T0",
+     "x0/T0",
+     "x1/T0",
+     "x2/T0",
+     "x3/T0",
+     "x4/T0",
+     "x0/T1",
+     "x1/T1",
+     "x2/T1",
+     "Si/T2",
+     "x0/T2",
+     "x1/T2",
+     "x2/T2",
+     "x3/T2",
+     "x4/T2",
+     "x0/T3",
+     "x1/T3",
+     "x2/T3",
+     "Si/T4",
+     "x0/T4",
+     "x1/T4",
+     "x2/T4"
+    ],
+    "n_cells_satisfied": 22,
+    "cells_missed_but_feasible": [
+     "x3/T1",
+     "x4/T1",
+     "Si/T3",
+     "x3/T3",
+     "x4/T3",
+     "x3/T4",
+     "x4/T4"
+    ]
+   },
+   "optimal_for_same_cells_as_campaign": {
+    "cost_min": 407.5,
+    "greedy_cost_min": 407.5,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "BTE-DFT": [
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "GPUMD-HNEMD": [
+      "Si/T4"
+     ]
+    }
+   },
+   "topup_to_full_grid": {
+    "cost_min": 804.5,
+    "assignment": {
+     "DGX-MD": [
+      "x4/T1"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T1",
+      "x3/T3",
+      "x4/T1",
+      "x4/T3"
+     ]
+    },
+    "bte_runs": {
+     "Si": 1,
+     "x3": 1,
+     "x4": 1,
+     "Ge": 1
+    }
+   }
+  },
+  "D_bte_T4_ok": {
+   "description": "as A, but BTE-DFT accepted at >=1100 K",
+   "infeasible_cells": [],
+   "optimal": {
+    "cost_min": 957.5,
+    "cost_h": 15.958333333333334,
+    "n_assignments": 49,
+    "bte_runs": {
+     "Si": 1,
+     "x3": 2,
+     "x4": 2,
+     "Ge": 2
+    },
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T3",
+      "Si/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1"
+     ]
+    }
+   },
+   "greedy": {
+    "cost_min": 997.5,
+    "cost_h": 16.625,
+    "gap_rel": 0.04177545691906004,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "Si/T3",
+      "Si/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T1",
+      "Ge/T2",
+      "Ge/T3",
+      "Ge/T4",
+      "Si/T1",
+      "x3/T0",
+      "x3/T1",
+      "x3/T2",
+      "x3/T3",
+      "x3/T4",
+      "x4/T0",
+      "x4/T1",
+      "x4/T2",
+      "x4/T3",
+      "x4/T4"
+     ]
+    }
+   },
+   "actual": {
+    "spent_min_at_base_costs": 5892.0,
+    "spent_h": 98.2,
+    "points": {
+     "DGX-MD": 4,
+     "CHPC-MD": 180,
+     "MACE-MD": 2,
+     "BTE-DFT": 21,
+     "GPUMD-HNEMD": 38
+    },
+    "invalid_points": [
+     [
+      "CHPC-MD",
+      "Ge/T0"
+     ],
+     [
+      "CHPC-MD",
+      "Ge/T2"
+     ],
+     [
+      "CHPC-MD",
+      "Si/T0"
+     ]
+    ],
+    "cells_satisfied": [
+     "Si/T0",
+     "x0/T0",
+     "x1/T0",
+     "x2/T0",
+     "x3/T0",
+     "x4/T0",
+     "Ge/T0",
+     "x0/T1",
+     "x1/T1",
+     "x2/T1",
+     "Si/T2",
+     "x0/T2",
+     "x1/T2",
+     "x2/T2",
+     "x3/T2",
+     "x4/T2",
+     "Ge/T2",
+     "x0/T3",
+     "x1/T3",
+     "x2/T3",
+     "Si/T4",
+     "x0/T4",
+     "x1/T4",
+     "x2/T4",
+     "x3/T4",
+     "x4/T4",
+     "Ge/T4"
+    ],
+    "n_cells_satisfied": 27,
+    "cells_missed_but_feasible": [
+     "Si/T1",
+     "x3/T1",
+     "x4/T1",
+     "Ge/T1",
+     "Si/T3",
+     "x3/T3",
+     "x4/T3",
+     "Ge/T3"
+    ]
+   },
+   "optimal_for_same_cells_as_campaign": {
+    "cost_min": 567.5,
+    "greedy_cost_min": 567.5,
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T1",
+      "x0/T2",
+      "x0/T3",
+      "x0/T4",
+      "x1/T0",
+      "x1/T1",
+      "x1/T2",
+      "x1/T3",
+      "x1/T4",
+      "x2/T0",
+      "x2/T1",
+      "x2/T2",
+      "x2/T3",
+      "x2/T4",
+      "x3/T0",
+      "x3/T2",
+      "x3/T4",
+      "x4/T0",
+      "x4/T2",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T2",
+      "Ge/T4",
+      "x3/T0",
+      "x3/T2",
+      "x3/T4",
+      "x4/T0",
+      "x4/T2",
+      "x4/T4"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T2",
+      "Ge/T4",
+      "Si/T4"
+     ]
+    }
+   },
+   "topup_to_full_grid": {
+    "cost_min": 372.5,
+    "assignment": {
+     "DGX-MD": [
+      "x4/T1"
+     ],
+     "BTE-DFT": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1",
+      "Si/T3",
+      "x3/T1",
+      "x3/T3",
+      "x4/T1",
+      "x4/T3"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T1",
+      "Ge/T3",
+      "Si/T1"
+     ]
+    },
+    "bte_runs": {
+     "Si": 1,
+     "x3": 1,
+     "x4": 1,
+     "Ge": 1
+    }
+   }
+  },
+  "E_campaign_T_bands": {
+   "description": "as A, but only the T0/T2/T4 bands the campaign targeted (21 cells)",
+   "infeasible_cells": [
+    "Ge/T4"
+   ],
+   "optimal": {
+    "cost_min": 984.5,
+    "cost_h": 16.408333333333335,
+    "bte_runs": {
+     "x3": 1,
+     "x4": 1,
+     "Ge": 1
+    },
+    "assignment": {
+     "DGX-MD": [
+      "x0/T0",
+      "x0/T2",
+      "x0/T4",
+      "x1/T0",
+      "x1/T2",
+      "x1/T4",
+      "x2/T0",
+      "x2/T2",
+      "x2/T4",
+      "x3/T0",
+      "x3/T2",
+      "x3/T4",
+      "x4/T0",
+      "x4/T2",
+      "x4/T4"
+     ],
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ],
+     "BTE-DFT": [
+      "Ge/T0",
+      "Ge/T2",
+      "x3/T0",
+      "x3/T2",
+      "x4/T0",
+      "x4/T2"
+     ],
+     "GPUMD-HNEMD": [
+      "Ge/T0",
+      "Ge/T2",
+      "Ge/T4",
+      "Si/T4"
+     ]
+    }
+   },
+   "greedy": {
+    "cost_min": 1024.5,
+    "cost_h": 17.075,
+    "gap_rel": 0.04062976130015228
+   },
+   "actual": {
+    "spent_h": 98.2,
+    "n_cells_satisfied": 18,
+    "cells_satisfied": [
+     "Si/T0",
+     "x0/T0",
+     "x1/T0",
+     "x2/T0",
+     "x3/T0",
+     "x4/T0",
+     "Ge/T0",
+     "Si/T2",
+     "x0/T2",
+     "x1/T2",
+     "x2/T2",
+     "x3/T2",
+     "x4/T2",
+     "Ge/T2",
+     "Si/T4",
+     "x0/T4",
+     "x1/T4",
+     "x2/T4"
+    ]
+   },
+   "topup_to_full_grid": {
+    "cost_min": 492.0,
+    "assignment": {
+     "MACE-MD": [
+      "x3/T4",
+      "x4/T4"
+     ]
+    },
+    "bte_runs": {}
+   }
+  }
+ }
+}

@@ -1,0 +1,18 @@
+# Python 3.12. Figures, checkers and analyses:
+numpy
+scipy
+matplotlib
+pandas
+scikit-learn
+sympy
+ase
+
+# Only to repeat the simulations or engine comparisons (LAMMPS with its Python
+# module, GPUMD and almaBTE are separate installs; see each campaign README):
+# mace-torch
+# torch
+# lammps
+# pysr
+# feyn
+# aifeynman
+# TorchSisso

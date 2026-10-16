@@ -1,0 +1,5707 @@
+{
+ "design_sha256": "0f841e07eb19f34b429c10b5a3a44e3b668bedc98ad9dd2c4b29f9d3ab3cb73b",
+ "base_n": 62,
+ "base_in_region": 6,
+ "true_min": 1.4855394290591057,
+ "by_f": {
+  "0.0": {
+   "CA2+random": {
+    "false_claim_rate": 0.0,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.11810080088694153,
+    "log_rmse_median": 0.1347227053280998
+   },
+   "CA2+exploit": {
+    "false_claim_rate": 0.0,
+    "report_regret_median": 0.0026613879044665723,
+    "surrogate_regret_median": 0.0013306939522332861,
+    "log_rmse_median": 0.13554136543463846
+   },
+   "CA2+reserve": {
+    "false_claim_rate": 0.0,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.11517067805190684,
+    "log_rmse_median": 0.13359457268892977,
+    "flagged_mean": 6.0,
+    "replicated_total": 300,
+    "confirmed_total": 289,
+    "set_aside_frac": 0.03666666666666667,
+    "confirmed_true_frac": 1.0,
+    "set_aside_that_were_faults": 0,
+    "trials_with_confirmed": 1.0,
+    "base_faults_mean": 0.0
+   }
+  },
+  "0.05": {
+   "CA2+random": {
+    "false_claim_rate": 0.3,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.3457779838008015,
+    "log_rmse_median": 0.1706760898191204
+   },
+   "CA2+exploit": {
+    "false_claim_rate": 0.5166666666666667,
+    "report_regret_median": 0.30195070127770873,
+    "surrogate_regret_median": 0.23131087339772594,
+    "log_rmse_median": 0.17201409151887742
+   },
+   "CA2+reserve": {
+    "false_claim_rate": 0.06666666666666667,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.12222033189358905,
+    "log_rmse_median": 0.1404568636295337,
+    "flagged_mean": 6.0,
+    "replicated_total": 350,
+    "confirmed_total": 179,
+    "set_aside_frac": 0.48857142857142855,
+    "confirmed_true_frac": 0.9832402234636871,
+    "set_aside_that_were_faults": 152,
+    "trials_with_confirmed": 0.9833333333333333,
+    "base_faults_mean": 3.05
+   }
+  },
+  "0.1": {
+   "CA2+random": {
+    "false_claim_rate": 0.45,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.34443181371361375,
+    "log_rmse_median": 0.2016206979378953
+   },
+   "CA2+exploit": {
+    "false_claim_rate": 0.75,
+    "report_regret_median": 0.32028633075135793,
+    "surrogate_regret_median": 0.31510305690992346,
+    "log_rmse_median": 0.1999265027886653
+   },
+   "CA2+reserve": {
+    "false_claim_rate": 0.2,
+    "report_regret_median": 0.32027483025507786,
+    "surrogate_regret_median": 0.12222033189358905,
+    "log_rmse_median": 0.15599037866127857,
+    "flagged_mean": 6.0,
+    "replicated_total": 360,
+    "confirmed_total": 92,
+    "set_aside_frac": 0.7444444444444445,
+    "confirmed_true_frac": 0.9021739130434783,
+    "set_aside_that_were_faults": 253,
+    "trials_with_confirmed": 0.7666666666666667,
+    "base_faults_mean": 6.333333333333333
+   }
+  }
+ },
+ "trials": {
+  "0.0": [
+   {
+    "CA2+random": {
+     "log_rmse": 0.14316508077312048,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1355652529651845,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12629210175445424,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1362422328267605,
+     "surrogate_regret": 0.19034501065125542,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13125796214621097,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13984729743545984,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1346509254166635,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1328828532397823,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13219471732047688,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14419258194394455,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12401164382085474,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13925984796670007,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1376969456129003,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13473677529425163,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13567072745245234,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11897335489721078,
+     "surrogate_regret": 0.3357258475091709,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1500176719530885,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12219020026969105,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14519292907642598,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1374947628739349,
+     "surrogate_regret": 0.31432929752536554,
+     "false_claim": false,
+     "report_regret": 0.31432929752536554,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13696689521310126,
+     "surrogate_regret": 0.6954447730187057,
+     "false_claim": false,
+     "report_regret": 0.3202633297587978,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1347944852395361,
+     "surrogate_regret": 0.10412794384298008,
+     "false_claim": false,
+     "report_regret": 0.22492934434211254,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14149348726461394,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1379564970444138,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1355710309634432,
+     "surrogate_regret": 0.3288603333974529,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12897854483799284,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1263992442317882,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13989948033842636,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14505594023147325,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1250723939538081,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14410162819389313,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13551747790409238,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13089010726144776,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11616141907039279,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.11597013294492788,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12979087526070268,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13176321877871267,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13569029803037708,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13180318318726286,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1305620398519345,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13686885390134787,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1327025153609691,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13506544864449735,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1351823135640926,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.11810080088694153,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12212613103109281,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13398603278031865,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13577850200938094,
+     "surrogate_regret": 0.31108219064296283,
+     "false_claim": false,
+     "report_regret": 0.31108219064296283,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12681175489947377,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12201634560456877,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12359816622436506,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13936810991247256,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13617444097956952,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1456277623482757,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13853096536939388,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13265965930138876,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13237636605085906,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.2994783945948638,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13318166604439946,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13896894009532473,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14658535430976877,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.29614938255997725,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14873327811448017,
+     "surrogate_regret": 0.33433592122400313,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13235876637983918,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12889709843857639,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13749615353505168,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13890408403078913,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1411071669028681,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13765001366464336,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11897384850891994,
+     "surrogate_regret": 0.11912982824664953,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13900458092300336,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.135046976431437,
+     "surrogate_regret": 0.3343961506362878,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14557796128188605,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12581346718785516,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13558403730683308,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13869333595769748,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14195840707530283,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14060058556412852,
+     "surrogate_regret": 0.11050756441899412,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12617196447900964,
+     "surrogate_regret": 0.11912982824664953,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13486291322997482,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13925325351391063,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12167506164483569,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1396341807595988,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13476421427036,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14443876996441413,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14273539244287306,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1315802482147364,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12520680734087697,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.4095343629574675,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1349268243025504,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12782714759638686,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12061256345517579,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15453027292359017,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1344590770502836,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13839650326300454,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13112823341385824,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12784388988265827,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12357720410656971,
+     "surrogate_regret": 0.3158768162944814,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13341452881228677,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12927462899173284,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14192065569788043,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14220779626187485,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14159696638662977,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1475835325086352,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1428838668441111,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": false,
+     "report_regret": 0.07502356801452192,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1384100430592889,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12279694312539648,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.4316966869092391,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12206288434598055,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12886839882923243,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13398773742033213,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13641967069919994,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13588369277127824,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14372268972457636,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14370537259991545,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.0028104882336406067,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14481952890913935,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1231502213531163,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12131391215954161,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1327263077119389,
+     "surrogate_regret": 0.3158768162944814,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1332743987881786,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1435351405370055,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14934382091892293,
+     "surrogate_regret": 0.17212645477010202,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11309142268102744,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1374337811598891,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13597885605352172,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1448888775662709,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13641319828669796,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.0028104882336406067,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14923046018475816,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12286119605660631,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12920921731467538,
+     "surrogate_regret": 0.10726894168368872,
+     "false_claim": false,
+     "report_regret": 0.10726894168368872,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13418449917773465,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1315056004294059,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12047653056158046,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1328850999118582,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1436061206378164,
+     "surrogate_regret": 0.3343961506362878,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14152191779424753,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14051388697469674,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13984957645127027,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.11568230900766024,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12183415154458721,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14074231847448668,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13473015360686805,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13662659331158994,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11768915863791882,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12619923294534427,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1271794102316422,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13977692494598756,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13497672500441424,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12813564655233242,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13576870342647662,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1327358811544766,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1252417697351645,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11980925023244,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13013646137206203,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13142329086479687,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.142850273881957,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12100640984512888,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12666733327317395,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13038423375941346,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.12964297906022587,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13201491150146957,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13747919189324292,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1578403245494843,
+     "surrogate_regret": 0.19034501065125542,
+     "false_claim": false,
+     "report_regret": 0.07502356801452192,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14550949724569243,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14476635869060506,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13773135345827386,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13072303049390815,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12843126539059507,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1367648661420176,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13400747933346005,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11336243490254616,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.134201937667383,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1442398676314648,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14274991977881343,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14688287288477772,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13074420935331932,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12526477031147432,
+     "surrogate_regret": 0.07518190354368937,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13348536296023783,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13194045422825462,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11812109425281231,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15560752885746465,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16494790959366495,
+     "surrogate_regret": 0.11826494987325642,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12856467270163166,
+     "surrogate_regret": 0.3343961506362878,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13985378128906037,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1329955979702325,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   }
+  ],
+  "0.05": [
+   {
+    "CA2+random": {
+     "log_rmse": 0.16732424354442424,
+     "surrogate_regret": 0.6954712673480241,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1542939970833858,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14306310765807545,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17306469806056674,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1789792063702754,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.29614938255997725,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13059071971591243,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11962173281722732,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1294011154996111,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13125804313509243,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18090450644354827,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1897561225838975,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.2993018425403511,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13586948888670342,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15357050517101248,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15393737152011264,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": true,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13461564719846258,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1515109661531881,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17650053921752368,
+     "surrogate_regret": 0.2831547066092419,
+     "false_claim": true,
+     "report_regret": 0.2831547066092419,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14088271683472545,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16554588610573304,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.16054130836616307,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": true,
+     "report_regret": 0.2994783945948638,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15170778307939078,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16648337664384447,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.16062336966432939,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13490588653737995,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1870399489845571,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1982743387063254,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12886675005051654,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17283322478490684,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1665311550570884,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1390246322767182,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1360302244416505,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14089698271263323,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.0028104882336406067,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12447456050074444,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17499481846981918,
+     "surrogate_regret": 0.31432929752536554,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14950322510405398,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32981348332751903,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.134594644339274,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 0,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12800501795543978,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13763786863435684,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13089926990755615,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16479206067802143,
+     "surrogate_regret": 0.9946786592567505,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15455542881477988,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": true,
+     "report_regret": 0.10702140862718545,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1328142494679268,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.167155810654229,
+     "surrogate_regret": 0.8099957256776151,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17432779055421346,
+     "surrogate_regret": 0.19235962789903205,
+     "false_claim": false,
+     "report_regret": 0.22492934434211254,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1533050865413623,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1847666678356689,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17633739714267074,
+     "surrogate_regret": 0.22809563896157448,
+     "false_claim": true,
+     "report_regret": 0.22809563896157448,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1477942300018273,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18604677547536294,
+     "surrogate_regret": 1.4184115327797802,
+     "false_claim": true,
+     "report_regret": 1.4184115327797802,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.16157227521056075,
+     "surrogate_regret": 0.3075198770040497,
+     "false_claim": true,
+     "report_regret": 0.3075198770040497,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14328687538338164,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 2
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.13944854319302807,
+     "surrogate_regret": 0.8807075196312195,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15386734202266908,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16108610952302094,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22581469298385462,
+     "surrogate_regret": 0.7541620741682507,
+     "false_claim": true,
+     "report_regret": 0.8141404926165972,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1788789327945471,
+     "surrogate_regret": 0.48055494573937185,
+     "false_claim": true,
+     "report_regret": 0.48055494573937185,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15387286462714728,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20347101811316262,
+     "surrogate_regret": 0.766519740768866,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18929622085993095,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": true,
+     "report_regret": 0.489770546032708,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14834187975205554,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18744949525460106,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18635559422811349,
+     "surrogate_regret": 0.8807075196312195,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15250609764871834,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15710663260117877,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21280931935373304,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16909517527534412,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": false,
+     "report_regret": 0.2993018425403511,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 2
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17716005765375578,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": false,
+     "report_regret": 0.1954536360534158,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19336822506102336,
+     "surrogate_regret": 0.48667972877397303,
+     "false_claim": true,
+     "report_regret": 0.48667972877397303,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.11896820290254247,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14918962066088223,
+     "surrogate_regret": 0.3345879969454493,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15718096092439646,
+     "surrogate_regret": 0.11826494987325642,
+     "false_claim": true,
+     "report_regret": 0.11826494987325642,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13723034718942073,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18493613755959779,
+     "surrogate_regret": 0.17518617341108245,
+     "false_claim": false,
+     "report_regret": 0.17518617341108245,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.185534498853721,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.08623662706247548,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1464747380897876,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16180424632936682,
+     "surrogate_regret": 0.9946786592567505,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17605345077717321,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.10702140862718545,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.130515403455057,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17326796024352806,
+     "surrogate_regret": 0.8807075196312195,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1672868688930817,
+     "surrogate_regret": 0.24125030107528,
+     "false_claim": true,
+     "report_regret": 0.24125030107528,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1403677792914899,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20191105067574688,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20303553550125322,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12929061826546306,
+     "surrogate_regret": 0.24125030107528,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19359677522085472,
+     "surrogate_regret": 0.30442300796055366,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21681392621555154,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.30442300796055366,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1544761650963083,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1926645252191726,
+     "surrogate_regret": 0.4651177254587293,
+     "false_claim": true,
+     "report_regret": 0.9394055778299029,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17306478642274392,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1566622394850834,
+     "surrogate_regret": 0.641659900977851,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.11922956397320532,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1275220093317085,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13601594129416708,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16851895485333396,
+     "surrogate_regret": 0.34232675553647973,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14171854063453973,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15184953751721234,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15154341799903953,
+     "surrogate_regret": 0.3815635012660896,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.153681903989799,
+     "surrogate_regret": 0.17836656684483732,
+     "false_claim": false,
+     "report_regret": 0.30442300796055366,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13375774987318959,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16667790462219823,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17067194550422388,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16064503785497117,
+     "surrogate_regret": 0.3202633297587978,
+     "false_claim": true,
+     "report_regret": 0.3202633297587978,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14888397433089814,
+     "surrogate_regret": 0.10726894168368872,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14437295407703238,
+     "surrogate_regret": 0.0,
+     "false_claim": true,
+     "report_regret": 0.0,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1518195047299487,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 5,
+     "n_set_aside": 0,
+     "n_confirmed_not_fault": 5,
+     "n_set_aside_fault": 0,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16628984521058662,
+     "surrogate_regret": 0.641659900977851,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1757377238489044,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16803596186366085,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16569915289199988,
+     "surrogate_regret": 1.3451924714407828,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15488346227477667,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.10718350460979487,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13506199942257713,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1577544351234136,
+     "surrogate_regret": 0.3365963465060111,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15881401176715043,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": false,
+     "report_regret": 0.33097131878655817,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14322087352771506,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18972121687333665,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.22577581500558233,
+     "surrogate_regret": 0.47103388510254307,
+     "false_claim": true,
+     "report_regret": 0.47103388510254307,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15999566762802223,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17554978922657527,
+     "surrogate_regret": 0.7102677790938194,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17096339661501092,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13129874845635356,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19037285639042983,
+     "surrogate_regret": 0.37873473095052423,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1673569500791484,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13376992920289943,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18859073636913762,
+     "surrogate_regret": 0.3428926944653208,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19622290921410995,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.0028104882336406067,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16337210407953914,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18779350346998896,
+     "surrogate_regret": 0.8141404926165972,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17391259411053336,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15925386325915114,
+     "surrogate_regret": 0.9946786592567505,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18000113380344354,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18612164745190632,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14441578148696607,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.31432929752536554,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16327167539056905,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13656044482183544,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13205847551241326,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16657616175765017,
+     "surrogate_regret": 0.37873473095052423,
+     "false_claim": true,
+     "report_regret": 0.6985377968788615,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15136529098769028,
+     "surrogate_regret": 0.2345261078338774,
+     "false_claim": true,
+     "report_regret": 0.2345261078338774,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13010009237043038,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20968047298066683,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20580889980519673,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": false,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13769380961466318,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15820210871961,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.13478584073465852,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12053326514880885,
+     "surrogate_regret": 0.11810080088694153,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.24441596939960494,
+     "surrogate_regret": 0.7541331143880006,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20444185698515638,
+     "surrogate_regret": 0.788827029682273,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14076443264652577,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20285646316759204,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.183378440515194,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14252834637209483,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15485267385766893,
+     "surrogate_regret": 0.3158768162944814,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15816629736991047,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1614009042909212,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.14813248978258242,
+     "surrogate_regret": 0.6312332683940174,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1389321239762652,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": true,
+     "report_regret": 0.29614938255997725,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1374034846863092,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20548925322915257,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2057380499145824,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13010759285055798,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1797652156181922,
+     "surrogate_regret": 0.788827029682273,
+     "false_claim": false,
+     "report_regret": 0.08623662706247548,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18004617165948406,
+     "surrogate_regret": 0.6854760140030562,
+     "false_claim": true,
+     "report_regret": 0.6854760140030562,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15544480709647013,
+     "surrogate_regret": 0.3300009319407802,
+     "false_claim": true,
+     "report_regret": 0.3300009319407802,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18858014712555685,
+     "surrogate_regret": 0.33097131878655817,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20619049420349625,
+     "surrogate_regret": 0.731818056979529,
+     "false_claim": true,
+     "report_regret": 0.7534201876902564,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.138910328870227,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1657442418455384,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17331467715537502,
+     "surrogate_regret": 0.31432929752536554,
+     "false_claim": true,
+     "report_regret": 0.31432929752536554,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12683518004915464,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12596298652086013,
+     "surrogate_regret": 0.30770818761547414,
+     "false_claim": false,
+     "report_regret": 0.2380891766631168,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1439657301181502,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.17788227187830583,
+     "surrogate_regret": 0.2657811157569254,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 2,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.12982137037407576,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.14155350977430115,
+     "surrogate_regret": 0.10726894168368872,
+     "false_claim": true,
+     "report_regret": 0.10726894168368872,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13798023909418403,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 5,
+     "n_confirmed": 4,
+     "n_set_aside": 1,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 1,
+     "n_base_faults": 1,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19235201547425596,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1885415381126165,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1648426223743062,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19104750353502362,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1921653741435748,
+     "surrogate_regret": 0.3343961506362878,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14054594796757747,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   }
+  ],
+  "0.1": [
+   {
+    "CA2+random": {
+     "log_rmse": 0.17701973812138377,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19809211372523935,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16176740409465876,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.23022912012328697,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2061466480898966,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1511466189460157,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1550987195677529,
+     "surrogate_regret": 0.343085643626426,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15644171116849592,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13320087664048189,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1738666113283917,
+     "surrogate_regret": 0.4651177254587293,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18130661335521292,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13373291524615416,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.3038775292416226,
+     "surrogate_regret": 0.19562696061450002,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.24836043909585037,
+     "surrogate_regret": 0.26559819145647423,
+     "false_claim": true,
+     "report_regret": 0.26559819145647423,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1509390011101483,
+     "surrogate_regret": 0.22809563896157448,
+     "false_claim": true,
+     "report_regret": 0.22809563896157448,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2277286758371006,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20038142867410355,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1706872962748052,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.27725070019258846,
+     "surrogate_regret": 0.47158806654825147,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2521713416054652,
+     "surrogate_regret": 0.3377341534812677,
+     "false_claim": true,
+     "report_regret": 0.3300009319407802,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1658094065875208,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 9,
+     "n_base_faults_in_region": 3
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2364223575721272,
+     "surrogate_regret": 0.4651177254587293,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2315796921298599,
+     "surrogate_regret": 0.4366985132182657,
+     "false_claim": true,
+     "report_regret": 0.11050756441899412,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.19585283239662618,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 9,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19811336739127117,
+     "surrogate_regret": 1.2040024941673781,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19968776091080553,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.10702140862718545,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13424070401092505,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20533609594338886,
+     "surrogate_regret": 0.8807075196312195,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19597620449730835,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.18391383823313162,
+     "surrogate_regret": 0.08322987318088426,
+     "false_claim": false,
+     "report_regret": 0.08322987318088426,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.21914389318214092,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.22798497766321893,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14643623207267992,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 10,
+     "n_base_faults_in_region": 2
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15957741145352117,
+     "surrogate_regret": 0.4651177254587293,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19057963620373186,
+     "surrogate_regret": 0.4420729900279212,
+     "false_claim": true,
+     "report_regret": 0.4420729900279212,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1542357165165694,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22730929097758923,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2069494310778463,
+     "surrogate_regret": 0.0,
+     "false_claim": true,
+     "report_regret": 0.0,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15600481497465016,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.29244766586986626,
+     "surrogate_regret": 0.0,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2550075677539348,
+     "surrogate_regret": 0.34003424737965404,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.2192391302192607,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 11,
+     "n_base_faults_in_region": 3
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22020182319841286,
+     "surrogate_regret": 0.7541331143880006,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19108217469954059,
+     "surrogate_regret": 0.7541331143880006,
+     "false_claim": true,
+     "report_regret": 0.7541331143880006,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.18022038730290568,
+     "surrogate_regret": 0.766519740768866,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18605162225676844,
+     "surrogate_regret": 0.34003424737965404,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15112582679353112,
+     "surrogate_regret": 0.34003424737965404,
+     "false_claim": true,
+     "report_regret": 0.34003424737965404,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12846798225904396,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.08623662706247548,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1704979406478928,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1716955008230907,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14766360443187684,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1612275647843629,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17390070430322715,
+     "surrogate_regret": 0.3202633297587978,
+     "false_claim": true,
+     "report_regret": 0.3202633297587978,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16086750644366032,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1923993949654563,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21234822676446694,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 0.34232675553647973,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.18585308291396863,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": true,
+     "report_regret": 0.0,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22570083723697093,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20456231877382697,
+     "surrogate_regret": 0.6443506053338326,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1375903038129933,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 3
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.15063778362048993,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.6443506053338326,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15939598071800598,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.10718350460979487,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.12540219349185897,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2846926561686181,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": true,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.26496007392926346,
+     "surrogate_regret": 0.8099957256776151,
+     "false_claim": true,
+     "report_regret": 0.489770546032708,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.22771472183169425,
+     "surrogate_regret": 0.10726894168368872,
+     "false_claim": true,
+     "report_regret": 0.10726894168368872,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 11,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19996804110216798,
+     "surrogate_regret": 0.8807075196312195,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18976387361350222,
+     "surrogate_regret": 0.6200182732395745,
+     "false_claim": true,
+     "report_regret": 0.6200182732395745,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.17262120957820423,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1723938534591639,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18687974422537595,
+     "surrogate_regret": 0.3393529414076475,
+     "false_claim": true,
+     "report_regret": 0.3393529414076475,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1478689074961217,
+     "surrogate_regret": 0.0028104882336406067,
+     "false_claim": false,
+     "report_regret": 0.0028104882336406067,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2261415740520082,
+     "surrogate_regret": 0.3379245020579815,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20567866538799334,
+     "surrogate_regret": 0.31432929752536554,
+     "false_claim": false,
+     "report_regret": 0.31451116214542596,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1629871915459943,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.3377341534812677,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22747709152212084,
+     "surrogate_regret": 0.3379245020579815,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.22271359724218395,
+     "surrogate_regret": 0.3300009319407802,
+     "false_claim": true,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1460865690208393,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.16846631335929452,
+     "surrogate_regret": 0.30770818761547414,
+     "false_claim": true,
+     "report_regret": 1.4184115327797802,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18058308919287117,
+     "surrogate_regret": 0.3393529414076475,
+     "false_claim": true,
+     "report_regret": 0.3393529414076475,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1345988756634958,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.10702140862718545,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22090430421035534,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.23638546781241804,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16210064129239574,
+     "surrogate_regret": 0.08623662706247548,
+     "false_claim": false,
+     "report_regret": 0.20190479563778996,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 10,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1747298546657971,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17743691814989165,
+     "surrogate_regret": 0.2380891766631168,
+     "false_claim": true,
+     "report_regret": 0.2380891766631168,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1531808230542838,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.173009819588217,
+     "surrogate_regret": 0.31108219064296283,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19116488617576935,
+     "surrogate_regret": 0.2345261078338774,
+     "false_claim": true,
+     "report_regret": 0.2345261078338774,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1515285173931931,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.21893355803672385,
+     "surrogate_regret": 0.831761547874099,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21523277226204876,
+     "surrogate_regret": 0.33433592122400313,
+     "false_claim": true,
+     "report_regret": 0.29614938255997725,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1440229979625374,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.2993018425403511,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2294117974611813,
+     "surrogate_regret": 0.31432929752536554,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20843686113938453,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": true,
+     "report_regret": 0.07502356801452192,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15759945343782683,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 2
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1909526378039657,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20981715346283064,
+     "surrogate_regret": 0.4271973669446085,
+     "false_claim": true,
+     "report_regret": 0.4271973669446085,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1464041347368445,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 2
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.22105160500578178,
+     "surrogate_regret": 0.38380351848164906,
+     "false_claim": true,
+     "report_regret": 0.25006845345161444,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.23197408431136304,
+     "surrogate_regret": 0.3158768162944814,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1819658724440251,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.21023993859916723,
+     "surrogate_regret": 0.30279580494471303,
+     "false_claim": true,
+     "report_regret": 0.7183241290177214,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21182202196647443,
+     "surrogate_regret": 0.2018176967995371,
+     "false_claim": true,
+     "report_regret": 0.2018176967995371,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13222323281942175,
+     "surrogate_regret": 0.3202633297587978,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20501433854839138,
+     "surrogate_regret": 0.43123791345552687,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21888870166361152,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16463341122442368,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.34232675553647973,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17020483675126427,
+     "surrogate_regret": 0.8141404926165972,
+     "false_claim": true,
+     "report_regret": 0.9938808590917207,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2112135058967553,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14750773887659624,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2495139647888206,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 1.4184115327797802,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.250382910017875,
+     "surrogate_regret": 0.08607711904115778,
+     "false_claim": false,
+     "report_regret": 0.08607711904115778,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.2012341294056751,
+     "surrogate_regret": 0.3393529414076475,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 11,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20158322337655474,
+     "surrogate_regret": 0.641659900977851,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18885230824331659,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.08607711904115778,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1718742016402793,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2057070342396922,
+     "surrogate_regret": 0.2994783945948638,
+     "false_claim": false,
+     "report_regret": 0.24125030107528,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1957681117368888,
+     "surrogate_regret": 0.07502356801452192,
+     "false_claim": true,
+     "report_regret": 0.07502356801452192,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1318244689975019,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 3,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19806910500131195,
+     "surrogate_regret": 0.8141404926165972,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21038301605319018,
+     "surrogate_regret": 0.10726894168368872,
+     "false_claim": true,
+     "report_regret": 0.10726894168368872,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15129572016291554,
+     "surrogate_regret": 0.29614938255997725,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.221095332813694,
+     "surrogate_regret": 0.6954712673480241,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.20016524466652505,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.18042848823076382,
+     "surrogate_regret": 0.7541331143880006,
+     "false_claim": true,
+     "report_regret": 0.7541331143880006,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 10,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.28649158690414017,
+     "surrogate_regret": 0.34003424737965404,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.26689287156722724,
+     "surrogate_regret": 0.3343961506362878,
+     "false_claim": true,
+     "report_regret": 0.3343961506362878,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.2125440834598703,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 9,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.25310585851757156,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.2531459907205442,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16196038423851838,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.17924522277691,
+     "surrogate_regret": 0.3010636679713148,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17755504023620736,
+     "surrogate_regret": 0.17518617341108245,
+     "false_claim": true,
+     "report_regret": 0.17518617341108245,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14580578434945238,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 3,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2042750189844936,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1836067751658733,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": true,
+     "report_regret": 0.11517067805190684,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1383358744441878,
+     "surrogate_regret": 0.3158768162944814,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1674375531694995,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.15294708144453806,
+     "surrogate_regret": 0.3393529414076475,
+     "false_claim": true,
+     "report_regret": 0.3393529414076475,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.13631174180045216,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": false,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19710492931675205,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18680806042608572,
+     "surrogate_regret": 0.35797782803343914,
+     "false_claim": false,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14090793882566807,
+     "surrogate_regret": 0.2831547066092419,
+     "false_claim": false,
+     "report_regret": 0.2831547066092419,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1575259748128562,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1785021168511465,
+     "surrogate_regret": 1.0539409438737959,
+     "false_claim": true,
+     "report_regret": 1.0539409438737959,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1631997227499498,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18980260204572177,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19608566852222287,
+     "surrogate_regret": 0.0,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.18529717224973133,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.3457779838008015,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.19110526363500954,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.1987731646008254,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.17429708467858052,
+     "surrogate_regret": 0.32028633075135793,
+     "false_claim": true,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2074324105903262,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": true,
+     "report_regret": 0.48250095543093363,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21906034382488238,
+     "surrogate_regret": 0.7592322629229367,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.20127289971501502,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.3202633297587978,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 4,
+     "n_set_aside": 2,
+     "n_confirmed_not_fault": 4,
+     "n_set_aside_fault": 2,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.24520952230166854,
+     "surrogate_regret": 0.11517067805190684,
+     "false_claim": false,
+     "report_regret": 0.30415820075940925,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.23754776835651803,
+     "surrogate_regret": 0.0,
+     "false_claim": true,
+     "report_regret": 0.0,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1560118435412662,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.2134289626048989,
+     "surrogate_regret": 0.4651177254587293,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.21096652091590803,
+     "surrogate_regret": 0.76278469750983,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.17349501061773115,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.1998088424936111,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.17932685713542018,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.10718350460979487,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15537501544063467,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 5,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.20165817249923587,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18766921850832982,
+     "surrogate_regret": 0.10702140862718545,
+     "false_claim": false,
+     "report_regret": 0.1220563831255812,
+     "reported_is_fault": false
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15654750867429273,
+     "surrogate_regret": 0.0,
+     "false_claim": false,
+     "report_regret": 0.0,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 0,
+     "n_set_aside": 6,
+     "n_confirmed_not_fault": 0,
+     "n_set_aside_fault": 6,
+     "n_base_faults": 7,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18385886659844783,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.205779910031758,
+     "surrogate_regret": 0.0026613879044665723,
+     "false_claim": true,
+     "report_regret": 0.0026613879044665723,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.15597594234790702,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 3,
+     "n_set_aside": 3,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18704453785962236,
+     "surrogate_regret": 0.3457779838008015,
+     "false_claim": false,
+     "report_regret": 0.32028633075135793,
+     "reported_is_fault": false
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.18759345052066678,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.489770546032708,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.16491656049999812,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": false,
+     "report_regret": 0.12222033189358905,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 4,
+     "n_base_faults": 8,
+     "n_base_faults_in_region": 0
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18112052506509654,
+     "surrogate_regret": 0.12222033189358905,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.16963451148501757,
+     "surrogate_regret": 0.9967414804729255,
+     "false_claim": true,
+     "report_regret": 0.9967414804729255,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.1362364927386453,
+     "surrogate_regret": 0.10718350460979487,
+     "false_claim": false,
+     "report_regret": 0.10718350460979487,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 1,
+     "n_set_aside": 5,
+     "n_confirmed_not_fault": 1,
+     "n_set_aside_fault": 5,
+     "n_base_faults": 6,
+     "n_base_faults_in_region": 1
+    }
+   },
+   {
+    "CA2+random": {
+     "log_rmse": 0.18463484794980678,
+     "surrogate_regret": 0.7444823308671593,
+     "false_claim": true,
+     "report_regret": 0.7444823308671593,
+     "reported_is_fault": true
+    },
+    "CA2+exploit": {
+     "log_rmse": 0.19232778551400465,
+     "surrogate_regret": 0.47103388510254307,
+     "false_claim": true,
+     "report_regret": 0.47103388510254307,
+     "reported_is_fault": true
+    },
+    "CA2+reserve": {
+     "log_rmse": 0.14078508268822687,
+     "surrogate_regret": 0.2993018425403511,
+     "false_claim": false,
+     "report_regret": 0.35797782803343914,
+     "reported_is_fault": false,
+     "n_flagged": 6,
+     "n_replicated": 6,
+     "n_confirmed": 2,
+     "n_set_aside": 4,
+     "n_confirmed_not_fault": 2,
+     "n_set_aside_fault": 3,
+     "n_base_faults": 4,
+     "n_base_faults_in_region": 2
+    }
+   }
+  ]
+ },
+ "predictions": {
+  "PR1": {
+   "exploit": 0.5166666666666667,
+   "reserve": 0.06666666666666667,
+   "pass": true
+  },
+  "PR2": {
+   "exploit": 0.30195070127770873,
+   "reserve": 0.32028633075135793,
+   "pass": false
+  },
+  "PR3": {
+   "random": 0.1347227053280998,
+   "reserve": 0.13359457268892977,
+   "pass": true
+  },
+  "PR4": {
+   "set_aside_frac": 0.03666666666666667,
+   "pass": true
+  },
+  "PR5": {
+   "exploit": 0.75,
+   "reserve": 0.2,
+   "pass": true
+  }
+ },
+ "wall_seconds": 98.60368466377258
+}

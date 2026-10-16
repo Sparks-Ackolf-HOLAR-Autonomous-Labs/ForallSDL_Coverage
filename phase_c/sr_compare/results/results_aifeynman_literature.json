@@ -1,0 +1,6 @@
+{
+ "engine": "aifeynman",
+ "task": "literature",
+ "available": false,
+ "reason": "needs gfortran, so it cannot build on the DGX (aarch64); built and ran on CHPC instead (job 15855552, see aif_chpc/): zero-byte solution files on literature/combined, LinAlgError on md. Designed for large near-noiseless synthetic data; unusable on these tables."
+}

@@ -1,0 +1,423 @@
+{
+ "n_completed": 50,
+ "never_completed": [],
+ "coef": {
+  "b0": 1.0646,
+  "b1_x": -5.0409,
+  "b2_x2": 5.4712,
+  "b3_t": 0.0088,
+  "a_eps": -3.935,
+  "b_eps_x": -0.9652,
+  "c_eps_t": -3.2368,
+  "d_eps_dir": 7.0301
+ },
+ "ci95": {
+  "b0": [
+   0.9946,
+   1.1305
+  ],
+  "b1_x": [
+   -5.28,
+   -4.7812
+  ],
+  "b2_x2": [
+   5.226,
+   5.7179
+  ],
+  "b3_t": [
+   -0.0436,
+   0.0685
+  ],
+  "a_eps": [
+   -7.2598,
+   -0.8055
+  ],
+  "b_eps_x": [
+   -4.1666,
+   2.8789
+  ],
+  "c_eps_t": [
+   -6.3736,
+   0.4349
+  ],
+  "d_eps_dir": [
+   5.2713,
+   8.8102
+  ]
+ },
+ "rms_ln": 0.0489,
+ "coverage_C2_completed": [
+  81,
+  81
+ ],
+ "coverage_C1_completed": [
+  81,
+  81
+ ],
+ "predictions": {
+  "compressive_raises_kappa_cross_plane_300K_x0.5": true,
+  "sensitivity_smaller_in_alloy_than_dilute": false
+ },
+ "materials_calls": {
+  "on_Si001|T300|cross-plane|x0.1": {
+   "eps": -0.0042,
+   "pct_change": 2.1,
+   "ci95_pct": [
+    1.2,
+    3.2
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|cross-plane|x0.3": {
+   "eps": -0.0126,
+   "pct_change": 6.8,
+   "ci95_pct": [
+    4.3,
+    9.5
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|cross-plane|x0.5": {
+   "eps": -0.021,
+   "pct_change": 12.0,
+   "ci95_pct": [
+    8.3,
+    16.2
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|cross-plane|x0.7": {
+   "eps": -0.0294,
+   "pct_change": 17.8,
+   "ci95_pct": [
+    12.4,
+    24.3
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|cross-plane|x0.9": {
+   "eps": -0.0378,
+   "pct_change": 24.4,
+   "ci95_pct": [
+    15.9,
+    34.6
+   ],
+   "extrapolated": true
+  },
+  "on_Si001|T300|in-plane|x0.1": {
+   "eps": -0.0042,
+   "pct_change": -0.8,
+   "ci95_pct": [
+    -1.9,
+    0.3
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|in-plane|x0.3": {
+   "eps": -0.0126,
+   "pct_change": -2.3,
+   "ci95_pct": [
+    -4.8,
+    0.6
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|in-plane|x0.5": {
+   "eps": -0.021,
+   "pct_change": -3.4,
+   "ci95_pct": [
+    -7.2,
+    1.0
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|in-plane|x0.7": {
+   "eps": -0.0294,
+   "pct_change": -4.2,
+   "ci95_pct": [
+    -9.6,
+    2.1
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T300|in-plane|x0.9": {
+   "eps": -0.0378,
+   "pct_change": -4.6,
+   "ci95_pct": [
+    -12.4,
+    4.3
+   ],
+   "extrapolated": true
+  },
+  "on_Si001|T1100|cross-plane|x0.1": {
+   "eps": -0.0042,
+   "pct_change": 3.2,
+   "ci95_pct": [
+    2.2,
+    4.4
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|cross-plane|x0.3": {
+   "eps": -0.0126,
+   "pct_change": 10.3,
+   "ci95_pct": [
+    7.3,
+    13.5
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|cross-plane|x0.5": {
+   "eps": -0.021,
+   "pct_change": 18.2,
+   "ci95_pct": [
+    13.1,
+    23.3
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|cross-plane|x0.7": {
+   "eps": -0.0294,
+   "pct_change": 27.2,
+   "ci95_pct": [
+    19.4,
+    34.4
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|cross-plane|x0.9": {
+   "eps": -0.0378,
+   "pct_change": 37.2,
+   "ci95_pct": [
+    25.2,
+    49.1
+   ],
+   "extrapolated": true
+  },
+  "on_Si001|T1100|in-plane|x0.1": {
+   "eps": -0.0042,
+   "pct_change": 0.2,
+   "ci95_pct": [
+    -0.8,
+    1.2
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|in-plane|x0.3": {
+   "eps": -0.0126,
+   "pct_change": 1.0,
+   "ci95_pct": [
+    -1.6,
+    3.1
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|in-plane|x0.5": {
+   "eps": -0.021,
+   "pct_change": 2.0,
+   "ci95_pct": [
+    -1.9,
+    5.2
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|in-plane|x0.7": {
+   "eps": -0.0294,
+   "pct_change": 3.4,
+   "ci95_pct": [
+    -2.7,
+    8.6
+   ],
+   "extrapolated": false
+  },
+  "on_Si001|T1100|in-plane|x0.9": {
+   "eps": -0.0378,
+   "pct_change": 5.2,
+   "ci95_pct": [
+    -3.9,
+    13.4
+   ],
+   "extrapolated": true
+  },
+  "on_relaxed_Ge|T300|cross-plane|x0.1": {
+   "eps": 0.036,
+   "pct_change": -16.5,
+   "ci95_pct": [
+    -23.9,
+    -9.4
+   ],
+   "extrapolated": true
+  },
+  "on_relaxed_Ge|T300|cross-plane|x0.3": {
+   "eps": 0.028,
+   "pct_change": -13.5,
+   "ci95_pct": [
+    -18.3,
+    -8.8
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|cross-plane|x0.5": {
+   "eps": 0.02,
+   "pct_change": -10.2,
+   "ci95_pct": [
+    -13.3,
+    -7.3
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|cross-plane|x0.7": {
+   "eps": 0.012,
+   "pct_change": -6.5,
+   "ci95_pct": [
+    -8.5,
+    -4.7
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|cross-plane|x0.9": {
+   "eps": 0.004,
+   "pct_change": -2.3,
+   "ci95_pct": [
+    -3.1,
+    -1.6
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|in-plane|x0.1": {
+   "eps": 0.036,
+   "pct_change": 7.6,
+   "ci95_pct": [
+    -2.3,
+    17.5
+   ],
+   "extrapolated": true
+  },
+  "on_relaxed_Ge|T300|in-plane|x0.3": {
+   "eps": 0.028,
+   "pct_change": 5.3,
+   "ci95_pct": [
+    -1.3,
+    11.7
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|in-plane|x0.5": {
+   "eps": 0.02,
+   "pct_change": 3.3,
+   "ci95_pct": [
+    -1.0,
+    7.4
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|in-plane|x0.7": {
+   "eps": 0.012,
+   "pct_change": 1.8,
+   "ci95_pct": [
+    -0.8,
+    4.2
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T300|in-plane|x0.9": {
+   "eps": 0.004,
+   "pct_change": 0.5,
+   "ci95_pct": [
+    -0.4,
+    1.4
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|cross-plane|x0.1": {
+   "eps": 0.036,
+   "pct_change": -23.9,
+   "ci95_pct": [
+    -31.1,
+    -17.2
+   ],
+   "extrapolated": true
+  },
+  "on_relaxed_Ge|T1100|cross-plane|x0.3": {
+   "eps": 0.028,
+   "pct_change": -19.6,
+   "ci95_pct": [
+    -24.6,
+    -14.5
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|cross-plane|x0.5": {
+   "eps": 0.02,
+   "pct_change": -14.7,
+   "ci95_pct": [
+    -18.1,
+    -11.1
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|cross-plane|x0.7": {
+   "eps": 0.012,
+   "pct_change": -9.3,
+   "ci95_pct": [
+    -11.4,
+    -7.0
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|cross-plane|x0.9": {
+   "eps": 0.004,
+   "pct_change": -3.3,
+   "ci95_pct": [
+    -4.1,
+    -2.3
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|in-plane|x0.1": {
+   "eps": 0.036,
+   "pct_change": -2.0,
+   "ci95_pct": [
+    -9.4,
+    6.7
+   ],
+   "extrapolated": true
+  },
+  "on_relaxed_Ge|T1100|in-plane|x0.3": {
+   "eps": 0.028,
+   "pct_change": -2.1,
+   "ci95_pct": [
+    -6.6,
+    3.6
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|in-plane|x0.5": {
+   "eps": 0.02,
+   "pct_change": -1.9,
+   "ci95_pct": [
+    -4.7,
+    1.9
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|in-plane|x0.7": {
+   "eps": 0.012,
+   "pct_change": -1.4,
+   "ci95_pct": [
+    -3.3,
+    1.1
+   ],
+   "extrapolated": false
+  },
+  "on_relaxed_Ge|T1100|in-plane|x0.9": {
+   "eps": 0.004,
+   "pct_change": -0.5,
+   "ci95_pct": [
+    -1.3,
+    0.4
+   ],
+   "extrapolated": false
+  }
+ }
+}
