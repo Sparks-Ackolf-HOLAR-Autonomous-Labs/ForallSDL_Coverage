@@ -27,8 +27,8 @@ tot = sum(imp.values())
 series = [
     ("full factorial, registered contrast", [mea["main_effect_pct_of_var_lnkappa_full_factorial"]["stiffness_registered"][f] for f in fac], "#9ECAE1", None),
     ("62-run batch, registered contrast", [100 * imp[f] / tot for f in fac], "#0072B2", None),
-    ("full factorial, measured contrast", [mea["main_effect_pct_of_var_lnkappa_full_factorial"]["measured_curve"][f] for f in fac], "#FDD0A2", None),
-    ("62-run batch, measured contrast", [mea["importance_pct_CA2_ref"][f] for f in fac], "#D55E00", None),
+    ("full factorial, measured contrast", [mea["main_effect_pct_of_var_lnkappa_full_factorial"]["measured_curve"][f] for f in fac], "#D8C3E3", None),
+    ("62-run batch, measured contrast", [mea["importance_pct_CA2_ref"][f] for f in fac], "#6A3D9A", None),
 ]
 fig, ax = plt.subplots(figsize=(S.COL, 2.9))
 y = np.arange(len(fac))
@@ -40,5 +40,5 @@ ax.invert_yaxis()
 ax.set_xlabel("share of $\\ln\\kappa_L$ (%)")
 ax.set_xlim(0, 85)
 ax.grid(axis="y", visible=False)
-ax.legend(loc="lower right", fontsize=6.5, handlelength=1.0)
+ax.legend(loc="lower right", fontsize=7, handlelength=1.0, borderaxespad=0.1)
 S.save(fig, "fig_ranking")

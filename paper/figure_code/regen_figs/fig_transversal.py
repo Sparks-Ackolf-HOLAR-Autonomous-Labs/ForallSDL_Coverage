@@ -43,8 +43,10 @@ for r in des["CA2_ref"]:
 b.imshow(g.T, cmap="Greys", vmin=0, vmax=12, origin="lower", aspect="auto")
 for i in range(g.shape[0]):
     for j in range(g.shape[1]):
-        b.text(i, j + 0.32, str(g[i, j]), ha="center", va="center", fontsize=6, color=S.GREY)
-tcol = {300: "#56B4E9", 500: "#009E73", 700: "#E69F00", 900: "#CC79A7", 1100: "#D55E00"}
+        b.text(i, j + 0.3, str(g[i, j]), ha="center", va="center", fontsize=7,
+               color="white" if g[i, j] >= 7 else "black")
+# temperature: the same light-to-dark red scale as the molecular dynamics figure
+tcol = {300: "#F4A582", 500: "#E3685A", 700: "#CA0020", 900: "#930016", 1100: "#5E0012"}
 seen = {}
 slots = [(-0.22, -0.05), (0.0, -0.05), (0.22, -0.05), (-0.22, -0.3), (0.0, -0.3), (0.22, -0.3)]
 used = {}
@@ -55,25 +57,32 @@ for p in tv["followup_points"]:
     lab = f"{p['T_K']} K" if p["T_K"] not in seen else None
     seen[p["T_K"]] = 1
     b.plot(i + dx, j + dy, "o", ms=4.5, color=tcol[p["T_K"]],
-           mec="white", mew=0.5, label=lab)
-b.set_xticks(range(5)); b.set_xticklabels(["on site", "2.5", "5", "25", "100"])
+           mec="black", mew=0.5, label=lab)
+b.set_xticks(range(5)); b.set_xticklabels(["on\nsite", "2.5", "5", "25", "100"])
+b.axvline(0.5, color=S.INK, lw=1.2)
 b.set_yticks(range(4)); b.set_yticklabels([str(v) for v in F["d_eff_um"]])
 b.set_xlabel("carbon form (SiC radius, nm)")
 b.set_ylabel("effective grain size ($\\mu$m)")
 b.grid(False)
-b.legend(fontsize=6, loc="lower left", bbox_to_anchor=(0.45, 1.0), ncol=2, handletextpad=0.1, borderpad=0.1, columnspacing=0.6)
+b.legend(fontsize=7, loc="lower left", bbox_to_anchor=(0.45, 1.0), ncol=2, handletextpad=0.1, borderpad=0.1, columnspacing=0.6)
 
 # (c) model error and decision after nine follow-up runs
 c = axs[2]
 rows = [("none", tv["base"]), ("transversal", tv["transversal"]), ("random (median)", tv["random_median"]),
         ("most uncertain", tv["top_sd"])]
 x = np.arange(len(rows))
-c.barh(x, [v["log_rmse"] for _, v in rows], color=["#BBBBBB", "#0072B2", S.GREY, "#D55E00"], height=0.6)
+# dot plot: the axis does not start at zero, so the values are dots, not bars.
+# Only the median of the random follow-ups is stored, so no spread is drawn.
+cols = [S.INK, "#0072B2", S.GREY, "#6A3D9A"]
+mks = ["o", "s", "o", "D"]
 for i, (_, v) in enumerate(rows):
-    c.text(v["log_rmse"] + 0.0004, i, f"pick +{100 * v['regret']:.0f}%", va="center", fontsize=6)
+    c.hlines(i, 0.118, v["log_rmse"], color="#DDDDDD", lw=0.8, zorder=1)
+    c.plot([v["log_rmse"]], [i], mks[i], ms=5, color=cols[i], zorder=3)
+    c.text(v["log_rmse"] + 0.0013, i, f"pick +{100 * v['regret']:.0f}%", va="center", fontsize=7)
 c.set_yticks(x); c.set_yticklabels([n for n, _ in rows])
 c.invert_yaxis()
-c.set_xlim(0.118, 0.141)
+c.set_ylim(len(rows) - 0.5, -0.5)
+c.set_xlim(0.118, 0.143)
 c.set_xlabel("model error ($\\ln\\kappa_L$)")
 c.set_title("nine follow-up runs", fontsize=7.5)
 c.grid(axis="y", visible=False)

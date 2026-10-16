@@ -53,7 +53,8 @@ c_check, _ = a.fit(rows)
 assert np.allclose(np.round(c_check, 4), c), "fit does not reproduce analysis_strain.json"
 
 X0, T0 = 0.5, 700
-COLS = {0: "#0072B2", 1: "#D55E00"}
+COLS = {0: "#0072B2", 1: "#6A3D9A"}  # cross-plane blue, in-plane purple
+C_CA = "#0072B2"                      # covering batch, as in every figure
 LAB = {0: "cross-plane", 1: "in-plane"}
 
 # ---- panel b numbers --------------------------------------------------------
@@ -98,7 +99,10 @@ post = {
     "random25_pair_coverage_median": int(np.median(cov_rand)),
     "pairs_total": a.coverage(rows)[1],
 }
-json.dump(post, open(HERE / "halfbatch_posthoc.json", "w"), indent=1)
+# The committed record is read, never rewritten: the numbers recomputed here
+# must match it.
+stored = json.load(open(HERE / "halfbatch_posthoc.json"))
+assert json.loads(json.dumps(post)) == stored, "recomputed numbers differ from halfbatch_posthoc.json"
 print(json.dumps(post, indent=1))
 
 # ---- figure ------------------------------------------------------------------
@@ -135,14 +139,17 @@ ax.legend(handles=hd, loc="upper right", frameon=False, ncol=2, columnspacing=1.
 ok = dev_rand[~np.isnan(dev_rand)]
 bx.hist(ok, bins=np.arange(0, np.ceil(ok.max()) + 0.5, 0.5), color=S.LIGHT, edgecolor=S.GREY,
         linewidth=0.5, label="random 25 of the 50 runs")
-ytop = np.histogram(ok, bins=np.arange(0, np.ceil(ok.max()) + 0.5, 0.5))[0].max() * 1.08
-bx.errorbar([np.median(dev_c1_loss)], [ytop], xerr=[[np.median(dev_c1_loss) - dev_c1_loss.min()],
-            [dev_c1_loss.max() - np.median(dev_c1_loss)]], fmt="D", ms=4, color="#009E73",
-            mfc="white", capsize=2.5, lw=1.0, label="covering subset, one run lost")
-bx.axvline(dev_c1, color="#009E73", lw=1.6, label="covering subset (25 runs)")
+hmax = np.histogram(ok, bins=np.arange(0, np.ceil(ok.max()) + 0.5, 0.5))[0].max()
+yb = hmax * 1.15  # bracket height, above every histogram bar
+lo, md, hi = dev_c1_loss.min(), np.median(dev_c1_loss), dev_c1_loss.max()
+bx.plot([lo, lo, hi, hi], [yb - hmax * 0.04, yb, yb, yb - hmax * 0.04], color=C_CA, lw=1.0)
+bx.plot([md], [yb], "D", ms=4, color=C_CA, mfc="white", mew=1.0)
+bx.text(hi + 0.4, yb, "covering subset, one run lost\n(median and range)",
+        ha="left", va="center", fontsize=7, color=C_CA)
+bx.axvline(dev_c1, color=C_CA, lw=1.6, label="covering subset (25 runs)")
 bx.set_xlabel("Largest error of the eight calls (% points)")
-bx.set_ylim(0, ytop * 1.35)
+bx.set_ylim(0, hmax * 1.55)
 bx.set_ylabel("Random batches")
 bx.set_title("b", loc="left", fontweight="bold")
-bx.legend(loc="upper right", frameon=False, bbox_to_anchor=(1.0, 0.66))
+bx.legend(loc="center right", frameon=False, bbox_to_anchor=(1.0, 0.55))
 S.save(fig, "fig_strain")

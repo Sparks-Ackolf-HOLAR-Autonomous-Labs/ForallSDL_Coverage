@@ -47,12 +47,12 @@ Each figure is drawn by one script at its print size and written to `paper/figur
 | figure | command |
 |---|---|
 | `fig_assignment` | `python3 paper/figure_code/regen_figs/fig_assignment.py` |
+| `fig_campaign_loop` | `python3 paper/figure_code/regen_figs/fig_campaign_loop.py` |
 | `fig_hidden_mace` | `python3 paper/figure_code/regen_figs/fig_hidden_mace.py` |
 | `fig_ranking` | `python3 paper/figure_code/regen_figs/fig_ranking.py` |
 | `fig_reserve` | `python3 paper/figure_code/regen_figs/fig_reserve.py` |
 | `fig_scaling` | `python3 paper/figure_code/regen_figs/fig_scaling.py` |
 | `fig_sigec_design` | `python3 paper/figure_code/regen_figs/fig_sigec_design.py` |
-| `fig_slice` | `python3 paper/figure_code/regen_figs/fig_slice.py` |
 | `fig_strain` | `python3 paper/figure_code/regen_figs/fig_strain.py` |
 | `fig_transversal` | `python3 paper/figure_code/regen_figs/fig_transversal.py` |
 

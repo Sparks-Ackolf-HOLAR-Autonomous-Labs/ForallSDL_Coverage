@@ -6,6 +6,21 @@
    "paper/figure_code/regen_figs/fig_assignment.py",
    "paper/figure_code/regen_figs/paper_fig_style.py"
   ],
+  "paper/figure_code/regen_figs/fig_campaign_loop.py": [
+   "nano/PREREGISTERED_SHA256",
+   "nano/analyze_nano.py",
+   "nano/nano_design.json",
+   "nano_sigec/PREREGISTERED_SHA256",
+   "nano_sigec/analyze_sigec.py",
+   "nano_sigec/m1c/m1c_summary.json",
+   "nano_sigec/sigec_design.json",
+   "p3_sigec/PREREGISTERED_SHA256",
+   "p3_sigec/p3_sigec_design.json",
+   "p3_sigec/results/designs.json",
+   "p3_sigec/run_p3_sigec.py",
+   "paper/figure_code/regen_figs/fig_campaign_loop.py",
+   "paper/figure_code/regen_figs/paper_fig_style.py"
+  ],
   "paper/figure_code/regen_figs/fig_hidden_mace.py": [
    "p3_mace/PREREGISTERED_SHA256",
    "p3_mace/analyze_p3_mace.py",
@@ -139,24 +154,10 @@
    "paper/figure_code/regen_figs/fig_sigec_design.py",
    "paper/figure_code/regen_figs/paper_fig_style.py"
   ],
-  "paper/figure_code/regen_figs/fig_slice.py": [
-   "nano/PREREGISTERED_SHA256",
-   "nano/analyze_nano.py",
-   "nano/nano_design.json",
-   "nano_sigec/PREREGISTERED_SHA256",
-   "nano_sigec/analyze_sigec.py",
-   "nano_sigec/m1c/m1c_summary.json",
-   "nano_sigec/sigec_design.json",
-   "p3_sigec/PREREGISTERED_SHA256",
-   "p3_sigec/p3_sigec_design.json",
-   "p3_sigec/results/designs.json",
-   "p3_sigec/run_p3_sigec.py",
-   "paper/figure_code/regen_figs/fig_slice.py",
-   "paper/figure_code/regen_figs/paper_fig_style.py"
-  ],
   "paper/figure_code/regen_figs/fig_strain.py": [
    "p3_strain/analysis_strain.json",
    "p3_strain/analyze_strain.py",
+   "p3_strain/halfbatch_posthoc.json",
    "p3_strain/results/S00_x0.1_e-0.03_T300_ip.json",
    "p3_strain/results/S01_x0.1_e-0.02_T1100_cp.json",
    "p3_strain/results/S02_x0.1_e-0.01_T700_cp.json",

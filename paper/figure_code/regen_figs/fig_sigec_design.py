@@ -2,6 +2,10 @@
 """Fig. SiGeC design (P3): batch designs on the SiGeC + dopant design space,
 at full two-column print width.
 
+a  pair coverage against batch size; b  coverage after lost runs;
+c  screening excess by design. (Factor importance of the 62-run batch is
+   drawn once, in fig_ranking.)
+
 Inputs (committed files only): p3_sigec/results/p3_sigec_results.json and
 the registered design (p3_sigec/run_p3_sigec.py refuses to import if the
 design changed after registration). Panel a draws 200 random batches per
@@ -25,8 +29,7 @@ res = json.load(open(S.PROJECT / "p3_sigec" / "results" / "p3_sigec_results.json
 dd = res["designs"]
 C_CA, C_RND, C_OF = "#0072B2", S.GREY, "#D55E00"
 
-fig, axs = plt.subplots(2, 2, figsize=(S.FULL, 4.3))
-ax = axs.ravel()
+fig, ax = plt.subplots(1, 3, figsize=(S.FULL, 2.55), gridspec_kw={"width_ratios": [1.0, 1.0, 1.2]})
 
 # (a) pair coverage against batch size
 rng = random.Random(3)
@@ -45,65 +48,59 @@ a.set_xlabel("Runs in the batch")
 a.set_ylabel("Two-factor combinations\nsampled (%)")
 a.set_xlim(0, 135)
 a.set_ylim(0, 105)
-a.legend(loc="lower right", handlelength=1.4)
+a.legend(loc="lower right", bbox_to_anchor=(1.04, 0.0), handlelength=1.0, handletextpad=0.4,
+         borderaxespad=0.1)
 a.set_title("a", loc="left", fontweight="bold")
 
-# (b) screening regret
-b = ax[2]
-lab = ["one factor\nat a time", "random", "covering\n1-fold", "random", "covering\n2-fold"]
-keys = [None, "RND_nCA1", "CA1", "RND_nCA2", "CA2"]
-for i, k in enumerate(keys):
-    if k is None:
-        b.plot([i], [100 * dd["OFAT"]["regret"]], "^", color=C_OF, ms=5.5)
-        continue
-    lo, hi = dd[k]["regret_q25_q75"]
-    col = C_CA if k.startswith("CA") else C_RND
-    b.vlines(i, 100 * lo, 100 * hi, color=col, lw=5, alpha=0.5)
-    b.plot([i], [100 * dd[k]["regret_median"]], "o", color=col, ms=4.5)
-b.set_xticks(range(5))
-b.set_xticklabels(lab)
-b.grid(axis="x", visible=False)
-b.set_ylabel("Excess $\\kappa_L$ of the chosen\nlow-Ge composition (%)")
-b.text(1.5, 37, f"{res['sizes']['CA1_ref']} runs", ha="center", fontsize=7)
-b.text(3.5, 37, f"{res['sizes']['CA2_ref']} runs", ha="center", fontsize=7)
-for xv in (0.5, 2.5):
-    b.axvline(xv, color="#BBBBBB", lw=0.6)
-b.set_ylim(-2, 40)
-b.set_title("c", loc="left", fontweight="bold")
-
-# (c) erasure tolerance
+# (b) erasure tolerance
 c = ax[1]
 er = res["erasure"]
-ks = [0, 1, 2, 3]
+ks = np.array([0, 1, 2, 3])
 for k, col, mk, ls, lb in (("CA1", C_CA, "o", "-", "covering, 1-fold"),
-                           ("CA2", C_CA, "s", "--", "covering, 2-fold"),
-                           ("RND_nCA2", C_RND, "d", "-", "random, size of 2-fold")):
-    v = [100.0 * (1.0 if k != "RND_nCA2" else 0.0)] + \
-        [100 * er[k][f"k{j}"]["complete_frac"] for j in (1, 2, 3)]
+                           ("CA2", C_CA, "s", "--", "covering, 2-fold")):
+    v = [100.0] + [100 * er[k][f"k{j}"]["complete_frac"] for j in (1, 2, 3)]
     c.plot(ks, v, marker=mk, ls=ls, color=col, ms=4, lw=1.1,
-           mfc="white" if k == "CA2" else col, label=lb,
-           zorder=2 if k == "RND_nCA2" else 3)
+           mfc="white" if k == "CA2" else col, label=lb, zorder=3)
+# random batch of the 2-fold size: never complete, before or after losses.
+# Drawn just right of the covering points so it is not hidden under them.
+vr = [0.0] + [100 * er["RND_nCA2"][f"k{j}"]["complete_frac"] for j in (1, 2, 3)]
+c.plot(ks + 0.12, vr, marker="d", ls=":", color=C_RND, mec=S.INK, mew=0.5, ms=4.5, lw=1.0,
+       zorder=4, clip_on=False)
+c.annotate("random, size of 2-fold:\n0% in every trial", xy=(2.12, 3.0), xytext=(1.9, 24),
+           ha="center", fontsize=7, color=S.INK,
+           arrowprops=dict(arrowstyle="-", color=S.INK, lw=0.6))
 c.set_xticks(ks)
 c.set_xlabel("Runs lost")
 c.set_ylabel("Batches still sampling every\ntwo-factor combination (%)")
 c.set_ylim(-5, 105)
-c.set_xlim(-0.2, 3.2)
-c.legend(loc="center right", handlelength=2.0)
+c.set_xlim(-0.2, 3.3)
+c.legend(loc="center right", handlelength=1.4, handletextpad=0.4, bbox_to_anchor=(1.04, 0.6),
+         borderaxespad=0.0)
 c.set_title("b", loc="left", fontweight="bold")
 
-# (d) factor importance
-d = ax[3]
-imp = dd["CA2_ref"]["importance"]
-names = {"d_eff_um": "grain size", "carbon_form": "carbon form", "x_Ge": "Ge content",
-         "y_C_at_frac": "C content", "T_K": "temperature", "dopant": "B/P dopant"}
-order = sorted(imp, key=imp.get)
-tot = sum(imp.values())
-d.barh(range(len(order)), [100 * imp[k] / tot for k in order], color=C_CA, height=0.6)
-d.set_yticks(range(len(order)))
-d.set_yticklabels([names[k] for k in order])
-d.grid(axis="y", visible=False)
-d.tick_params(axis="y", length=0)
-d.set_xlabel("Relative importance for $\\ln\\kappa_L$ (%)")
-d.set_title("d", loc="left", fontweight="bold")
+# (c) screening excess
+b = ax[2]
+n1, n2, no = res["sizes"]["CA1_ref"], res["sizes"]["CA2_ref"], res["sizes"]["OFAT"]
+lab = [f"one factor\nat a time, {no}", f"random, {n1}", f"covering\n1-fold, {n1}",
+       f"random, {n2}", f"covering\n2-fold, {n2}"]
+keys = [None, "RND_nCA1", "CA1", "RND_nCA2", "CA2"]
+for i, k in enumerate(keys):
+    if k is None:
+        b.plot([100 * dd["OFAT"]["regret"]], [i], "^", color=C_OF, ms=5.5)
+        continue
+    lo, hi = dd[k]["regret_q25_q75"]
+    col = C_CA if k.startswith("CA") else C_RND
+    b.hlines(i, 100 * lo, 100 * hi, color=col, lw=5, alpha=0.5)
+    b.plot([100 * dd[k]["regret_median"]], [i], "o", color=col, ms=4.5)
+b.set_yticks(range(5))
+b.set_yticklabels(lab)
+b.invert_yaxis()
+b.grid(axis="y", visible=False)
+b.tick_params(axis="y", length=0)
+b.set_xlabel("Excess $\\kappa_L$ of pick (%)")
+for yv in (0.5, 2.5):
+    b.axhline(yv, color="#BBBBBB", lw=0.6)
+b.set_xlim(-1, 37)
+b.set_title("c", loc="left", fontweight="bold")
 
 S.save(fig, "fig_sigec_design")
