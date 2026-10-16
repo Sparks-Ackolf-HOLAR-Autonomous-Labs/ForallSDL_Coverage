@@ -1,5 +1,7 @@
 # Covering and loss-tolerant batch designs guarantee what autonomous campaigns sample in SiGeC semiconductors
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23413465.svg)](https://doi.org/10.5281/zenodo.23413465)
+
 Code, data and figure scripts for the paper "Covering and loss-tolerant batch designs guarantee what autonomous campaigns sample in SiGeC semiconductors" (Molecular Systems Design & Engineering (RSC)). The manuscript itself is not part of this folder.
 
 Licences: code (Python, shell and SLURM scripts) under the MIT License (`LICENSE`); data, result files, figures and text under CC BY 4.0 (`LICENSE-CC-BY-4.0.txt`). Archived third-party datasets keep their own terms and are cited in the paper: the Starrydata slice is CC BY 4.0 (Katsura et al., Sci. Technol. Adv. Mater.: Methods 5, 2506976 (2025), doi:10.1080/27660400.2025.2506976; cite it and the source paper of each curve used), and the Citrine release keeps its published terms.
